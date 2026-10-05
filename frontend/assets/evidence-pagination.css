@@ -1,0 +1,15 @@
+.show-more-evidence {
+  display: block;
+  margin: 14px auto 0;
+  border: 1px solid var(--brand2);
+  border-radius: 10px;
+  padding: 9px 18px;
+  background: #fff;
+  color: var(--brand2);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.show-more-evidence:hover {
+  background: var(--soft);
+}

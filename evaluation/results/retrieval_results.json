@@ -1,0 +1,3422 @@
+{
+  "status": "completed",
+  "evaluation_mode": "offline_fixture_providers",
+  "case_count": 25,
+  "timestamp_utc": "2026-10-02T15:52:09.045064+00:00",
+  "metrics": {
+    "routing_accuracy": 1.0,
+    "source_selection_precision": 1.0,
+    "source_selection_recall": 1.0,
+    "retrieval_success_rate": 0.96,
+    "attribute_coverage_rate": 1.0,
+    "source_metadata_completeness": 1.0,
+    "source_metadata_preservation_rate": 1.0,
+    "normalization_success_rate": 1.0,
+    "missing_context_safety_rate": 1.0,
+    "unsupported_source_safety_rate": 1.0,
+    "provider_successful_query_rate": 0.9696969696969697,
+    "no_evidence_and_failure_handling_accuracy": 1.0,
+    "duplicate_evidence_rate": 0.0,
+    "structured_output_success_rate": 1.0
+  },
+  "operational_counts": {
+    "cases": 25,
+    "providers_attempted": 33,
+    "providers_successfully_queried": 32,
+    "claims_with_candidates": 21,
+    "claims_without_candidates": 4,
+    "evidence_candidates_retrieved": 32
+  },
+  "cases": [
+    {
+      "id": 1,
+      "claim": {
+        "id": "claim_001",
+        "original_text": "آية الكرسي هي الآية 255 من سورة البقرة",
+        "normalized_claim": "آية الكرسي هي الآية 255 من سورة البقرة",
+        "claim_type": "QURAN_RECORD",
+        "domain": "QURAN",
+        "search_queries": [
+          "آية الكرسي هي الآية 255 من سورة البقرة"
+        ],
+        "entities": [],
+        "attributes": [
+          {
+            "id": "attr_001",
+            "type": "SURAH",
+            "value": "البقرة",
+            "asserted_by": null,
+            "qualifier": null,
+            "requires_evidence": true
+          },
+          {
+            "id": "attr_002",
+            "type": "AYAH_NUMBER",
+            "value": "255",
+            "asserted_by": null,
+            "qualifier": null,
+            "requires_evidence": true
+          }
+        ],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "QURANPEDIA"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 1,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_001",
+        "sources": [
+          {
+            "provider": "QURANPEDIA",
+            "purpose": "QURAN_RETRIEVAL",
+            "priority": 1
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_001",
+            "target_attribute_ids": [
+              "attr_001",
+              "attr_002"
+            ],
+            "provider": "QURANPEDIA",
+            "purpose": "QURAN_RETRIEVAL",
+            "query": "آية الكرسي هي الآية 255 من سورة البقرة"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "QURANPEDIA",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "quranpedia:claim_001",
+              "claim_id": "claim_001",
+              "target_attribute_ids": [
+                "attr_001",
+                "attr_002"
+              ],
+              "provider": "QURANPEDIA",
+              "evidence_type": "QURAN_AYAH",
+              "query_used": "آية الكرسي هي الآية 255 من سورة البقرة",
+              "title": null,
+              "text": "Fixture source text for claim_001",
+              "source_name": "QURANPEDIA fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_001",
+              "source_url": "https://fixture.invalid/quranpedia/claim_001",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.042066Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "quranpedia:claim_001",
+          "claim_id": "claim_001",
+          "target_attribute_ids": [
+            "attr_001",
+            "attr_002"
+          ],
+          "provider": "QURANPEDIA",
+          "evidence_type": "QURAN_AYAH",
+          "query_used": "آية الكرسي هي الآية 255 من سورة البقرة",
+          "title": null,
+          "text": "Fixture source text for claim_001",
+          "source_name": "QURANPEDIA fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_001",
+          "source_url": "https://fixture.invalid/quranpedia/claim_001",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.042066Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "claim": {
+        "id": "claim_002",
+        "original_text": "سورة الإخلاص أربع آيات",
+        "normalized_claim": "سورة الإخلاص أربع آيات",
+        "claim_type": "QURAN_REFERENCE",
+        "domain": "QURAN",
+        "search_queries": [
+          "سورة الإخلاص أربع آيات"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "QURANPEDIA"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 1,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_002",
+        "sources": [
+          {
+            "provider": "QURANPEDIA",
+            "purpose": "QURAN_RETRIEVAL",
+            "priority": 1
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_002",
+            "target_attribute_ids": [],
+            "provider": "QURANPEDIA",
+            "purpose": "QURAN_RETRIEVAL",
+            "query": "سورة الإخلاص أربع آيات"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "QURANPEDIA",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "quranpedia:claim_002",
+              "claim_id": "claim_002",
+              "target_attribute_ids": [],
+              "provider": "QURANPEDIA",
+              "evidence_type": "QURAN_AYAH",
+              "query_used": "سورة الإخلاص أربع آيات",
+              "title": null,
+              "text": "Fixture source text for claim_002",
+              "source_name": "QURANPEDIA fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_002",
+              "source_url": "https://fixture.invalid/quranpedia/claim_002",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.042066Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "quranpedia:claim_002",
+          "claim_id": "claim_002",
+          "target_attribute_ids": [],
+          "provider": "QURANPEDIA",
+          "evidence_type": "QURAN_AYAH",
+          "query_used": "سورة الإخلاص أربع آيات",
+          "title": null,
+          "text": "Fixture source text for claim_002",
+          "source_name": "QURANPEDIA fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_002",
+          "source_url": "https://fixture.invalid/quranpedia/claim_002",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.042066Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "claim": {
+        "id": "claim_003",
+        "original_text": "تفسير النور في الآية بالهدى",
+        "normalized_claim": "تفسير النور في الآية بالهدى",
+        "claim_type": "QURAN_TAFSIR",
+        "domain": "QURAN",
+        "search_queries": [
+          "تفسير النور في الآية بالهدى"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "QURANPEDIA"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "MISSING_CONTEXT",
+      "evidence_count": 0,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_003",
+        "sources": [
+          {
+            "provider": "QURANPEDIA",
+            "purpose": "QURAN_TAFSIR",
+            "priority": 1
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_003",
+            "target_attribute_ids": [],
+            "provider": "QURANPEDIA",
+            "purpose": "QURAN_TAFSIR",
+            "query": "تفسير النور في الآية بالهدى"
+          }
+        ]
+      },
+      "provider_results": [],
+      "evidence_candidates": []
+    },
+    {
+      "id": 4,
+      "claim": {
+        "id": "claim_004",
+        "original_text": "ترجمة الصمد هي الملجأ الأبدي",
+        "normalized_claim": "ترجمة الصمد هي الملجأ الأبدي",
+        "claim_type": "QURAN_TRANSLATION",
+        "domain": "QURAN",
+        "search_queries": [
+          "ترجمة الصمد هي الملجأ الأبدي"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "QURANPEDIA"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 1,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_004",
+        "sources": [
+          {
+            "provider": "QURANPEDIA",
+            "purpose": "QURAN_RETRIEVAL",
+            "priority": 1
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_004",
+            "target_attribute_ids": [],
+            "provider": "QURANPEDIA",
+            "purpose": "QURAN_RETRIEVAL",
+            "query": "ترجمة الصمد هي الملجأ الأبدي"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "QURANPEDIA",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "quranpedia:claim_004",
+              "claim_id": "claim_004",
+              "target_attribute_ids": [],
+              "provider": "QURANPEDIA",
+              "evidence_type": "QURAN_AYAH",
+              "query_used": "ترجمة الصمد هي الملجأ الأبدي",
+              "title": null,
+              "text": "Fixture source text for claim_004",
+              "source_name": "QURANPEDIA fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_004",
+              "source_url": "https://fixture.invalid/quranpedia/claim_004",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.042066Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "quranpedia:claim_004",
+          "claim_id": "claim_004",
+          "target_attribute_ids": [],
+          "provider": "QURANPEDIA",
+          "evidence_type": "QURAN_AYAH",
+          "query_used": "ترجمة الصمد هي الملجأ الأبدي",
+          "title": null,
+          "text": "Fixture source text for claim_004",
+          "source_name": "QURANPEDIA fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_004",
+          "source_url": "https://fixture.invalid/quranpedia/claim_004",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.042066Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "claim": {
+        "id": "claim_005",
+        "original_text": "سورة الملك سورة مكية",
+        "normalized_claim": "سورة الملك سورة مكية",
+        "claim_type": "QURAN_CONTEXT",
+        "domain": "QURAN",
+        "search_queries": [
+          "سورة الملك سورة مكية"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "QURANPEDIA"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 1,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_005",
+        "sources": [
+          {
+            "provider": "QURANPEDIA",
+            "purpose": "QURAN_RETRIEVAL",
+            "priority": 1
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_005",
+            "target_attribute_ids": [],
+            "provider": "QURANPEDIA",
+            "purpose": "QURAN_RETRIEVAL",
+            "query": "سورة الملك سورة مكية"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "QURANPEDIA",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "quranpedia:claim_005",
+              "claim_id": "claim_005",
+              "target_attribute_ids": [],
+              "provider": "QURANPEDIA",
+              "evidence_type": "QURAN_AYAH",
+              "query_used": "سورة الملك سورة مكية",
+              "title": null,
+              "text": "Fixture source text for claim_005",
+              "source_name": "QURANPEDIA fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_005",
+              "source_url": "https://fixture.invalid/quranpedia/claim_005",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.042066Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "quranpedia:claim_005",
+          "claim_id": "claim_005",
+          "target_attribute_ids": [],
+          "provider": "QURANPEDIA",
+          "evidence_type": "QURAN_AYAH",
+          "query_used": "سورة الملك سورة مكية",
+          "title": null,
+          "text": "Fixture source text for claim_005",
+          "source_name": "QURANPEDIA fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_005",
+          "source_url": "https://fixture.invalid/quranpedia/claim_005",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.042066Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "claim": {
+        "id": "claim_006",
+        "original_text": "حديث إنما الأعمال بالنيات عن عمر",
+        "normalized_claim": "حديث إنما الأعمال بالنيات عن عمر",
+        "claim_type": "HADITH_RECORD",
+        "domain": "HADITH",
+        "search_queries": [
+          "حديث إنما الأعمال بالنيات عن عمر"
+        ],
+        "entities": [],
+        "attributes": [
+          {
+            "id": "attr_001",
+            "type": "TEXT",
+            "value": "إنما الأعمال بالنيات",
+            "asserted_by": null,
+            "qualifier": null,
+            "requires_evidence": true
+          },
+          {
+            "id": "attr_002",
+            "type": "NARRATOR",
+            "value": "عمر",
+            "asserted_by": null,
+            "qualifier": null,
+            "requires_evidence": true
+          }
+        ],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "HADEETHENC",
+        "DORAR"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 2,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_006",
+        "sources": [
+          {
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "priority": 1
+          },
+          {
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "priority": 2
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_006",
+            "target_attribute_ids": [
+              "attr_001",
+              "attr_002"
+            ],
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "query": "إنما الأعمال بالنيات"
+          },
+          {
+            "task_id": "task_002",
+            "claim_id": "claim_006",
+            "target_attribute_ids": [
+              "attr_001"
+            ],
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "query": "إنما الأعمال بالنيات"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "HADEETHENC",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "hadeethenc:claim_006",
+              "claim_id": "claim_006",
+              "target_attribute_ids": [
+                "attr_001",
+                "attr_002"
+              ],
+              "provider": "HADEETHENC",
+              "evidence_type": "HADITH",
+              "query_used": "حديث إنما الأعمال بالنيات عن عمر",
+              "title": null,
+              "text": "Fixture source text for claim_006",
+              "source_name": "HADEETHENC fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_006",
+              "source_url": "https://fixture.invalid/hadeethenc/claim_006",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.042066Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        },
+        {
+          "provider": "DORAR",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "dorar:claim_006",
+              "claim_id": "claim_006",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR",
+              "evidence_type": "HADITH_JUDGMENT",
+              "query_used": "حديث إنما الأعمال بالنيات عن عمر",
+              "title": null,
+              "text": "Fixture source text for claim_006",
+              "source_name": "DORAR fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_006",
+              "source_url": "https://fixture.invalid/dorar/claim_006",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.042066Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "hadeethenc:claim_006",
+          "claim_id": "claim_006",
+          "target_attribute_ids": [
+            "attr_001",
+            "attr_002"
+          ],
+          "provider": "HADEETHENC",
+          "evidence_type": "HADITH",
+          "query_used": "حديث إنما الأعمال بالنيات عن عمر",
+          "title": null,
+          "text": "Fixture source text for claim_006",
+          "source_name": "HADEETHENC fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_006",
+          "source_url": "https://fixture.invalid/hadeethenc/claim_006",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.042066Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        },
+        {
+          "evidence_id": "dorar:claim_006",
+          "claim_id": "claim_006",
+          "target_attribute_ids": [
+            "attr_001"
+          ],
+          "provider": "DORAR",
+          "evidence_type": "HADITH_JUDGMENT",
+          "query_used": "حديث إنما الأعمال بالنيات عن عمر",
+          "title": null,
+          "text": "Fixture source text for claim_006",
+          "source_name": "DORAR fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_006",
+          "source_url": "https://fixture.invalid/dorar/claim_006",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.042066Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "claim": {
+        "id": "claim_007",
+        "original_text": "المسلم من سلم المسلمون من لسانه ويده",
+        "normalized_claim": "المسلم من سلم المسلمون من لسانه ويده",
+        "claim_type": "HADITH_TEXT",
+        "domain": "HADITH",
+        "search_queries": [
+          "المسلم من سلم المسلمون من لسانه ويده"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "HADEETHENC",
+        "DORAR"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 2,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_007",
+        "sources": [
+          {
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "priority": 1
+          },
+          {
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "priority": 2
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_007",
+            "target_attribute_ids": [],
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "query": "المسلم من سلم المسلمون من لسانه ويده"
+          },
+          {
+            "task_id": "task_002",
+            "claim_id": "claim_007",
+            "target_attribute_ids": [],
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "query": "المسلم من سلم المسلمون من لسانه ويده"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "HADEETHENC",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "hadeethenc:claim_007",
+              "claim_id": "claim_007",
+              "target_attribute_ids": [],
+              "provider": "HADEETHENC",
+              "evidence_type": "HADITH",
+              "query_used": "المسلم من سلم المسلمون من لسانه ويده",
+              "title": null,
+              "text": "Fixture source text for claim_007",
+              "source_name": "HADEETHENC fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_007",
+              "source_url": "https://fixture.invalid/hadeethenc/claim_007",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.043065Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        },
+        {
+          "provider": "DORAR",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "dorar:claim_007",
+              "claim_id": "claim_007",
+              "target_attribute_ids": [],
+              "provider": "DORAR",
+              "evidence_type": "HADITH_JUDGMENT",
+              "query_used": "المسلم من سلم المسلمون من لسانه ويده",
+              "title": null,
+              "text": "Fixture source text for claim_007",
+              "source_name": "DORAR fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_007",
+              "source_url": "https://fixture.invalid/dorar/claim_007",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.043065Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "hadeethenc:claim_007",
+          "claim_id": "claim_007",
+          "target_attribute_ids": [],
+          "provider": "HADEETHENC",
+          "evidence_type": "HADITH",
+          "query_used": "المسلم من سلم المسلمون من لسانه ويده",
+          "title": null,
+          "text": "Fixture source text for claim_007",
+          "source_name": "HADEETHENC fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_007",
+          "source_url": "https://fixture.invalid/hadeethenc/claim_007",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.043065Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        },
+        {
+          "evidence_id": "dorar:claim_007",
+          "claim_id": "claim_007",
+          "target_attribute_ids": [],
+          "provider": "DORAR",
+          "evidence_type": "HADITH_JUDGMENT",
+          "query_used": "المسلم من سلم المسلمون من لسانه ويده",
+          "title": null,
+          "text": "Fixture source text for claim_007",
+          "source_name": "DORAR fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_007",
+          "source_url": "https://fixture.invalid/dorar/claim_007",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.043065Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "claim": {
+        "id": "claim_008",
+        "original_text": "الابتسامة في وجه المسلم صدقة",
+        "normalized_claim": "الابتسامة في وجه المسلم صدقة",
+        "claim_type": "HADITH_MEANING",
+        "domain": "HADITH",
+        "search_queries": [
+          "الابتسامة في وجه المسلم صدقة"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "HADEETHENC",
+        "DORAR"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 2,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_008",
+        "sources": [
+          {
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "priority": 1
+          },
+          {
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "priority": 2
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_008",
+            "target_attribute_ids": [],
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "query": "الابتسامة في وجه المسلم صدقة"
+          },
+          {
+            "task_id": "task_002",
+            "claim_id": "claim_008",
+            "target_attribute_ids": [],
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "query": "الابتسامة في وجه المسلم صدقة"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "HADEETHENC",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "hadeethenc:claim_008",
+              "claim_id": "claim_008",
+              "target_attribute_ids": [],
+              "provider": "HADEETHENC",
+              "evidence_type": "HADITH",
+              "query_used": "الابتسامة في وجه المسلم صدقة",
+              "title": null,
+              "text": "Fixture source text for claim_008",
+              "source_name": "HADEETHENC fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_008",
+              "source_url": "https://fixture.invalid/hadeethenc/claim_008",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.043065Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        },
+        {
+          "provider": "DORAR",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "dorar:claim_008",
+              "claim_id": "claim_008",
+              "target_attribute_ids": [],
+              "provider": "DORAR",
+              "evidence_type": "HADITH_JUDGMENT",
+              "query_used": "الابتسامة في وجه المسلم صدقة",
+              "title": null,
+              "text": "Fixture source text for claim_008",
+              "source_name": "DORAR fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_008",
+              "source_url": "https://fixture.invalid/dorar/claim_008",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.043065Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "hadeethenc:claim_008",
+          "claim_id": "claim_008",
+          "target_attribute_ids": [],
+          "provider": "HADEETHENC",
+          "evidence_type": "HADITH",
+          "query_used": "الابتسامة في وجه المسلم صدقة",
+          "title": null,
+          "text": "Fixture source text for claim_008",
+          "source_name": "HADEETHENC fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_008",
+          "source_url": "https://fixture.invalid/hadeethenc/claim_008",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.043065Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        },
+        {
+          "evidence_id": "dorar:claim_008",
+          "claim_id": "claim_008",
+          "target_attribute_ids": [],
+          "provider": "DORAR",
+          "evidence_type": "HADITH_JUDGMENT",
+          "query_used": "الابتسامة في وجه المسلم صدقة",
+          "title": null,
+          "text": "Fixture source text for claim_008",
+          "source_name": "DORAR fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_008",
+          "source_url": "https://fixture.invalid/dorar/claim_008",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.043065Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "claim": {
+        "id": "claim_009",
+        "original_text": "حديث منسوب إلى أبي هريرة",
+        "normalized_claim": "حديث منسوب إلى أبي هريرة",
+        "claim_type": "HADITH_ATTRIBUTION",
+        "domain": "HADITH",
+        "search_queries": [
+          "حديث منسوب إلى أبي هريرة"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "HADEETHENC",
+        "DORAR"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 2,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_009",
+        "sources": [
+          {
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "priority": 1
+          },
+          {
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "priority": 2
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_009",
+            "target_attribute_ids": [],
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "query": "حديث منسوب إلى أبي هريرة"
+          },
+          {
+            "task_id": "task_002",
+            "claim_id": "claim_009",
+            "target_attribute_ids": [],
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "query": "حديث منسوب إلى أبي هريرة"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "HADEETHENC",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "hadeethenc:claim_009",
+              "claim_id": "claim_009",
+              "target_attribute_ids": [],
+              "provider": "HADEETHENC",
+              "evidence_type": "HADITH",
+              "query_used": "حديث منسوب إلى أبي هريرة",
+              "title": null,
+              "text": "Fixture source text for claim_009",
+              "source_name": "HADEETHENC fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_009",
+              "source_url": "https://fixture.invalid/hadeethenc/claim_009",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.043065Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        },
+        {
+          "provider": "DORAR",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "dorar:claim_009",
+              "claim_id": "claim_009",
+              "target_attribute_ids": [],
+              "provider": "DORAR",
+              "evidence_type": "HADITH_JUDGMENT",
+              "query_used": "حديث منسوب إلى أبي هريرة",
+              "title": null,
+              "text": "Fixture source text for claim_009",
+              "source_name": "DORAR fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_009",
+              "source_url": "https://fixture.invalid/dorar/claim_009",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.043065Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "hadeethenc:claim_009",
+          "claim_id": "claim_009",
+          "target_attribute_ids": [],
+          "provider": "HADEETHENC",
+          "evidence_type": "HADITH",
+          "query_used": "حديث منسوب إلى أبي هريرة",
+          "title": null,
+          "text": "Fixture source text for claim_009",
+          "source_name": "HADEETHENC fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_009",
+          "source_url": "https://fixture.invalid/hadeethenc/claim_009",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.043065Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        },
+        {
+          "evidence_id": "dorar:claim_009",
+          "claim_id": "claim_009",
+          "target_attribute_ids": [],
+          "provider": "DORAR",
+          "evidence_type": "HADITH_JUDGMENT",
+          "query_used": "حديث منسوب إلى أبي هريرة",
+          "title": null,
+          "text": "Fixture source text for claim_009",
+          "source_name": "DORAR fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_009",
+          "source_url": "https://fixture.invalid/dorar/claim_009",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.043065Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "claim": {
+        "id": "claim_010",
+        "original_text": "حديث فضل سورة الملك",
+        "normalized_claim": "حديث فضل سورة الملك",
+        "claim_type": "HADITH_RECORD",
+        "domain": "HADITH",
+        "search_queries": [
+          "حديث فضل سورة الملك"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "HADEETHENC",
+        "DORAR"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 2,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_010",
+        "sources": [
+          {
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "priority": 1
+          },
+          {
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "priority": 2
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_010",
+            "target_attribute_ids": [],
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "query": "حديث فضل سورة الملك"
+          },
+          {
+            "task_id": "task_002",
+            "claim_id": "claim_010",
+            "target_attribute_ids": [],
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "query": "حديث فضل سورة الملك"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "HADEETHENC",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "hadeethenc:claim_010",
+              "claim_id": "claim_010",
+              "target_attribute_ids": [],
+              "provider": "HADEETHENC",
+              "evidence_type": "HADITH",
+              "query_used": "حديث فضل سورة الملك",
+              "title": null,
+              "text": "Fixture source text for claim_010",
+              "source_name": "HADEETHENC fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_010",
+              "source_url": "https://fixture.invalid/hadeethenc/claim_010",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.044064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        },
+        {
+          "provider": "DORAR",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "dorar:claim_010",
+              "claim_id": "claim_010",
+              "target_attribute_ids": [],
+              "provider": "DORAR",
+              "evidence_type": "HADITH_JUDGMENT",
+              "query_used": "حديث فضل سورة الملك",
+              "title": null,
+              "text": "Fixture source text for claim_010",
+              "source_name": "DORAR fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_010",
+              "source_url": "https://fixture.invalid/dorar/claim_010",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.044064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "hadeethenc:claim_010",
+          "claim_id": "claim_010",
+          "target_attribute_ids": [],
+          "provider": "HADEETHENC",
+          "evidence_type": "HADITH",
+          "query_used": "حديث فضل سورة الملك",
+          "title": null,
+          "text": "Fixture source text for claim_010",
+          "source_name": "HADEETHENC fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_010",
+          "source_url": "https://fixture.invalid/hadeethenc/claim_010",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.044064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        },
+        {
+          "evidence_id": "dorar:claim_010",
+          "claim_id": "claim_010",
+          "target_attribute_ids": [],
+          "provider": "DORAR",
+          "evidence_type": "HADITH_JUDGMENT",
+          "query_used": "حديث فضل سورة الملك",
+          "title": null,
+          "text": "Fixture source text for claim_010",
+          "source_name": "DORAR fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_010",
+          "source_url": "https://fixture.invalid/dorar/claim_010",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.044064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "claim": {
+        "id": "claim_011",
+        "original_text": "حديث قراءة الكهف يوم الجمعة",
+        "normalized_claim": "حديث قراءة الكهف يوم الجمعة",
+        "claim_type": "HADITH_TEXT",
+        "domain": "HADITH",
+        "search_queries": [
+          "حديث قراءة الكهف يوم الجمعة"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "HADEETHENC",
+        "DORAR"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 2,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_011",
+        "sources": [
+          {
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "priority": 1
+          },
+          {
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "priority": 2
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_011",
+            "target_attribute_ids": [],
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "query": "حديث قراءة الكهف يوم الجمعة"
+          },
+          {
+            "task_id": "task_002",
+            "claim_id": "claim_011",
+            "target_attribute_ids": [],
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "query": "حديث قراءة الكهف يوم الجمعة"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "HADEETHENC",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "hadeethenc:claim_011",
+              "claim_id": "claim_011",
+              "target_attribute_ids": [],
+              "provider": "HADEETHENC",
+              "evidence_type": "HADITH",
+              "query_used": "حديث قراءة الكهف يوم الجمعة",
+              "title": null,
+              "text": "Fixture source text for claim_011",
+              "source_name": "HADEETHENC fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_011",
+              "source_url": "https://fixture.invalid/hadeethenc/claim_011",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.044064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        },
+        {
+          "provider": "DORAR",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "dorar:claim_011",
+              "claim_id": "claim_011",
+              "target_attribute_ids": [],
+              "provider": "DORAR",
+              "evidence_type": "HADITH_JUDGMENT",
+              "query_used": "حديث قراءة الكهف يوم الجمعة",
+              "title": null,
+              "text": "Fixture source text for claim_011",
+              "source_name": "DORAR fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_011",
+              "source_url": "https://fixture.invalid/dorar/claim_011",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.044064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "hadeethenc:claim_011",
+          "claim_id": "claim_011",
+          "target_attribute_ids": [],
+          "provider": "HADEETHENC",
+          "evidence_type": "HADITH",
+          "query_used": "حديث قراءة الكهف يوم الجمعة",
+          "title": null,
+          "text": "Fixture source text for claim_011",
+          "source_name": "HADEETHENC fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_011",
+          "source_url": "https://fixture.invalid/hadeethenc/claim_011",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.044064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        },
+        {
+          "evidence_id": "dorar:claim_011",
+          "claim_id": "claim_011",
+          "target_attribute_ids": [],
+          "provider": "DORAR",
+          "evidence_type": "HADITH_JUDGMENT",
+          "query_used": "حديث قراءة الكهف يوم الجمعة",
+          "title": null,
+          "text": "Fixture source text for claim_011",
+          "source_name": "DORAR fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_011",
+          "source_url": "https://fixture.invalid/dorar/claim_011",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.044064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "claim": {
+        "id": "claim_012",
+        "original_text": "حديث حقوق المسلم على المسلم",
+        "normalized_claim": "حديث حقوق المسلم على المسلم",
+        "claim_type": "HADITH_MEANING",
+        "domain": "HADITH",
+        "search_queries": [
+          "حديث حقوق المسلم على المسلم"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "HADEETHENC",
+        "DORAR"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 2,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_012",
+        "sources": [
+          {
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "priority": 1
+          },
+          {
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "priority": 2
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_012",
+            "target_attribute_ids": [],
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "query": "حديث حقوق المسلم على المسلم"
+          },
+          {
+            "task_id": "task_002",
+            "claim_id": "claim_012",
+            "target_attribute_ids": [],
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "query": "حديث حقوق المسلم على المسلم"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "HADEETHENC",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "hadeethenc:claim_012",
+              "claim_id": "claim_012",
+              "target_attribute_ids": [],
+              "provider": "HADEETHENC",
+              "evidence_type": "HADITH",
+              "query_used": "حديث حقوق المسلم على المسلم",
+              "title": null,
+              "text": "Fixture source text for claim_012",
+              "source_name": "HADEETHENC fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_012",
+              "source_url": "https://fixture.invalid/hadeethenc/claim_012",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.044064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        },
+        {
+          "provider": "DORAR",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "dorar:claim_012",
+              "claim_id": "claim_012",
+              "target_attribute_ids": [],
+              "provider": "DORAR",
+              "evidence_type": "HADITH_JUDGMENT",
+              "query_used": "حديث حقوق المسلم على المسلم",
+              "title": null,
+              "text": "Fixture source text for claim_012",
+              "source_name": "DORAR fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_012",
+              "source_url": "https://fixture.invalid/dorar/claim_012",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.044064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "hadeethenc:claim_012",
+          "claim_id": "claim_012",
+          "target_attribute_ids": [],
+          "provider": "HADEETHENC",
+          "evidence_type": "HADITH",
+          "query_used": "حديث حقوق المسلم على المسلم",
+          "title": null,
+          "text": "Fixture source text for claim_012",
+          "source_name": "HADEETHENC fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_012",
+          "source_url": "https://fixture.invalid/hadeethenc/claim_012",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.044064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        },
+        {
+          "evidence_id": "dorar:claim_012",
+          "claim_id": "claim_012",
+          "target_attribute_ids": [],
+          "provider": "DORAR",
+          "evidence_type": "HADITH_JUDGMENT",
+          "query_used": "حديث حقوق المسلم على المسلم",
+          "title": null,
+          "text": "Fixture source text for claim_012",
+          "source_name": "DORAR fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_012",
+          "source_url": "https://fixture.invalid/dorar/claim_012",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.044064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "claim": {
+        "id": "claim_013",
+        "original_text": "رواية البخاري للحديث",
+        "normalized_claim": "رواية البخاري للحديث",
+        "claim_type": "HADITH_ATTRIBUTION",
+        "domain": "HADITH",
+        "search_queries": [
+          "رواية البخاري للحديث"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "HADEETHENC",
+        "DORAR"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 2,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_013",
+        "sources": [
+          {
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "priority": 1
+          },
+          {
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "priority": 2
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_013",
+            "target_attribute_ids": [],
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "query": "رواية البخاري للحديث"
+          },
+          {
+            "task_id": "task_002",
+            "claim_id": "claim_013",
+            "target_attribute_ids": [],
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "query": "رواية البخاري للحديث"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "HADEETHENC",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "hadeethenc:claim_013",
+              "claim_id": "claim_013",
+              "target_attribute_ids": [],
+              "provider": "HADEETHENC",
+              "evidence_type": "HADITH",
+              "query_used": "رواية البخاري للحديث",
+              "title": null,
+              "text": "Fixture source text for claim_013",
+              "source_name": "HADEETHENC fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_013",
+              "source_url": "https://fixture.invalid/hadeethenc/claim_013",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.044064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        },
+        {
+          "provider": "DORAR",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "dorar:claim_013",
+              "claim_id": "claim_013",
+              "target_attribute_ids": [],
+              "provider": "DORAR",
+              "evidence_type": "HADITH_JUDGMENT",
+              "query_used": "رواية البخاري للحديث",
+              "title": null,
+              "text": "Fixture source text for claim_013",
+              "source_name": "DORAR fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_013",
+              "source_url": "https://fixture.invalid/dorar/claim_013",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.044064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "hadeethenc:claim_013",
+          "claim_id": "claim_013",
+          "target_attribute_ids": [],
+          "provider": "HADEETHENC",
+          "evidence_type": "HADITH",
+          "query_used": "رواية البخاري للحديث",
+          "title": null,
+          "text": "Fixture source text for claim_013",
+          "source_name": "HADEETHENC fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_013",
+          "source_url": "https://fixture.invalid/hadeethenc/claim_013",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.044064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        },
+        {
+          "evidence_id": "dorar:claim_013",
+          "claim_id": "claim_013",
+          "target_attribute_ids": [],
+          "provider": "DORAR",
+          "evidence_type": "HADITH_JUDGMENT",
+          "query_used": "رواية البخاري للحديث",
+          "title": null,
+          "text": "Fixture source text for claim_013",
+          "source_name": "DORAR fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_013",
+          "source_url": "https://fixture.invalid/dorar/claim_013",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.044064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "claim": {
+        "id": "claim_014",
+        "original_text": "حديث طلب العلم في الصين ضعيف",
+        "normalized_claim": "حديث طلب العلم في الصين ضعيف",
+        "claim_type": "HADITH_AUTHENTICITY",
+        "domain": "HADITH",
+        "search_queries": [
+          "حديث طلب العلم في الصين ضعيف"
+        ],
+        "entities": [],
+        "attributes": [
+          {
+            "id": "attr_001",
+            "type": "AUTHENTICITY",
+            "value": "ضعيف",
+            "asserted_by": null,
+            "qualifier": null,
+            "requires_evidence": true
+          }
+        ],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "DORAR",
+        "HADEETHENC"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 2,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_014",
+        "sources": [
+          {
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "priority": 1
+          },
+          {
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "priority": 2
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_014",
+            "target_attribute_ids": [
+              "attr_001"
+            ],
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "query": "حديث طلب العلم في الصين ضعيف"
+          },
+          {
+            "task_id": "task_002",
+            "claim_id": "claim_014",
+            "target_attribute_ids": [],
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "query": "حديث طلب العلم في الصين ضعيف"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "DORAR",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "dorar:claim_014",
+              "claim_id": "claim_014",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR",
+              "evidence_type": "HADITH_JUDGMENT",
+              "query_used": "حديث طلب العلم في الصين ضعيف",
+              "title": null,
+              "text": "Fixture source text for claim_014",
+              "source_name": "DORAR fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_014",
+              "source_url": "https://fixture.invalid/dorar/claim_014",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.044064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        },
+        {
+          "provider": "HADEETHENC",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "hadeethenc:claim_014",
+              "claim_id": "claim_014",
+              "target_attribute_ids": [],
+              "provider": "HADEETHENC",
+              "evidence_type": "HADITH",
+              "query_used": "حديث طلب العلم في الصين ضعيف",
+              "title": null,
+              "text": "Fixture source text for claim_014",
+              "source_name": "HADEETHENC fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_014",
+              "source_url": "https://fixture.invalid/hadeethenc/claim_014",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.044064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "dorar:claim_014",
+          "claim_id": "claim_014",
+          "target_attribute_ids": [
+            "attr_001"
+          ],
+          "provider": "DORAR",
+          "evidence_type": "HADITH_JUDGMENT",
+          "query_used": "حديث طلب العلم في الصين ضعيف",
+          "title": null,
+          "text": "Fixture source text for claim_014",
+          "source_name": "DORAR fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_014",
+          "source_url": "https://fixture.invalid/dorar/claim_014",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.044064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        },
+        {
+          "evidence_id": "hadeethenc:claim_014",
+          "claim_id": "claim_014",
+          "target_attribute_ids": [],
+          "provider": "HADEETHENC",
+          "evidence_type": "HADITH",
+          "query_used": "حديث طلب العلم في الصين ضعيف",
+          "title": null,
+          "text": "Fixture source text for claim_014",
+          "source_name": "HADEETHENC fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_014",
+          "source_url": "https://fixture.invalid/hadeethenc/claim_014",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.044064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "claim": {
+        "id": "claim_015",
+        "original_text": "حديث الملك صحيح",
+        "normalized_claim": "حديث الملك صحيح",
+        "claim_type": "HADITH_RECORD",
+        "domain": "HADITH",
+        "search_queries": [
+          "حديث الملك صحيح"
+        ],
+        "entities": [],
+        "attributes": [
+          {
+            "id": "attr_001",
+            "type": "AUTHENTICITY",
+            "value": "صحيح",
+            "asserted_by": null,
+            "qualifier": null,
+            "requires_evidence": true
+          }
+        ],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "DORAR",
+        "HADEETHENC"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 2,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_015",
+        "sources": [
+          {
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "priority": 1
+          },
+          {
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "priority": 2
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_015",
+            "target_attribute_ids": [
+              "attr_001"
+            ],
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "query": "حديث الملك صحيح"
+          },
+          {
+            "task_id": "task_002",
+            "claim_id": "claim_015",
+            "target_attribute_ids": [],
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "query": "حديث الملك صحيح"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "DORAR",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "dorar:claim_015",
+              "claim_id": "claim_015",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR",
+              "evidence_type": "HADITH_JUDGMENT",
+              "query_used": "حديث الملك صحيح",
+              "title": null,
+              "text": "Fixture source text for claim_015",
+              "source_name": "DORAR fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_015",
+              "source_url": "https://fixture.invalid/dorar/claim_015",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.044064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        },
+        {
+          "provider": "HADEETHENC",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "hadeethenc:claim_015",
+              "claim_id": "claim_015",
+              "target_attribute_ids": [],
+              "provider": "HADEETHENC",
+              "evidence_type": "HADITH",
+              "query_used": "حديث الملك صحيح",
+              "title": null,
+              "text": "Fixture source text for claim_015",
+              "source_name": "HADEETHENC fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_015",
+              "source_url": "https://fixture.invalid/hadeethenc/claim_015",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.044064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "dorar:claim_015",
+          "claim_id": "claim_015",
+          "target_attribute_ids": [
+            "attr_001"
+          ],
+          "provider": "DORAR",
+          "evidence_type": "HADITH_JUDGMENT",
+          "query_used": "حديث الملك صحيح",
+          "title": null,
+          "text": "Fixture source text for claim_015",
+          "source_name": "DORAR fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_015",
+          "source_url": "https://fixture.invalid/dorar/claim_015",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.044064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        },
+        {
+          "evidence_id": "hadeethenc:claim_015",
+          "claim_id": "claim_015",
+          "target_attribute_ids": [],
+          "provider": "HADEETHENC",
+          "evidence_type": "HADITH",
+          "query_used": "حديث الملك صحيح",
+          "title": null,
+          "text": "Fixture source text for claim_015",
+          "source_name": "HADEETHENC fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_015",
+          "source_url": "https://fixture.invalid/hadeethenc/claim_015",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.044064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "claim": {
+        "id": "claim_016",
+        "original_text": "الترمذي وصف الحديث بحسن غريب",
+        "normalized_claim": "الترمذي وصف الحديث بحسن غريب",
+        "claim_type": "HADITH_AUTHENTICITY",
+        "domain": "HADITH",
+        "search_queries": [
+          "الترمذي وصف الحديث بحسن غريب"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "DORAR",
+        "HADEETHENC"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 2,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_016",
+        "sources": [
+          {
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "priority": 1
+          },
+          {
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "priority": 2
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_016",
+            "target_attribute_ids": [],
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "query": "الترمذي وصف الحديث بحسن غريب"
+          },
+          {
+            "task_id": "task_002",
+            "claim_id": "claim_016",
+            "target_attribute_ids": [],
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "query": "الترمذي وصف الحديث بحسن غريب"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "DORAR",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "dorar:claim_016",
+              "claim_id": "claim_016",
+              "target_attribute_ids": [],
+              "provider": "DORAR",
+              "evidence_type": "HADITH_JUDGMENT",
+              "query_used": "الترمذي وصف الحديث بحسن غريب",
+              "title": null,
+              "text": "Fixture source text for claim_016",
+              "source_name": "DORAR fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_016",
+              "source_url": "https://fixture.invalid/dorar/claim_016",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.045064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        },
+        {
+          "provider": "HADEETHENC",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "hadeethenc:claim_016",
+              "claim_id": "claim_016",
+              "target_attribute_ids": [],
+              "provider": "HADEETHENC",
+              "evidence_type": "HADITH",
+              "query_used": "الترمذي وصف الحديث بحسن غريب",
+              "title": null,
+              "text": "Fixture source text for claim_016",
+              "source_name": "HADEETHENC fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_016",
+              "source_url": "https://fixture.invalid/hadeethenc/claim_016",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.045064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "dorar:claim_016",
+          "claim_id": "claim_016",
+          "target_attribute_ids": [],
+          "provider": "DORAR",
+          "evidence_type": "HADITH_JUDGMENT",
+          "query_used": "الترمذي وصف الحديث بحسن غريب",
+          "title": null,
+          "text": "Fixture source text for claim_016",
+          "source_name": "DORAR fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_016",
+          "source_url": "https://fixture.invalid/dorar/claim_016",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.045064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        },
+        {
+          "evidence_id": "hadeethenc:claim_016",
+          "claim_id": "claim_016",
+          "target_attribute_ids": [],
+          "provider": "HADEETHENC",
+          "evidence_type": "HADITH",
+          "query_used": "الترمذي وصف الحديث بحسن غريب",
+          "title": null,
+          "text": "Fixture source text for claim_016",
+          "source_name": "HADEETHENC fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_016",
+          "source_url": "https://fixture.invalid/hadeethenc/claim_016",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.045064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "claim": {
+        "id": "claim_017",
+        "original_text": "أثر ابن عباس في ضياء الحسنة",
+        "normalized_claim": "أثر ابن عباس في ضياء الحسنة",
+        "claim_type": "ATHAR_RECORD",
+        "domain": "ATHAR",
+        "search_queries": [
+          "أثر ابن عباس في ضياء الحسنة"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "DORAR"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 1,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_017",
+        "sources": [
+          {
+            "provider": "DORAR",
+            "purpose": "ATHAR_SOURCE_AND_JUDGMENT",
+            "priority": 1
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_017",
+            "target_attribute_ids": [],
+            "provider": "DORAR",
+            "purpose": "ATHAR_SOURCE_AND_JUDGMENT",
+            "query": "أثر ابن عباس في ضياء الحسنة"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "DORAR",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "dorar:claim_017",
+              "claim_id": "claim_017",
+              "target_attribute_ids": [],
+              "provider": "DORAR",
+              "evidence_type": "HADITH_JUDGMENT",
+              "query_used": "أثر ابن عباس في ضياء الحسنة",
+              "title": null,
+              "text": "Fixture source text for claim_017",
+              "source_name": "DORAR fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_017",
+              "source_url": "https://fixture.invalid/dorar/claim_017",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.045064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "dorar:claim_017",
+          "claim_id": "claim_017",
+          "target_attribute_ids": [],
+          "provider": "DORAR",
+          "evidence_type": "HADITH_JUDGMENT",
+          "query_used": "أثر ابن عباس في ضياء الحسنة",
+          "title": null,
+          "text": "Fixture source text for claim_017",
+          "source_name": "DORAR fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_017",
+          "source_url": "https://fixture.invalid/dorar/claim_017",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.045064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "claim": {
+        "id": "claim_018",
+        "original_text": "أثر الحسن البصري صحيح",
+        "normalized_claim": "أثر الحسن البصري صحيح",
+        "claim_type": "ATHAR_AUTHENTICITY",
+        "domain": "ATHAR",
+        "search_queries": [
+          "أثر الحسن البصري صحيح"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "DORAR"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 1,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_018",
+        "sources": [
+          {
+            "provider": "DORAR",
+            "purpose": "ATHAR_SOURCE_AND_JUDGMENT",
+            "priority": 1
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_018",
+            "target_attribute_ids": [],
+            "provider": "DORAR",
+            "purpose": "ATHAR_SOURCE_AND_JUDGMENT",
+            "query": "أثر الحسن البصري صحيح"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "DORAR",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "dorar:claim_018",
+              "claim_id": "claim_018",
+              "target_attribute_ids": [],
+              "provider": "DORAR",
+              "evidence_type": "HADITH_JUDGMENT",
+              "query_used": "أثر الحسن البصري صحيح",
+              "title": null,
+              "text": "Fixture source text for claim_018",
+              "source_name": "DORAR fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_018",
+              "source_url": "https://fixture.invalid/dorar/claim_018",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.045064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "dorar:claim_018",
+          "claim_id": "claim_018",
+          "target_attribute_ids": [],
+          "provider": "DORAR",
+          "evidence_type": "HADITH_JUDGMENT",
+          "query_used": "أثر الحسن البصري صحيح",
+          "title": null,
+          "text": "Fixture source text for claim_018",
+          "source_name": "DORAR fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_018",
+          "source_url": "https://fixture.invalid/dorar/claim_018",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.045064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "claim": {
+        "id": "claim_019",
+        "original_text": "كتاب تعليمي عن الصلاة",
+        "normalized_claim": "كتاب تعليمي عن الصلاة",
+        "claim_type": "GENERAL_ISLAMIC_CLAIM",
+        "domain": "GENERAL",
+        "search_queries": [
+          "كتاب تعليمي عن الصلاة"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "BAYAN"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 1,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_019",
+        "sources": [
+          {
+            "provider": "BAYAN",
+            "purpose": "ISLAMIC_LIBRARY_SEARCH",
+            "priority": 1
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_019",
+            "target_attribute_ids": [],
+            "provider": "BAYAN",
+            "purpose": "ISLAMIC_LIBRARY_SEARCH",
+            "query": "كتاب تعليمي عن الصلاة"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "BAYAN",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "bayan:claim_019",
+              "claim_id": "claim_019",
+              "target_attribute_ids": [],
+              "provider": "BAYAN",
+              "evidence_type": "LIBRARY_CONTENT",
+              "query_used": "كتاب تعليمي عن الصلاة",
+              "title": null,
+              "text": "Fixture source text for claim_019",
+              "source_name": "BAYAN fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_019",
+              "source_url": "https://fixture.invalid/bayan/claim_019",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.045064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "bayan:claim_019",
+          "claim_id": "claim_019",
+          "target_attribute_ids": [],
+          "provider": "BAYAN",
+          "evidence_type": "LIBRARY_CONTENT",
+          "query_used": "كتاب تعليمي عن الصلاة",
+          "title": null,
+          "text": "Fixture source text for claim_019",
+          "source_name": "BAYAN fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_019",
+          "source_url": "https://fixture.invalid/bayan/claim_019",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.045064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "claim": {
+        "id": "claim_020",
+        "original_text": "مقال تعليمي عن الزكاة",
+        "normalized_claim": "مقال تعليمي عن الزكاة",
+        "claim_type": "ISLAMIC_EDUCATION",
+        "domain": "GENERAL",
+        "search_queries": [
+          "مقال تعليمي عن الزكاة"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "BAYAN"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 1,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_020",
+        "sources": [
+          {
+            "provider": "BAYAN",
+            "purpose": "ISLAMIC_LIBRARY_SEARCH",
+            "priority": 1
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_020",
+            "target_attribute_ids": [],
+            "provider": "BAYAN",
+            "purpose": "ISLAMIC_LIBRARY_SEARCH",
+            "query": "مقال تعليمي عن الزكاة"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "BAYAN",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "bayan:claim_020",
+              "claim_id": "claim_020",
+              "target_attribute_ids": [],
+              "provider": "BAYAN",
+              "evidence_type": "LIBRARY_CONTENT",
+              "query_used": "مقال تعليمي عن الزكاة",
+              "title": null,
+              "text": "Fixture source text for claim_020",
+              "source_name": "BAYAN fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_020",
+              "source_url": "https://fixture.invalid/bayan/claim_020",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.045064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "bayan:claim_020",
+          "claim_id": "claim_020",
+          "target_attribute_ids": [],
+          "provider": "BAYAN",
+          "evidence_type": "LIBRARY_CONTENT",
+          "query_used": "مقال تعليمي عن الزكاة",
+          "title": null,
+          "text": "Fixture source text for claim_020",
+          "source_name": "BAYAN fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_020",
+          "source_url": "https://fixture.invalid/bayan/claim_020",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.045064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "claim": {
+        "id": "claim_021",
+        "original_text": "مادة إسلامية متعددة اللغات",
+        "normalized_claim": "مادة إسلامية متعددة اللغات",
+        "claim_type": "GENERAL_ISLAMIC_CLAIM",
+        "domain": "GENERAL",
+        "search_queries": [
+          "مادة إسلامية متعددة اللغات"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "BAYAN"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "COMPLETED",
+      "evidence_count": 1,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_021",
+        "sources": [
+          {
+            "provider": "BAYAN",
+            "purpose": "ISLAMIC_LIBRARY_SEARCH",
+            "priority": 1
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_021",
+            "target_attribute_ids": [],
+            "provider": "BAYAN",
+            "purpose": "ISLAMIC_LIBRARY_SEARCH",
+            "query": "مادة إسلامية متعددة اللغات"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "BAYAN",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "bayan:claim_021",
+              "claim_id": "claim_021",
+              "target_attribute_ids": [],
+              "provider": "BAYAN",
+              "evidence_type": "LIBRARY_CONTENT",
+              "query_used": "مادة إسلامية متعددة اللغات",
+              "title": null,
+              "text": "Fixture source text for claim_021",
+              "source_name": "BAYAN fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_021",
+              "source_url": "https://fixture.invalid/bayan/claim_021",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.045064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "bayan:claim_021",
+          "claim_id": "claim_021",
+          "target_attribute_ids": [],
+          "provider": "BAYAN",
+          "evidence_type": "LIBRARY_CONTENT",
+          "query_used": "مادة إسلامية متعددة اللغات",
+          "title": null,
+          "text": "Fixture source text for claim_021",
+          "source_name": "BAYAN fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_021",
+          "source_url": "https://fixture.invalid/bayan/claim_021",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.045064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "claim": {
+        "id": "claim_022",
+        "original_text": "أحب سورة البقرة",
+        "normalized_claim": "أحب سورة البقرة",
+        "claim_type": "NON_VERIFIABLE",
+        "domain": "GENERAL",
+        "search_queries": [],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": false,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [],
+      "routing_accurate": true,
+      "retrieval_status": "SKIPPED",
+      "evidence_count": 0,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_022",
+        "sources": [],
+        "tasks": []
+      },
+      "provider_results": [],
+      "evidence_candidates": []
+    },
+    {
+      "id": 23,
+      "claim": {
+        "id": "claim_023",
+        "original_text": "أسأل الله أن يصلح أحوالنا",
+        "normalized_claim": "أسأل الله أن يصلح أحوالنا",
+        "claim_type": "NON_VERIFIABLE",
+        "domain": "GENERAL",
+        "search_queries": [],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": false,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [],
+      "routing_accurate": true,
+      "retrieval_status": "SKIPPED",
+      "evidence_count": 0,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_023",
+        "sources": [],
+        "tasks": []
+      },
+      "provider_results": [],
+      "evidence_candidates": []
+    },
+    {
+      "id": 24,
+      "claim": {
+        "id": "claim_024",
+        "original_text": "حديث لاختبار عزل فشل المزود",
+        "normalized_claim": "حديث لاختبار عزل فشل المزود",
+        "claim_type": "HADITH_RECORD",
+        "domain": "HADITH",
+        "search_queries": [
+          "حديث لاختبار عزل فشل المزود"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [
+        "HADEETHENC",
+        "DORAR"
+      ],
+      "routing_accurate": true,
+      "retrieval_status": "PARTIAL",
+      "evidence_count": 1,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_024",
+        "sources": [
+          {
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "priority": 1
+          },
+          {
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "priority": 2
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "task_001",
+            "claim_id": "claim_024",
+            "target_attribute_ids": [],
+            "provider": "HADEETHENC",
+            "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+            "query": "حديث لاختبار عزل فشل المزود"
+          },
+          {
+            "task_id": "task_002",
+            "claim_id": "claim_024",
+            "target_attribute_ids": [],
+            "provider": "DORAR",
+            "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+            "query": "حديث لاختبار عزل فشل المزود"
+          }
+        ]
+      },
+      "provider_results": [
+        {
+          "provider": "HADEETHENC",
+          "success": true,
+          "query_attempts": [],
+          "evidence": [
+            {
+              "evidence_id": "hadeethenc:claim_024",
+              "claim_id": "claim_024",
+              "target_attribute_ids": [],
+              "provider": "HADEETHENC",
+              "evidence_type": "HADITH",
+              "query_used": "حديث لاختبار عزل فشل المزود",
+              "title": null,
+              "text": "Fixture source text for claim_024",
+              "source_name": "HADEETHENC fixture source",
+              "author": null,
+              "reference": null,
+              "page": null,
+              "narrator": null,
+              "scholar": null,
+              "judgment": null,
+              "language": null,
+              "provider_record_id": "claim_024",
+              "source_url": "https://fixture.invalid/hadeethenc/claim_024",
+              "provider_score": null,
+              "provider_score_type": null,
+              "result_rank": 1,
+              "retrieved_at": "2026-10-02T15:52:09.045064Z",
+              "raw_metadata": {
+                "fixture": true
+              }
+            }
+          ],
+          "error": null
+        },
+        {
+          "provider": "DORAR",
+          "success": false,
+          "query_attempts": [],
+          "evidence": [],
+          "error": {
+            "provider": "DORAR",
+            "error_type": "TIMEOUT",
+            "message": "fixture timeout",
+            "retryable": true,
+            "http_status": null
+          }
+        }
+      ],
+      "evidence_candidates": [
+        {
+          "evidence_id": "hadeethenc:claim_024",
+          "claim_id": "claim_024",
+          "target_attribute_ids": [],
+          "provider": "HADEETHENC",
+          "evidence_type": "HADITH",
+          "query_used": "حديث لاختبار عزل فشل المزود",
+          "title": null,
+          "text": "Fixture source text for claim_024",
+          "source_name": "HADEETHENC fixture source",
+          "author": null,
+          "reference": null,
+          "page": null,
+          "narrator": null,
+          "scholar": null,
+          "judgment": null,
+          "language": null,
+          "provider_record_id": "claim_024",
+          "source_url": "https://fixture.invalid/hadeethenc/claim_024",
+          "provider_score": null,
+          "provider_score_type": null,
+          "result_rank": 1,
+          "retrieved_at": "2026-10-02T15:52:09.045064Z",
+          "raw_metadata": {
+            "fixture": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "claim": {
+        "id": "claim_025",
+        "original_text": "ادعاء خارج المصادر المدعومة",
+        "normalized_claim": "ادعاء خارج المصادر المدعومة",
+        "claim_type": "OTHER",
+        "domain": "NON_ISLAMIC",
+        "search_queries": [
+          "ادعاء خارج المصادر المدعومة"
+        ],
+        "entities": [],
+        "attributes": [],
+        "requires_evidence": true,
+        "reason": "Phase 3 evaluation fixture"
+      },
+      "expected_sources": [],
+      "routing_accurate": true,
+      "retrieval_status": "NO_SUPPORTED_SOURCE",
+      "evidence_count": 0,
+      "metadata_complete": true,
+      "retrieval_plan": {
+        "claim_id": "claim_025",
+        "sources": [],
+        "tasks": []
+      },
+      "provider_results": [],
+      "evidence_candidates": []
+    }
+  ]
+}

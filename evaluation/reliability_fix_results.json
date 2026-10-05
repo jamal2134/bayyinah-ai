@@ -1,0 +1,34 @@
+{
+  "multi_verse_cases": {"passed": 9, "total": 9},
+  "segmentation_cases": {"passed": 4, "total": 4},
+  "hadith_alignment_cases": {"passed": 4, "total": 4},
+  "dependent_attribute_cases": {"passed": 4, "total": 4},
+  "report_filtering_cases": {"passed": 2, "total": 2},
+  "full_mixed_content_case": {
+    "status": "passed_live",
+    "claim_count": 4,
+    "claim_types": ["QURAN_RECORD", "QURAN_INTERPRETATION", "HADITH_RECORD", "HADITH_INTERPRETATION"],
+    "phase3_candidate_count": 11,
+    "hadith_alignment": {
+      "ALIGNED": ["hadeethenc:4309", "hadeethenc:66516"],
+      "UNRELATED": ["hadeethenc:5025", "hadeethenc:3607", "hadeethenc:65292", "hadeethenc:5795", "hadeethenc:3589", "hadeethenc:66155", "hadeethenc:65066", "hadeethenc:3395"],
+      "UNRESOLVED": []
+    },
+    "user_facing_evidence_ids": ["quranpedia:112:1-2", "hadeethenc:4309", "hadeethenc:66516"]
+  },
+  "regression_summary": {"passed": 155, "failed": 0, "skipped": 1, "status": "passed"},
+  "metrics": {
+    "multi_verse_reference_accuracy": 1.0,
+    "multi_verse_text_validation_accuracy": 1.0,
+    "interpretation_segmentation_accuracy": 1.0,
+    "parent_relationship_accuracy": 1.0,
+    "hadith_alignment_accuracy": 1.0,
+    "unrelated_candidate_rejection_rate": 1.0,
+    "dependent_attribute_alignment_safety_rate": 1.0,
+    "user_facing_evidence_filter_accuracy": 1.0,
+    "evidence_provenance_accuracy": 1.0,
+    "authenticity_safety_rate": 1.0,
+    "unsupported_inference_rate": 0.0,
+    "determinism_rate": 1.0
+  }
+}

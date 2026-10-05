@@ -1,0 +1,21 @@
+{
+  "classification_cases": {"passed": 2, "total": 2},
+  "interpretation_attribute_cases": {"passed": 4, "total": 4},
+  "parent_context_cases": {"passed": 2, "total": 2},
+  "evidence_isolation_cases": {"passed": 2, "total": 2},
+  "no_provider_cases": {"passed": 2, "total": 2},
+  "relationship_cases": {"passed": 2, "total": 2},
+  "authenticity_safety_cases": {"passed": 1, "total": 1},
+  "ui_cases": {"passed": 5, "total": 5},
+  "regression_summary": {"passed": 140, "failed": 0, "skipped": 1, "status": "passed"},
+  "metrics": {
+    "interpretation_attribute_extraction_accuracy": 1.0,
+    "interpretation_requires_evidence_rate": 1.0,
+    "parent_context_propagation_accuracy": 1.0,
+    "parent_child_evidence_isolation_rate": 1.0,
+    "no_provider_handling_accuracy": 1.0,
+    "relationship_preservation_accuracy": 1.0,
+    "authenticity_safety_rate": 1.0,
+    "unsupported_inference_rate": 0.0
+  }
+}

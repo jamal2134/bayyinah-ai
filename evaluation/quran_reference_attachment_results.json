@@ -1,0 +1,44 @@
+{
+  "unit_tests": {
+    "targeted": "11 passed",
+    "full_suite": "193 passed, 1 skipped",
+    "skip": "existing opt-in live retrieval test"
+  },
+  "metrics": {
+    "quran_reference_attachment_accuracy": {"value": 1.0, "passed": 5, "total": 5},
+    "quran_claim_fragmentation_rate": {"value": 0.0, "fragmented": 0, "total": 5},
+    "quran_wrong_reference_attachment_accuracy": {"value": 1.0, "passed": 1, "total": 1},
+    "quran_interpretation_segmentation_accuracy": {"value": 1.0, "passed": 1, "total": 1},
+    "independent_quran_separation_accuracy": {"value": 1.0, "passed": 1, "total": 1},
+    "quran_alignment_e2e_accuracy": {"value": 1.0, "passed": 3, "total": 3},
+    "overall_regression_pass_rate": {"value": 1.0, "passed": 193, "total_executed": 193}
+  },
+  "live_e2e": {
+    "wrong_reference_mixed_input": {
+      "claim_count": 6,
+      "wrong_reference": "113:1-2",
+      "alignment": "MISMATCH",
+      "decision": "CONFLICTING",
+      "dependent_tafsir": "BLOCKED",
+      "ash_sharh_alignment": "ALIGNED",
+      "ash_sharh_tafsir": "quranpedia:tafsir:94:6:2012",
+      "duration_ms": 35454.239,
+      "provider_calls": 15,
+      "llm_calls": 3,
+      "estimated_cost_usd": "0.068820"
+    },
+    "valid_al_ikhlas_input": {
+      "claim_count": 4,
+      "alignment": "ALIGNED",
+      "decision": "SUPPORTED",
+      "tafsir_sources": [
+        "quranpedia:tafsir:112:1:2012",
+        "quranpedia:tafsir:112:2:2012"
+      ],
+      "duration_ms": 42874.963,
+      "provider_calls": 16,
+      "llm_calls": 4,
+      "estimated_cost_usd": "0.078129"
+    }
+  }
+}

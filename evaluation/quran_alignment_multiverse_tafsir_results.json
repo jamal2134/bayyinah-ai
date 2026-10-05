@@ -1,0 +1,50 @@
+{
+  "quran_alignment_cases": {
+    "status": "passed",
+    "covered": ["ALIGNED", "MISMATCH", "UNRESOLVED", "split_multi_ayah_text_attributes"]
+  },
+  "dependency_cases": {
+    "status": "passed",
+    "mismatch_result": "all Quran record identity attributes CONTRADICTED from the same evidence record"
+  },
+  "tafsir_gate_cases": {
+    "status": "passed",
+    "blocked_parent_states": ["MISMATCH", "UNRESOLVED"],
+    "required_parent_state": "ALIGNED"
+  },
+  "multi_verse_tafsir_cases": {
+    "status": "passed",
+    "references": ["112:1", "112:2"],
+    "evidence_ids": ["quranpedia:tafsir:112:1:2012", "quranpedia:tafsir:112:2:2012"]
+  },
+  "hadith_regression_cases": {
+    "status": "passed",
+    "note": "Hadith retrieval and validation logic was not changed."
+  },
+  "e2e_test_a": {
+    "status": "passed",
+    "claim_count": 6,
+    "wrong_quran_parent": "CONFLICTING",
+    "wrong_quran_alignment": "MISMATCH",
+    "dependent_tafsir": "BLOCKED",
+    "valid_quran_parent": "SUPPORTED",
+    "valid_quran_interpretation": "SUPPORTED"
+  },
+  "e2e_test_b": {
+    "status": "passed",
+    "claim_count": 4,
+    "quran_parent": "SUPPORTED",
+    "quran_alignment": "ALIGNED",
+    "quran_interpretation": "SUPPORTED",
+    "tafsir_source_count": 2
+  },
+  "regression_summary": {
+    "status": "passed",
+    "pytest": "182 passed, 1 skipped",
+    "skipped_reason": "existing opt-in live retrieval test"
+  },
+  "metrics": {
+    "e2e_test_a": {"duration_ms": 54177.84, "provider_calls": 15, "estimated_cost_usd": "0.069993"},
+    "e2e_test_b_final": {"duration_ms": 42194.417, "provider_calls": 16, "estimated_cost_usd": "0.077637"}
+  }
+}

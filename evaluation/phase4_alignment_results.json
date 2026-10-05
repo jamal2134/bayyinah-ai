@@ -1,0 +1,173 @@
+{
+  "status": "completed",
+  "tests_run": 74,
+  "tests_passed": 73,
+  "tests_failed": 0,
+  "tests_skipped": 1,
+  "hadith_candidates": [
+    {
+      "provider": "HADEETHENC",
+      "provider_record_id": "4560",
+      "evidence_id": "hadeethenc:4560",
+      "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=4560",
+      "target_attribute_ids": [
+        "attr_001",
+        "attr_002",
+        "attr_003"
+      ],
+      "fixture": false,
+      "short_identifying_information": "عن عمر بن الخطاب رضي الله عنه قال: قال رسول الله صلى الله عليه وسلم: «إِنَّمَا الْأَعْمَالُ بِالنِّيَّةِ، وَإِنَّمَا لِامْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى اللهِ وَرَسُولِهِ، فَهِجْرَتُهُ إِلَى اللهِ وَرَسُولِهِ، وَمَنْ كَانَت",
+      "reference": "صحيح البخاري (9/ 22) (6953)، (1/ 6) (1).\nصحيح مسلم (3/ 1515) (1907).\nالتحفة الربانية في شرح الأربعين حديثًا النووية (ص5).\nشرح الأربعين النووية، لابن عثيمين (ص5).\nفتح القوي المتين في شرح الأربعين وتتمة الخمسين، للعباد (ص8).\nشرح النووي على مسلم (13/ 54).\nتاج العروس من جواهر القاموس، للزبيدي (7/ 196)."
+    },
+    {
+      "provider": "HADEETHENC",
+      "provider_record_id": "66511",
+      "evidence_id": "hadeethenc:66511",
+      "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=66511",
+      "target_attribute_ids": [
+        "attr_001",
+        "attr_002",
+        "attr_003"
+      ],
+      "fixture": false,
+      "short_identifying_information": "عَنْ أَمِيرِ المُؤْمِنِينَ أَبِي حَفْصٍ عُمَرَ بْنِ الخَطَّابِ رضي الله عنه قَالَ: سَمِعْتُ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ يَقُولُ: «إنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ ",
+      "reference": "صحيح البخاري (9/ 22) (6953)، (1/ 6) (1).\nصحيح مسلم (3/ 1515) (1907).\nالتحفة الربانية في شرح الأربعين حديثًا النووية (ص5).\nشرح الأربعين النووية، لابن عثيمين (ص5).\nفتح القوي المتين في شرح الأربعين وتتمة الخمسين، للعباد (ص8).\nشرح النووي على مسلم (13/ 54).\nتاج العروس من جواهر القاموس، للزبيدي (7/ 196)."
+    },
+    {
+      "provider": "HADEETHENC",
+      "provider_record_id": "5833",
+      "evidence_id": "hadeethenc:5833",
+      "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=5833",
+      "target_attribute_ids": [
+        "attr_001",
+        "attr_002",
+        "attr_003"
+      ],
+      "fixture": false,
+      "short_identifying_information": "عن أبي كبشة عمرو بن سعد الأنماري رضي الله عنه مرفوعاً: «ثلاثة أقسم عليهن، وأحدثكم حديثاً فاحفظوه: ما نقص مال عبد من صدقة، ولا ظلم عبد مظلمة صبر عليها إلا زاده الله عزًا، ولا فتح عبد باب مسألة إلا فتح الله عليه باب فقر -أو كلمة نحوها- وأحدثك",
+      "reference": "الجامع الكبير (سنن الترمذي), تأليف: محمد بن عيسى الترمذي, تحقيق وتعليق:أحمد محمد شاكر ومحمد فؤاد عبد الباقي وإبراهيم عطوة عوض -شركة مكتبة ومطبعة مصطفى البابي الحلبي - مصر\nالطبعة: الثانية، 1395 هـ - 1975 م\nصحيح الجامع وزيادته, تأليف: محمد ناصر الدين الألباني, الناشر: المكتب الإسلامي.\nبهجة الناظرين شرح رياض الصالحين, تأليف: سليم بن عيد الهلالي, دار ابن الجوزي.\nمرقاة المفاتيح شرح مشكاة المصابيح, تأليف: علي بن سلطان محمد الملا الهروي القاري, الناشر: دار الفكر, ط1 عام 1422ه."
+    },
+    {
+      "provider": "HADEETHENC",
+      "provider_record_id": "5865",
+      "evidence_id": "hadeethenc:5865",
+      "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=5865",
+      "target_attribute_ids": [
+        "attr_001",
+        "attr_002",
+        "attr_003"
+      ],
+      "fixture": false,
+      "short_identifying_information": "عن حذيفة بن اليمان وأبي هريرة رضي الله عنهما مرفوعاً: «يجمع الله -تبارك وتعالى- الناس فيقوم المؤمنون حتى تُزْلَفَ لهم الجنة، فيأتون آدم صلوات الله عليه، فيقولون: يا أبانا استفتح لنا الجنة، فيقول: وهل أخرجكم من الجنة إلا خطيئة أبيكم! لست بصا",
+      "reference": "صحيح مسلم, تأليف: مسلم بن حجاج النيسابوري, تحقيق: محمد فؤاد عبدالباقي, دار إحياء التراث العربي.\nنزهة المتقين شرح رياض الصالحين, تأليف: مصطفى الخن ومصطفى البغا ومحي الدين مستو وعلي الشربجي ومحمد لطفي, مؤسسة الرسالة, ط 14 عام 1407 - 1987م.\nبهجة الناظرين شرح رياض الصالحين, تأليف: سليم بن عيد الهلالي, دار ابن الجوزي، الطبعة الأولى 1418هـ.\nشرح رياض الصالحين من كلام سيد المرسلين, تأليف: محمد الصالح العثيمين, طبعة المؤسسة الناشر: مدار الوطن, ط عام  1425هـ.\n- دليل الفالحين لطرق رياض الصالحين، لمحمد بن علان الشافعي، دار الكتاب العربي -بيروت."
+    }
+  ],
+  "candidate_alignment": [
+    {
+      "evidence_id": "hadeethenc:4560",
+      "alignment": "ALIGNED",
+      "reason": "Normalized hadith text identifies the candidate as the target record."
+    },
+    {
+      "evidence_id": "hadeethenc:66511",
+      "alignment": "ALIGNED",
+      "reason": "Normalized hadith text identifies the candidate as the target record."
+    },
+    {
+      "evidence_id": "hadeethenc:5833",
+      "alignment": "UNRELATED",
+      "reason": "The candidate text does not identify the target hadith record."
+    },
+    {
+      "evidence_id": "hadeethenc:5865",
+      "alignment": "UNRELATED",
+      "reason": "The candidate text does not identify the target hadith record."
+    }
+  ],
+  "attribute_results": [
+    {
+      "attribute_id": "attr_001",
+      "attribute_type": "TEXT",
+      "status": "SUPPORTED",
+      "validation_method": "deterministic",
+      "evidence_ids": [
+        "hadeethenc:4560",
+        "hadeethenc:66511",
+        "hadeethenc:5833",
+        "hadeethenc:5865"
+      ],
+      "supporting_evidence_ids": [
+        "hadeethenc:4560",
+        "hadeethenc:66511"
+      ],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "attribute_id": "attr_002",
+      "attribute_type": "NARRATOR",
+      "status": "SUPPORTED",
+      "validation_method": "semantic",
+      "evidence_ids": [
+        "hadeethenc:4560",
+        "hadeethenc:66511"
+      ],
+      "supporting_evidence_ids": [
+        "hadeethenc:4560",
+        "hadeethenc:66511"
+      ],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "attribute_id": "attr_003",
+      "attribute_type": "SOURCE",
+      "status": "SUPPORTED",
+      "validation_method": "deterministic",
+      "evidence_ids": [
+        "hadeethenc:4560",
+        "hadeethenc:66511"
+      ],
+      "supporting_evidence_ids": [
+        "hadeethenc:4560",
+        "hadeethenc:66511"
+      ],
+      "contradicting_evidence_ids": []
+    }
+  ],
+  "authenticity_attribute_results": [
+    {
+      "attribute_id": "attr_001",
+      "attribute_type": "TEXT",
+      "status": "SUPPORTED",
+      "validation_method": "deterministic",
+      "evidence_ids": [
+        "hadeethenc:4560",
+        "hadeethenc:66511",
+        "hadeethenc:5833",
+        "hadeethenc:5865"
+      ],
+      "supporting_evidence_ids": [
+        "hadeethenc:4560",
+        "hadeethenc:66511"
+      ],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "attribute_id": "attr_002",
+      "attribute_type": "AUTHENTICITY",
+      "status": "NOT_FOUND",
+      "validation_method": "evidence_matching",
+      "evidence_ids": [],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": []
+    }
+  ],
+  "supporting_evidence_ids": [
+    "hadeethenc:4560",
+    "hadeethenc:66511"
+  ],
+  "contradicting_evidence_ids": [],
+  "authenticity_safety_passed": true,
+  "unsupported_inference_rate": 0.0,
+  "validation_execution_failures": [],
+  "phase_boundary": "STOP_AFTER_PHASE_4"
+}

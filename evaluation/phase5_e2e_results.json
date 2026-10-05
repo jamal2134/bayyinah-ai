@@ -1,0 +1,363 @@
+{
+  "status": "completed",
+  "mode": "saved_phase4_live_input_no_provider_calls",
+  "source": "evaluation\\phase4_e2e_live_results.json",
+  "case_count": 6,
+  "passed_cases": 6,
+  "records": [
+    {
+      "id": "quran_reference",
+      "claim_id": "claim_001",
+      "expected_decision": "SUPPORTED",
+      "actual_decision": "SUPPORTED",
+      "expected_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "actual_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "phase4_attribute_statuses": {
+        "attr_001": "SUPPORTED",
+        "attr_002": "SUPPORTED"
+      },
+      "supporting_evidence_ids": [
+        "quranpedia:262"
+      ],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [],
+      "decision_trace": [
+        {
+          "rule_id": "P5_SPECIALIST_MARKER",
+          "priority": 1,
+          "matched": false,
+          "reason": "Upstream explicitly requires specialist review."
+        },
+        {
+          "rule_id": "P5_VALIDATION_FAILURE",
+          "priority": 1,
+          "matched": false,
+          "reason": "A required Phase 4 validation did not execute successfully."
+        },
+        {
+          "rule_id": "P5_CONFLICT_WITHIN_ATTRIBUTE",
+          "priority": 2,
+          "matched": false,
+          "reason": "A required attribute has both supporting and contradicting validated evidence."
+        },
+        {
+          "rule_id": "P5_CONFLICT_CONTRADICTED",
+          "priority": 3,
+          "matched": false,
+          "reason": "At least one required attribute is explicitly contradicted by validated evidence."
+        },
+        {
+          "rule_id": "P5_REQUIRED_EVIDENCE_MISSING",
+          "priority": 4,
+          "matched": false,
+          "reason": "One or more required attributes have no validated evidence result."
+        },
+        {
+          "rule_id": "P5_AMBIGUOUS_EVIDENCE",
+          "priority": 4,
+          "matched": false,
+          "reason": "One or more required attributes remain ambiguous without explicit evidence conflict."
+        },
+        {
+          "rule_id": "P5_PARTIAL_EVIDENCE",
+          "priority": 5,
+          "matched": false,
+          "reason": "At least one required attribute is only partially supported."
+        },
+        {
+          "rule_id": "P5_SUPPORTED_ALL_REQUIRED",
+          "priority": 6,
+          "matched": true,
+          "reason": "All 2 required attributes are supported."
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "quran_metadata",
+      "claim_id": "claim_001",
+      "expected_decision": "SUPPORTED",
+      "actual_decision": "SUPPORTED",
+      "expected_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "actual_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "phase4_attribute_statuses": {
+        "attr_001": "SUPPORTED",
+        "attr_002": "SUPPORTED"
+      },
+      "supporting_evidence_ids": [
+        "quranpedia:surah:67"
+      ],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [],
+      "decision_trace": [
+        {
+          "rule_id": "P5_SPECIALIST_MARKER",
+          "priority": 1,
+          "matched": false,
+          "reason": "Upstream explicitly requires specialist review."
+        },
+        {
+          "rule_id": "P5_VALIDATION_FAILURE",
+          "priority": 1,
+          "matched": false,
+          "reason": "A required Phase 4 validation did not execute successfully."
+        },
+        {
+          "rule_id": "P5_CONFLICT_WITHIN_ATTRIBUTE",
+          "priority": 2,
+          "matched": false,
+          "reason": "A required attribute has both supporting and contradicting validated evidence."
+        },
+        {
+          "rule_id": "P5_CONFLICT_CONTRADICTED",
+          "priority": 3,
+          "matched": false,
+          "reason": "At least one required attribute is explicitly contradicted by validated evidence."
+        },
+        {
+          "rule_id": "P5_REQUIRED_EVIDENCE_MISSING",
+          "priority": 4,
+          "matched": false,
+          "reason": "One or more required attributes have no validated evidence result."
+        },
+        {
+          "rule_id": "P5_AMBIGUOUS_EVIDENCE",
+          "priority": 4,
+          "matched": false,
+          "reason": "One or more required attributes remain ambiguous without explicit evidence conflict."
+        },
+        {
+          "rule_id": "P5_PARTIAL_EVIDENCE",
+          "priority": 5,
+          "matched": false,
+          "reason": "At least one required attribute is only partially supported."
+        },
+        {
+          "rule_id": "P5_SUPPORTED_ALL_REQUIRED",
+          "priority": 6,
+          "matched": true,
+          "reason": "All 2 required attributes are supported."
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "quran_metadata_negative",
+      "claim_id": "claim_001",
+      "expected_decision": "CONFLICTING",
+      "actual_decision": "CONFLICTING",
+      "expected_reason_code": "EVIDENCE_CONFLICT",
+      "actual_reason_code": "EVIDENCE_CONFLICT",
+      "phase4_attribute_statuses": {
+        "attr_001": "SUPPORTED",
+        "attr_002": "CONTRADICTED"
+      },
+      "supporting_evidence_ids": [
+        "quranpedia:surah:67"
+      ],
+      "contradicting_evidence_ids": [
+        "quranpedia:surah:67"
+      ],
+      "unresolved_attribute_ids": [],
+      "decision_trace": [
+        {
+          "rule_id": "P5_SPECIALIST_MARKER",
+          "priority": 1,
+          "matched": false,
+          "reason": "Upstream explicitly requires specialist review."
+        },
+        {
+          "rule_id": "P5_VALIDATION_FAILURE",
+          "priority": 1,
+          "matched": false,
+          "reason": "A required Phase 4 validation did not execute successfully."
+        },
+        {
+          "rule_id": "P5_CONFLICT_WITHIN_ATTRIBUTE",
+          "priority": 2,
+          "matched": false,
+          "reason": "A required attribute has both supporting and contradicting validated evidence."
+        },
+        {
+          "rule_id": "P5_CONFLICT_CONTRADICTED",
+          "priority": 3,
+          "matched": true,
+          "reason": "At least one required attribute is explicitly contradicted by validated evidence."
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "hadith_record",
+      "claim_id": "claim_001",
+      "expected_decision": "SUPPORTED",
+      "actual_decision": "SUPPORTED",
+      "expected_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "actual_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "phase4_attribute_statuses": {
+        "attr_001": "SUPPORTED",
+        "attr_002": "SUPPORTED",
+        "attr_003": "SUPPORTED"
+      },
+      "supporting_evidence_ids": [
+        "hadeethenc:4560",
+        "hadeethenc:66511"
+      ],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [],
+      "decision_trace": [
+        {
+          "rule_id": "P5_SPECIALIST_MARKER",
+          "priority": 1,
+          "matched": false,
+          "reason": "Upstream explicitly requires specialist review."
+        },
+        {
+          "rule_id": "P5_VALIDATION_FAILURE",
+          "priority": 1,
+          "matched": false,
+          "reason": "A required Phase 4 validation did not execute successfully."
+        },
+        {
+          "rule_id": "P5_CONFLICT_WITHIN_ATTRIBUTE",
+          "priority": 2,
+          "matched": false,
+          "reason": "A required attribute has both supporting and contradicting validated evidence."
+        },
+        {
+          "rule_id": "P5_CONFLICT_CONTRADICTED",
+          "priority": 3,
+          "matched": false,
+          "reason": "At least one required attribute is explicitly contradicted by validated evidence."
+        },
+        {
+          "rule_id": "P5_REQUIRED_EVIDENCE_MISSING",
+          "priority": 4,
+          "matched": false,
+          "reason": "One or more required attributes have no validated evidence result."
+        },
+        {
+          "rule_id": "P5_AMBIGUOUS_EVIDENCE",
+          "priority": 4,
+          "matched": false,
+          "reason": "One or more required attributes remain ambiguous without explicit evidence conflict."
+        },
+        {
+          "rule_id": "P5_PARTIAL_EVIDENCE",
+          "priority": 5,
+          "matched": false,
+          "reason": "At least one required attribute is only partially supported."
+        },
+        {
+          "rule_id": "P5_SUPPORTED_ALL_REQUIRED",
+          "priority": 6,
+          "matched": true,
+          "reason": "All 3 required attributes are supported."
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "hadith_authenticity_safety",
+      "claim_id": "claim_001",
+      "expected_decision": "INSUFFICIENT_EVIDENCE",
+      "actual_decision": "INSUFFICIENT_EVIDENCE",
+      "expected_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "actual_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "phase4_attribute_statuses": {
+        "attr_001": "SUPPORTED",
+        "attr_002": "NOT_FOUND"
+      },
+      "supporting_evidence_ids": [
+        "hadeethenc:4560",
+        "hadeethenc:66511"
+      ],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [
+        "attr_002"
+      ],
+      "decision_trace": [
+        {
+          "rule_id": "P5_SPECIALIST_MARKER",
+          "priority": 1,
+          "matched": false,
+          "reason": "Upstream explicitly requires specialist review."
+        },
+        {
+          "rule_id": "P5_VALIDATION_FAILURE",
+          "priority": 1,
+          "matched": false,
+          "reason": "A required Phase 4 validation did not execute successfully."
+        },
+        {
+          "rule_id": "P5_CONFLICT_WITHIN_ATTRIBUTE",
+          "priority": 2,
+          "matched": false,
+          "reason": "A required attribute has both supporting and contradicting validated evidence."
+        },
+        {
+          "rule_id": "P5_CONFLICT_CONTRADICTED",
+          "priority": 3,
+          "matched": false,
+          "reason": "At least one required attribute is explicitly contradicted by validated evidence."
+        },
+        {
+          "rule_id": "P5_REQUIRED_EVIDENCE_MISSING",
+          "priority": 4,
+          "matched": true,
+          "reason": "One or more required attributes have no validated evidence result."
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "bayan_education",
+      "claim_id": "claim_001",
+      "expected_decision": "INSUFFICIENT_EVIDENCE",
+      "actual_decision": "INSUFFICIENT_EVIDENCE",
+      "expected_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "actual_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "phase4_attribute_statuses": {
+        "attr_001": "NOT_FOUND"
+      },
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [
+        "attr_001"
+      ],
+      "decision_trace": [
+        {
+          "rule_id": "P5_SPECIALIST_MARKER",
+          "priority": 1,
+          "matched": false,
+          "reason": "Upstream explicitly requires specialist review."
+        },
+        {
+          "rule_id": "P5_VALIDATION_FAILURE",
+          "priority": 1,
+          "matched": false,
+          "reason": "A required Phase 4 validation did not execute successfully."
+        },
+        {
+          "rule_id": "P5_CONFLICT_WITHIN_ATTRIBUTE",
+          "priority": 2,
+          "matched": false,
+          "reason": "A required attribute has both supporting and contradicting validated evidence."
+        },
+        {
+          "rule_id": "P5_CONFLICT_CONTRADICTED",
+          "priority": 3,
+          "matched": false,
+          "reason": "At least one required attribute is explicitly contradicted by validated evidence."
+        },
+        {
+          "rule_id": "P5_REQUIRED_EVIDENCE_MISSING",
+          "priority": 4,
+          "matched": true,
+          "reason": "One or more required attributes have no validated evidence result."
+        }
+      ],
+      "passed": true
+    }
+  ]
+}

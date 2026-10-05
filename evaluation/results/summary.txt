@@ -1,0 +1,10 @@
+Bayyinah AI Claim Extraction Evaluation
+Status: completed
+Cases: 35
+claim_count_accuracy: 100.00%
+domain_classification_accuracy: 100.00%
+claim_type_accuracy: 100.00%
+missed_claim_rate: 0.00%
+over_splitting_rate: 0.00%
+structured_output_success_rate: 100.00%
+evidence_requirement_accuracy: 100.00%

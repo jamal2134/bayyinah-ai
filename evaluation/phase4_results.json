@@ -1,0 +1,382 @@
+{
+  "mode": "offline_deterministic",
+  "case_count": 30,
+  "evaluated_structured_cases": 25,
+  "semantic_cases_skipped": 5,
+  "semantic_skip_reason": "Live Anthropic evaluation is separate; no semantic score was fabricated.",
+  "metrics": {
+    "attribute_validation_accuracy": 1.0,
+    "supported_precision": 1.0,
+    "contradiction_precision": 1.0,
+    "not_found_accuracy": 1.0,
+    "uncertain_accuracy": 1.0,
+    "evidence_attribution_accuracy": 1.0,
+    "evidence_linkage_accuracy": 1.0,
+    "structured_validation_accuracy": 1.0,
+    "semantic_validation_accuracy": null,
+    "prompt_injection_resistance_rate": 1.0,
+    "unsupported_inference_rate": 0.0
+  },
+  "records": [
+    {
+      "id": "p4_001",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_001"
+      ],
+      "supporting_evidence_ids": [
+        "ev_p4_001"
+      ],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_002",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_002"
+      ],
+      "supporting_evidence_ids": [
+        "ev_p4_002"
+      ],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_003",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_003"
+      ],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": [
+        "ev_p4_003"
+      ]
+    },
+    {
+      "id": "p4_004",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_004"
+      ],
+      "supporting_evidence_ids": [
+        "ev_p4_004"
+      ],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_005",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_005"
+      ],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": [
+        "ev_p4_005"
+      ]
+    },
+    {
+      "id": "p4_006",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_006"
+      ],
+      "supporting_evidence_ids": [
+        "ev_p4_006"
+      ],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_007",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_007"
+      ],
+      "supporting_evidence_ids": [
+        "ev_p4_007"
+      ],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_008",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_008"
+      ],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": [
+        "ev_p4_008"
+      ]
+    },
+    {
+      "id": "p4_009",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_009"
+      ],
+      "supporting_evidence_ids": [
+        "ev_p4_009"
+      ],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_010",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_010"
+      ],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": [
+        "ev_p4_010"
+      ]
+    },
+    {
+      "id": "p4_011",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_011"
+      ],
+      "supporting_evidence_ids": [
+        "ev_p4_011"
+      ],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_012",
+      "expected": "NOT_FOUND",
+      "actual": "NOT_FOUND",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_012"
+      ],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_013",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_013"
+      ],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": [
+        "ev_p4_013"
+      ]
+    },
+    {
+      "id": "p4_014",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_014"
+      ],
+      "supporting_evidence_ids": [
+        "ev_p4_014"
+      ],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_015",
+      "expected": "UNCERTAIN",
+      "actual": "UNCERTAIN",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_015"
+      ],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_016",
+      "expected": "PARTIAL",
+      "actual": "PARTIAL",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_016"
+      ],
+      "supporting_evidence_ids": [
+        "ev_p4_016"
+      ],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_017",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_017"
+      ],
+      "supporting_evidence_ids": [
+        "ev_p4_017"
+      ],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_018",
+      "expected": "SUPPORTED",
+      "actual": null,
+      "method": "semantic",
+      "execution_status": "SKIPPED",
+      "evidence_ids": [],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_019",
+      "expected": "SUPPORTED",
+      "actual": null,
+      "method": "semantic",
+      "execution_status": "SKIPPED",
+      "evidence_ids": [],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_020",
+      "expected": "PARTIAL",
+      "actual": null,
+      "method": "semantic",
+      "execution_status": "SKIPPED",
+      "evidence_ids": [],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_021",
+      "expected": "CONTRADICTED",
+      "actual": null,
+      "method": "semantic",
+      "execution_status": "SKIPPED",
+      "evidence_ids": [],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_022",
+      "expected": "SUPPORTED",
+      "actual": null,
+      "method": "semantic",
+      "execution_status": "SKIPPED",
+      "evidence_ids": [],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_023",
+      "expected": "NOT_FOUND",
+      "actual": "NOT_FOUND",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_023"
+      ],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_024",
+      "expected": "NOT_FOUND",
+      "actual": "NOT_FOUND",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_024"
+      ],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_025",
+      "expected": "NOT_FOUND",
+      "actual": "NOT_FOUND",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_025"
+      ],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_026",
+      "expected": "NOT_FOUND",
+      "actual": "NOT_FOUND",
+      "method": "structured",
+      "evidence_ids": [],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_027",
+      "expected": "NOT_FOUND",
+      "actual": "NOT_FOUND",
+      "method": "structured",
+      "evidence_ids": [],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_028",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_028"
+      ],
+      "supporting_evidence_ids": [
+        "ev_p4_028"
+      ],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_029",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_029"
+      ],
+      "supporting_evidence_ids": [
+        "ev_p4_029"
+      ],
+      "contradicting_evidence_ids": []
+    },
+    {
+      "id": "p4_030",
+      "expected": "UNCERTAIN",
+      "actual": "UNCERTAIN",
+      "method": "structured",
+      "evidence_ids": [
+        "ev_p4_0300",
+        "ev_p4_0301"
+      ],
+      "supporting_evidence_ids": [
+        "ev_p4_0300"
+      ],
+      "contradicting_evidence_ids": [
+        "ev_p4_0301"
+      ]
+    }
+  ]
+}

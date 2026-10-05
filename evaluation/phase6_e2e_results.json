@@ -1,0 +1,732 @@
+{
+  "status": "completed",
+  "mode": "saved_inputs_no_provider_calls",
+  "case_count": 6,
+  "passed_cases": 6,
+  "records": [
+    {
+      "id": "quran_reference",
+      "claim_text": "آية الكرسي هي الآية 255 من سورة البقرة.",
+      "phase5_decision": "SUPPORTED",
+      "phase5_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "report_decision": "SUPPORTED",
+      "report_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "summary_ar": "تم العثور على أدلة تدعم جميع عناصر الادعاء التي تتطلب التحقق.",
+      "attribute_reports": [
+        {
+          "attribute_id": "attr_001",
+          "attribute_type": "SURAH",
+          "claimed_value": "البقرة",
+          "validation_status": "SUPPORTED",
+          "validation_method": "deterministic",
+          "supporting_evidence_ids": [
+            "quranpedia:262"
+          ],
+          "contradicting_evidence_ids": [],
+          "user_message": "تم العثور على دليل يدعم هذه المعلومة."
+        },
+        {
+          "attribute_id": "attr_002",
+          "attribute_type": "AYAH_NUMBER",
+          "claimed_value": "255",
+          "validation_status": "SUPPORTED",
+          "validation_method": "deterministic",
+          "supporting_evidence_ids": [
+            "quranpedia:262"
+          ],
+          "contradicting_evidence_ids": [],
+          "user_message": "تم العثور على دليل يدعم هذه المعلومة."
+        }
+      ],
+      "sources": [
+        {
+          "evidence_id": "quranpedia:262",
+          "provider": "QURANPEDIA",
+          "provider_record_id": "262",
+          "source_url": "https://api.quranpedia.net/v1/mushafs/1/2/255",
+          "title": null,
+          "evidence_text": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَ",
+          "reference": "2:255",
+          "used_for_attributes": [
+            "attr_001",
+            "attr_002"
+          ],
+          "roles": [
+            {
+              "attribute_id": "attr_001",
+              "role": "SUPPORTING"
+            },
+            {
+              "attribute_id": "attr_002",
+              "role": "SUPPORTING"
+            }
+          ]
+        }
+      ],
+      "unresolved_items": [],
+      "warnings": [],
+      "trace": {
+        "phase5_decision": "SUPPORTED",
+        "phase5_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+        "phase4_validation_ids": [
+          "attr_001",
+          "attr_002"
+        ],
+        "evidence_ids": [
+          "quranpedia:262"
+        ],
+        "decision_trace": [
+          {
+            "rule_id": "P5_SPECIALIST_MARKER",
+            "priority": 1,
+            "matched": false,
+            "reason": "Upstream explicitly requires specialist review."
+          },
+          {
+            "rule_id": "P5_VALIDATION_FAILURE",
+            "priority": 1,
+            "matched": false,
+            "reason": "A required Phase 4 validation did not execute successfully."
+          },
+          {
+            "rule_id": "P5_CONFLICT_WITHIN_ATTRIBUTE",
+            "priority": 2,
+            "matched": false,
+            "reason": "A required attribute has both supporting and contradicting validated evidence."
+          },
+          {
+            "rule_id": "P5_CONFLICT_CONTRADICTED",
+            "priority": 3,
+            "matched": false,
+            "reason": "At least one required attribute is explicitly contradicted by validated evidence."
+          },
+          {
+            "rule_id": "P5_REQUIRED_EVIDENCE_MISSING",
+            "priority": 4,
+            "matched": false,
+            "reason": "One or more required attributes have no validated evidence result."
+          },
+          {
+            "rule_id": "P5_AMBIGUOUS_EVIDENCE",
+            "priority": 4,
+            "matched": false,
+            "reason": "One or more required attributes remain ambiguous without explicit evidence conflict."
+          },
+          {
+            "rule_id": "P5_PARTIAL_EVIDENCE",
+            "priority": 5,
+            "matched": false,
+            "reason": "At least one required attribute is only partially supported."
+          },
+          {
+            "rule_id": "P5_SUPPORTED_ALL_REQUIRED",
+            "priority": 6,
+            "matched": true,
+            "reason": "All 2 required attributes are supported."
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "quran_metadata",
+      "claim_text": "سورة الملك تتكون من 30 آية.",
+      "phase5_decision": "SUPPORTED",
+      "phase5_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "report_decision": "SUPPORTED",
+      "report_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "summary_ar": "تم العثور على أدلة تدعم جميع عناصر الادعاء التي تتطلب التحقق.",
+      "attribute_reports": [
+        {
+          "attribute_id": "attr_001",
+          "attribute_type": "SURAH",
+          "claimed_value": "الملك",
+          "validation_status": "SUPPORTED",
+          "validation_method": "deterministic",
+          "supporting_evidence_ids": [
+            "quranpedia:surah:67"
+          ],
+          "contradicting_evidence_ids": [],
+          "user_message": "تم العثور على دليل يدعم هذه المعلومة."
+        },
+        {
+          "attribute_id": "attr_002",
+          "attribute_type": "VERSE_COUNT",
+          "claimed_value": "30",
+          "validation_status": "SUPPORTED",
+          "validation_method": "deterministic",
+          "supporting_evidence_ids": [
+            "quranpedia:surah:67"
+          ],
+          "contradicting_evidence_ids": [],
+          "user_message": "تم العثور على دليل يدعم هذه المعلومة."
+        }
+      ],
+      "sources": [
+        {
+          "evidence_id": "quranpedia:surah:67",
+          "provider": "QURANPEDIA",
+          "provider_record_id": "67",
+          "source_url": "https://api.quranpedia.net/v1/surah/information/67",
+          "title": null,
+          "evidence_text": "سورة (المُلْكِ) من السُّوَر المكية، وتسمى أيضًا سورة { تَبَٰرَكَ }، وسورة (المُنْجِية)، وقد جاءت للدلالة على عظيمِ قدرة الله وجلال قَدْره، وتنزيهِه عن النقائص؛ فهو المستحِقُّ للعبادة، واشتملت على تخويفٍ من عذاب الله، وتهديد من مخالَفة أمره،",
+          "reference": "surah:67",
+          "used_for_attributes": [
+            "attr_001",
+            "attr_002"
+          ],
+          "roles": [
+            {
+              "attribute_id": "attr_001",
+              "role": "SUPPORTING"
+            },
+            {
+              "attribute_id": "attr_002",
+              "role": "SUPPORTING"
+            }
+          ]
+        }
+      ],
+      "unresolved_items": [],
+      "warnings": [],
+      "trace": {
+        "phase5_decision": "SUPPORTED",
+        "phase5_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+        "phase4_validation_ids": [
+          "attr_001",
+          "attr_002"
+        ],
+        "evidence_ids": [
+          "quranpedia:surah:67"
+        ],
+        "decision_trace": [
+          {
+            "rule_id": "P5_SPECIALIST_MARKER",
+            "priority": 1,
+            "matched": false,
+            "reason": "Upstream explicitly requires specialist review."
+          },
+          {
+            "rule_id": "P5_VALIDATION_FAILURE",
+            "priority": 1,
+            "matched": false,
+            "reason": "A required Phase 4 validation did not execute successfully."
+          },
+          {
+            "rule_id": "P5_CONFLICT_WITHIN_ATTRIBUTE",
+            "priority": 2,
+            "matched": false,
+            "reason": "A required attribute has both supporting and contradicting validated evidence."
+          },
+          {
+            "rule_id": "P5_CONFLICT_CONTRADICTED",
+            "priority": 3,
+            "matched": false,
+            "reason": "At least one required attribute is explicitly contradicted by validated evidence."
+          },
+          {
+            "rule_id": "P5_REQUIRED_EVIDENCE_MISSING",
+            "priority": 4,
+            "matched": false,
+            "reason": "One or more required attributes have no validated evidence result."
+          },
+          {
+            "rule_id": "P5_AMBIGUOUS_EVIDENCE",
+            "priority": 4,
+            "matched": false,
+            "reason": "One or more required attributes remain ambiguous without explicit evidence conflict."
+          },
+          {
+            "rule_id": "P5_PARTIAL_EVIDENCE",
+            "priority": 5,
+            "matched": false,
+            "reason": "At least one required attribute is only partially supported."
+          },
+          {
+            "rule_id": "P5_SUPPORTED_ALL_REQUIRED",
+            "priority": 6,
+            "matched": true,
+            "reason": "All 2 required attributes are supported."
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "quran_metadata_negative",
+      "claim_text": "سورة الملك تتكون من 31 آية.",
+      "phase5_decision": "CONFLICTING",
+      "phase5_reason_code": "EVIDENCE_CONFLICT",
+      "report_decision": "CONFLICTING",
+      "report_reason_code": "EVIDENCE_CONFLICT",
+      "summary_ar": "توجد أدلة موثقة لا تتوافق مع جزء من الادعاء أو توجد نتائج متعارضة تتطلب الانتباه.",
+      "attribute_reports": [
+        {
+          "attribute_id": "attr_001",
+          "attribute_type": "SURAH",
+          "claimed_value": "الملك",
+          "validation_status": "SUPPORTED",
+          "validation_method": "deterministic",
+          "supporting_evidence_ids": [
+            "quranpedia:surah:67"
+          ],
+          "contradicting_evidence_ids": [],
+          "user_message": "تم العثور على دليل يدعم هذه المعلومة."
+        },
+        {
+          "attribute_id": "attr_002",
+          "attribute_type": "VERSE_COUNT",
+          "claimed_value": "31",
+          "validation_status": "CONTRADICTED",
+          "validation_method": "deterministic",
+          "supporting_evidence_ids": [],
+          "contradicting_evidence_ids": [
+            "quranpedia:surah:67"
+          ],
+          "user_message": "الدليل المتاح لا يتوافق مع هذه المعلومة."
+        }
+      ],
+      "sources": [
+        {
+          "evidence_id": "quranpedia:surah:67",
+          "provider": "QURANPEDIA",
+          "provider_record_id": "67",
+          "source_url": "https://api.quranpedia.net/v1/surah/information/67",
+          "title": null,
+          "evidence_text": "سورة (المُلْكِ) من السُّوَر المكية، وتسمى أيضًا سورة { تَبَٰرَكَ }، وسورة (المُنْجِية)، وقد جاءت للدلالة على عظيمِ قدرة الله وجلال قَدْره، وتنزيهِه عن النقائص؛ فهو المستحِقُّ للعبادة، واشتملت على تخويفٍ من عذاب الله، وتهديد من مخالَفة أمره،",
+          "reference": "surah:67",
+          "used_for_attributes": [
+            "attr_001",
+            "attr_002"
+          ],
+          "roles": [
+            {
+              "attribute_id": "attr_001",
+              "role": "SUPPORTING"
+            },
+            {
+              "attribute_id": "attr_002",
+              "role": "CONTRADICTING"
+            }
+          ]
+        }
+      ],
+      "unresolved_items": [],
+      "warnings": [],
+      "trace": {
+        "phase5_decision": "CONFLICTING",
+        "phase5_reason_code": "EVIDENCE_CONFLICT",
+        "phase4_validation_ids": [
+          "attr_001",
+          "attr_002"
+        ],
+        "evidence_ids": [
+          "quranpedia:surah:67"
+        ],
+        "decision_trace": [
+          {
+            "rule_id": "P5_SPECIALIST_MARKER",
+            "priority": 1,
+            "matched": false,
+            "reason": "Upstream explicitly requires specialist review."
+          },
+          {
+            "rule_id": "P5_VALIDATION_FAILURE",
+            "priority": 1,
+            "matched": false,
+            "reason": "A required Phase 4 validation did not execute successfully."
+          },
+          {
+            "rule_id": "P5_CONFLICT_WITHIN_ATTRIBUTE",
+            "priority": 2,
+            "matched": false,
+            "reason": "A required attribute has both supporting and contradicting validated evidence."
+          },
+          {
+            "rule_id": "P5_CONFLICT_CONTRADICTED",
+            "priority": 3,
+            "matched": true,
+            "reason": "At least one required attribute is explicitly contradicted by validated evidence."
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "hadith_record",
+      "claim_text": "حديث إنما الأعمال بالنيات عن عمر بن الخطاب رواه البخاري.",
+      "phase5_decision": "SUPPORTED",
+      "phase5_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "report_decision": "SUPPORTED",
+      "report_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "summary_ar": "تم العثور على أدلة تدعم جميع عناصر الادعاء التي تتطلب التحقق.",
+      "attribute_reports": [
+        {
+          "attribute_id": "attr_001",
+          "attribute_type": "TEXT",
+          "claimed_value": "إنما الأعمال بالنيات",
+          "validation_status": "SUPPORTED",
+          "validation_method": "deterministic",
+          "supporting_evidence_ids": [
+            "hadeethenc:4560",
+            "hadeethenc:66511"
+          ],
+          "contradicting_evidence_ids": [],
+          "user_message": "تم العثور على دليل يدعم هذه المعلومة."
+        },
+        {
+          "attribute_id": "attr_002",
+          "attribute_type": "NARRATOR",
+          "claimed_value": "عمر بن الخطاب",
+          "validation_status": "SUPPORTED",
+          "validation_method": "semantic",
+          "supporting_evidence_ids": [
+            "hadeethenc:4560",
+            "hadeethenc:66511"
+          ],
+          "contradicting_evidence_ids": [],
+          "user_message": "تم العثور على دليل يدعم هذه المعلومة."
+        },
+        {
+          "attribute_id": "attr_003",
+          "attribute_type": "SOURCE",
+          "claimed_value": "البخاري",
+          "validation_status": "SUPPORTED",
+          "validation_method": "deterministic",
+          "supporting_evidence_ids": [
+            "hadeethenc:4560",
+            "hadeethenc:66511"
+          ],
+          "contradicting_evidence_ids": [],
+          "user_message": "تم العثور على دليل يدعم هذه المعلومة."
+        }
+      ],
+      "sources": [
+        {
+          "evidence_id": "hadeethenc:4560",
+          "provider": "HADEETHENC",
+          "provider_record_id": "4560",
+          "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=4560",
+          "title": null,
+          "evidence_text": "عن عمر بن الخطاب رضي الله عنه قال: قال رسول الله صلى الله عليه وسلم: «إِنَّمَا الْأَعْمَالُ بِالنِّيَّةِ، وَإِنَّمَا لِامْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى اللهِ وَرَسُولِهِ، فَهِجْرَتُهُ إِلَى اللهِ وَرَسُولِهِ، وَمَنْ كَانَت",
+          "reference": "صحيح البخاري (9/ 22) (6953)، (1/ 6) (1).\nصحيح مسلم (3/ 1515) (1907).\nالتحفة الربانية في شرح الأربعين حديثًا النووية (ص5).\nشرح الأربعين النووية، لابن عثيمين (ص5).\nفتح القوي المتين في شرح الأربعين وتتمة الخمسين، للعباد (ص8).\nشرح النووي على مسلم (13/ 54).\nتاج العروس من جواهر القاموس، للزبيدي (7/ 196).",
+          "used_for_attributes": [
+            "attr_001",
+            "attr_002",
+            "attr_003"
+          ],
+          "roles": [
+            {
+              "attribute_id": "attr_001",
+              "role": "SUPPORTING"
+            },
+            {
+              "attribute_id": "attr_002",
+              "role": "SUPPORTING"
+            },
+            {
+              "attribute_id": "attr_003",
+              "role": "SUPPORTING"
+            }
+          ]
+        },
+        {
+          "evidence_id": "hadeethenc:66511",
+          "provider": "HADEETHENC",
+          "provider_record_id": "66511",
+          "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=66511",
+          "title": null,
+          "evidence_text": "عَنْ أَمِيرِ المُؤْمِنِينَ أَبِي حَفْصٍ عُمَرَ بْنِ الخَطَّابِ رضي الله عنه قَالَ: سَمِعْتُ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ يَقُولُ: «إنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ ",
+          "reference": "صحيح البخاري (9/ 22) (6953)، (1/ 6) (1).\nصحيح مسلم (3/ 1515) (1907).\nالتحفة الربانية في شرح الأربعين حديثًا النووية (ص5).\nشرح الأربعين النووية، لابن عثيمين (ص5).\nفتح القوي المتين في شرح الأربعين وتتمة الخمسين، للعباد (ص8).\nشرح النووي على مسلم (13/ 54).\nتاج العروس من جواهر القاموس، للزبيدي (7/ 196).",
+          "used_for_attributes": [
+            "attr_001",
+            "attr_002",
+            "attr_003"
+          ],
+          "roles": [
+            {
+              "attribute_id": "attr_001",
+              "role": "SUPPORTING"
+            },
+            {
+              "attribute_id": "attr_002",
+              "role": "SUPPORTING"
+            },
+            {
+              "attribute_id": "attr_003",
+              "role": "SUPPORTING"
+            }
+          ]
+        }
+      ],
+      "unresolved_items": [],
+      "warnings": [],
+      "trace": {
+        "phase5_decision": "SUPPORTED",
+        "phase5_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+        "phase4_validation_ids": [
+          "attr_001",
+          "attr_002",
+          "attr_003"
+        ],
+        "evidence_ids": [
+          "hadeethenc:4560",
+          "hadeethenc:66511"
+        ],
+        "decision_trace": [
+          {
+            "rule_id": "P5_SPECIALIST_MARKER",
+            "priority": 1,
+            "matched": false,
+            "reason": "Upstream explicitly requires specialist review."
+          },
+          {
+            "rule_id": "P5_VALIDATION_FAILURE",
+            "priority": 1,
+            "matched": false,
+            "reason": "A required Phase 4 validation did not execute successfully."
+          },
+          {
+            "rule_id": "P5_CONFLICT_WITHIN_ATTRIBUTE",
+            "priority": 2,
+            "matched": false,
+            "reason": "A required attribute has both supporting and contradicting validated evidence."
+          },
+          {
+            "rule_id": "P5_CONFLICT_CONTRADICTED",
+            "priority": 3,
+            "matched": false,
+            "reason": "At least one required attribute is explicitly contradicted by validated evidence."
+          },
+          {
+            "rule_id": "P5_REQUIRED_EVIDENCE_MISSING",
+            "priority": 4,
+            "matched": false,
+            "reason": "One or more required attributes have no validated evidence result."
+          },
+          {
+            "rule_id": "P5_AMBIGUOUS_EVIDENCE",
+            "priority": 4,
+            "matched": false,
+            "reason": "One or more required attributes remain ambiguous without explicit evidence conflict."
+          },
+          {
+            "rule_id": "P5_PARTIAL_EVIDENCE",
+            "priority": 5,
+            "matched": false,
+            "reason": "At least one required attribute is only partially supported."
+          },
+          {
+            "rule_id": "P5_SUPPORTED_ALL_REQUIRED",
+            "priority": 6,
+            "matched": true,
+            "reason": "All 3 required attributes are supported."
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "hadith_authenticity_safety",
+      "claim_text": "حديث إنما الأعمال بالنيات صحيح.",
+      "phase5_decision": "INSUFFICIENT_EVIDENCE",
+      "phase5_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "report_decision": "INSUFFICIENT_EVIDENCE",
+      "report_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "summary_ar": "لم تتوفر أدلة كافية للتحقق من جميع عناصر الادعاء.",
+      "attribute_reports": [
+        {
+          "attribute_id": "attr_001",
+          "attribute_type": "TEXT",
+          "claimed_value": "إنما الأعمال بالنيات",
+          "validation_status": "SUPPORTED",
+          "validation_method": "deterministic",
+          "supporting_evidence_ids": [
+            "hadeethenc:4560",
+            "hadeethenc:66511"
+          ],
+          "contradicting_evidence_ids": [],
+          "user_message": "تم العثور على دليل يدعم هذه المعلومة."
+        },
+        {
+          "attribute_id": "attr_002",
+          "attribute_type": "AUTHENTICITY",
+          "claimed_value": "صحيح",
+          "validation_status": "NOT_FOUND",
+          "validation_method": "evidence_matching",
+          "supporting_evidence_ids": [],
+          "contradicting_evidence_ids": [],
+          "user_message": "لم يتم العثور على دليل كافٍ للتحقق من هذه المعلومة."
+        }
+      ],
+      "sources": [
+        {
+          "evidence_id": "hadeethenc:4560",
+          "provider": "HADEETHENC",
+          "provider_record_id": "4560",
+          "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=4560",
+          "title": null,
+          "evidence_text": "عن عمر بن الخطاب رضي الله عنه قال: قال رسول الله صلى الله عليه وسلم: «إِنَّمَا الْأَعْمَالُ بِالنِّيَّةِ، وَإِنَّمَا لِامْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى اللهِ وَرَسُولِهِ، فَهِجْرَتُهُ إِلَى اللهِ وَرَسُولِهِ، وَمَنْ كَانَت",
+          "reference": "صحيح البخاري (9/ 22) (6953)، (1/ 6) (1).\nصحيح مسلم (3/ 1515) (1907).\nالتحفة الربانية في شرح الأربعين حديثًا النووية (ص5).\nشرح الأربعين النووية، لابن عثيمين (ص5).\nفتح القوي المتين في شرح الأربعين وتتمة الخمسين، للعباد (ص8).\nشرح النووي على مسلم (13/ 54).\nتاج العروس من جواهر القاموس، للزبيدي (7/ 196).",
+          "used_for_attributes": [
+            "attr_001"
+          ],
+          "roles": [
+            {
+              "attribute_id": "attr_001",
+              "role": "SUPPORTING"
+            }
+          ]
+        },
+        {
+          "evidence_id": "hadeethenc:66511",
+          "provider": "HADEETHENC",
+          "provider_record_id": "66511",
+          "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=66511",
+          "title": null,
+          "evidence_text": "عَنْ أَمِيرِ المُؤْمِنِينَ أَبِي حَفْصٍ عُمَرَ بْنِ الخَطَّابِ رضي الله عنه قَالَ: سَمِعْتُ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ يَقُولُ: «إنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ ",
+          "reference": "صحيح البخاري (9/ 22) (6953)، (1/ 6) (1).\nصحيح مسلم (3/ 1515) (1907).\nالتحفة الربانية في شرح الأربعين حديثًا النووية (ص5).\nشرح الأربعين النووية، لابن عثيمين (ص5).\nفتح القوي المتين في شرح الأربعين وتتمة الخمسين، للعباد (ص8).\nشرح النووي على مسلم (13/ 54).\nتاج العروس من جواهر القاموس، للزبيدي (7/ 196).",
+          "used_for_attributes": [
+            "attr_001"
+          ],
+          "roles": [
+            {
+              "attribute_id": "attr_001",
+              "role": "SUPPORTING"
+            }
+          ]
+        }
+      ],
+      "unresolved_items": [
+        {
+          "attribute_id": "attr_002",
+          "attribute_type": "AUTHENTICITY",
+          "claimed_value": "صحيح",
+          "status": "NOT_FOUND",
+          "message": "لم يتم العثور على دليل كافٍ للتحقق من هذه المعلومة."
+        }
+      ],
+      "warnings": [
+        "عدم العثور على دليل كافٍ لإثبات حكم صحة الحديث لا يعني أن الحديث ضعيف أو غير صحيح."
+      ],
+      "trace": {
+        "phase5_decision": "INSUFFICIENT_EVIDENCE",
+        "phase5_reason_code": "REQUIRED_EVIDENCE_MISSING",
+        "phase4_validation_ids": [
+          "attr_001",
+          "attr_002"
+        ],
+        "evidence_ids": [
+          "hadeethenc:4560",
+          "hadeethenc:66511"
+        ],
+        "decision_trace": [
+          {
+            "rule_id": "P5_SPECIALIST_MARKER",
+            "priority": 1,
+            "matched": false,
+            "reason": "Upstream explicitly requires specialist review."
+          },
+          {
+            "rule_id": "P5_VALIDATION_FAILURE",
+            "priority": 1,
+            "matched": false,
+            "reason": "A required Phase 4 validation did not execute successfully."
+          },
+          {
+            "rule_id": "P5_CONFLICT_WITHIN_ATTRIBUTE",
+            "priority": 2,
+            "matched": false,
+            "reason": "A required attribute has both supporting and contradicting validated evidence."
+          },
+          {
+            "rule_id": "P5_CONFLICT_CONTRADICTED",
+            "priority": 3,
+            "matched": false,
+            "reason": "At least one required attribute is explicitly contradicted by validated evidence."
+          },
+          {
+            "rule_id": "P5_REQUIRED_EVIDENCE_MISSING",
+            "priority": 4,
+            "matched": true,
+            "reason": "One or more required attributes have no validated evidence result."
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "bayan_education",
+      "claim_text": "مواد تعليمية إسلامية للمسلمين.",
+      "phase5_decision": "INSUFFICIENT_EVIDENCE",
+      "phase5_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "report_decision": "INSUFFICIENT_EVIDENCE",
+      "report_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "summary_ar": "لم تتوفر أدلة كافية للتحقق من جميع عناصر الادعاء.",
+      "attribute_reports": [
+        {
+          "attribute_id": "attr_001",
+          "attribute_type": "OTHER",
+          "claimed_value": "مواد تعليمية إسلامية للمسلمين.",
+          "validation_status": "NOT_FOUND",
+          "validation_method": "evidence_matching",
+          "supporting_evidence_ids": [],
+          "contradicting_evidence_ids": [],
+          "user_message": "لم يتم العثور على دليل كافٍ للتحقق من هذه المعلومة."
+        }
+      ],
+      "sources": [],
+      "unresolved_items": [
+        {
+          "attribute_id": "attr_001",
+          "attribute_type": "OTHER",
+          "claimed_value": "مواد تعليمية إسلامية للمسلمين.",
+          "status": "NOT_FOUND",
+          "message": "لم يتم العثور على دليل كافٍ للتحقق من هذه المعلومة."
+        }
+      ],
+      "warnings": [],
+      "trace": {
+        "phase5_decision": "INSUFFICIENT_EVIDENCE",
+        "phase5_reason_code": "REQUIRED_EVIDENCE_MISSING",
+        "phase4_validation_ids": [
+          "attr_001"
+        ],
+        "evidence_ids": [],
+        "decision_trace": [
+          {
+            "rule_id": "P5_SPECIALIST_MARKER",
+            "priority": 1,
+            "matched": false,
+            "reason": "Upstream explicitly requires specialist review."
+          },
+          {
+            "rule_id": "P5_VALIDATION_FAILURE",
+            "priority": 1,
+            "matched": false,
+            "reason": "A required Phase 4 validation did not execute successfully."
+          },
+          {
+            "rule_id": "P5_CONFLICT_WITHIN_ATTRIBUTE",
+            "priority": 2,
+            "matched": false,
+            "reason": "A required attribute has both supporting and contradicting validated evidence."
+          },
+          {
+            "rule_id": "P5_CONFLICT_CONTRADICTED",
+            "priority": 3,
+            "matched": false,
+            "reason": "At least one required attribute is explicitly contradicted by validated evidence."
+          },
+          {
+            "rule_id": "P5_REQUIRED_EVIDENCE_MISSING",
+            "priority": 4,
+            "matched": true,
+            "reason": "One or more required attributes have no validated evidence result."
+          }
+        ]
+      },
+      "passed": true
+    }
+  ]
+}

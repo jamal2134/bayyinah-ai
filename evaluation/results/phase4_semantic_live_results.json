@@ -1,0 +1,54 @@
+{
+  "status": "completed",
+  "semantic_validation_accuracy": 0.8,
+  "attempted_cases": 5,
+  "completed_cases": 5,
+  "failed_cases": 0,
+  "supported_precision": 1.0,
+  "contradiction_precision": 1.0,
+  "partial_accuracy": 1.0,
+  "not_found_accuracy": null,
+  "uncertain_accuracy": null,
+  "records": [
+    {
+      "id": "p4_018",
+      "expected": "SUPPORTED",
+      "actual": "PARTIAL",
+      "execution_status": "COMPLETED",
+      "warnings": [],
+      "execution_failures": []
+    },
+    {
+      "id": "p4_019",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "execution_status": "COMPLETED",
+      "warnings": [],
+      "execution_failures": []
+    },
+    {
+      "id": "p4_020",
+      "expected": "PARTIAL",
+      "actual": "PARTIAL",
+      "execution_status": "COMPLETED",
+      "warnings": [],
+      "execution_failures": []
+    },
+    {
+      "id": "p4_021",
+      "expected": "CONTRADICTED",
+      "actual": "CONTRADICTED",
+      "execution_status": "COMPLETED",
+      "warnings": [],
+      "execution_failures": []
+    },
+    {
+      "id": "p4_022",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "execution_status": "COMPLETED",
+      "warnings": [],
+      "execution_failures": []
+    }
+  ]
+}

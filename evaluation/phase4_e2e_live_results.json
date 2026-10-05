@@ -1,0 +1,985 @@
+{
+  "status": "completed",
+  "evaluation_mode": "phase2_phase3_live_apis_phase4",
+  "timestamp_utc": "2026-10-02T20:32:19.327038+00:00",
+  "dorar": {
+    "enabled": false,
+    "reason": "HTTP 403; not required by this evaluation"
+  },
+  "metrics": {
+    "input_cases": 6,
+    "real_evidence_candidates": 11,
+    "fixture_evidence_candidates": 0,
+    "validation_execution_failures": 0,
+    "unsupported_authenticity_supports": 0
+  },
+  "cases": [
+    {
+      "id": "quran_reference",
+      "input_claim": "آية الكرسي هي الآية 255 من سورة البقرة.",
+      "claims": [
+        {
+          "phase2": {
+            "id": "claim_001",
+            "original_text": "آية الكرسي هي الآية 255 من سورة البقرة.",
+            "normalized_claim": "آية الكرسي هي الآية 255 من سورة البقرة",
+            "claim_type": "QURAN_RECORD",
+            "domain": "QURAN",
+            "search_queries": [
+              "آية الكرسي رقم الآية سورة البقرة",
+              "آية الكرسي الآية 255 البقرة",
+              "موقع آية الكرسي في القرآن"
+            ],
+            "entities": [
+              {
+                "name": "آية الكرسي",
+                "type": "QURANIC_VERSE"
+              },
+              {
+                "name": "سورة البقرة",
+                "type": "SURAH"
+              }
+            ],
+            "attributes": [
+              {
+                "id": "attr_001",
+                "type": "SURAH",
+                "value": "البقرة",
+                "asserted_by": null,
+                "qualifier": null,
+                "requires_evidence": true
+              },
+              {
+                "id": "attr_002",
+                "type": "AYAH_NUMBER",
+                "value": "255",
+                "asserted_by": null,
+                "qualifier": null,
+                "requires_evidence": true
+              }
+            ],
+            "requires_evidence": true,
+            "reason": "This is a factual claim about the location of Ayat al-Kursi in the Quran, specifying both the surah name and verse number, which can be verified against Quranic text."
+          },
+          "phase2_method": "anthropic_claim_extraction",
+          "phase3": {
+            "status": "COMPLETED",
+            "providers": [
+              "QURANPEDIA"
+            ],
+            "evidence": [
+              {
+                "provider": "QURANPEDIA",
+                "provider_record_id": "262",
+                "evidence_id": "quranpedia:262",
+                "source_url": "https://api.quranpedia.net/v1/mushafs/1/2/255",
+                "target_attribute_ids": [
+                  "attr_001",
+                  "attr_002"
+                ],
+                "fixture": false,
+                "short_identifying_information": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَ",
+                "reference": "2:255"
+              }
+            ]
+          },
+          "phase4": {
+            "claim_id": "claim_001",
+            "validations": [
+              {
+                "attribute_id": "attr_001",
+                "attribute_type": "SURAH",
+                "claimed_value": "البقرة",
+                "status": "SUPPORTED",
+                "evidence_ids": [
+                  "quranpedia:262"
+                ],
+                "supporting_evidence_ids": [
+                  "quranpedia:262"
+                ],
+                "contradicting_evidence_ids": [],
+                "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+                "asserted_by": null,
+                "validation_method": "deterministic",
+                "validator_confidence": 1.0
+              },
+              {
+                "attribute_id": "attr_002",
+                "attribute_type": "AYAH_NUMBER",
+                "claimed_value": "255",
+                "status": "SUPPORTED",
+                "evidence_ids": [
+                  "quranpedia:262"
+                ],
+                "supporting_evidence_ids": [
+                  "quranpedia:262"
+                ],
+                "contradicting_evidence_ids": [],
+                "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+                "asserted_by": null,
+                "validation_method": "deterministic",
+                "validator_confidence": 1.0
+              }
+            ],
+            "validation_status": "COMPLETED",
+            "retrieval_status": "COMPLETED",
+            "missing_context": [],
+            "reason": null,
+            "warnings": [],
+            "trace": [
+              {
+                "attribute_id": "attr_001",
+                "method": "deterministic",
+                "candidate_ids": [
+                  "quranpedia:262"
+                ],
+                "fields_compared": [
+                  "raw_metadata.surah",
+                  "raw_metadata.surah_number",
+                  "reference"
+                ],
+                "result": "SUPPORTED"
+              },
+              {
+                "attribute_id": "attr_002",
+                "method": "deterministic",
+                "candidate_ids": [
+                  "quranpedia:262"
+                ],
+                "fields_compared": [
+                  "raw_metadata.ayah",
+                  "raw_metadata.ayah_number",
+                  "reference"
+                ],
+                "result": "SUPPORTED"
+              }
+            ],
+            "execution_failures": [],
+            "candidate_alignment": [
+              {
+                "evidence_id": "quranpedia:262",
+                "alignment": "UNRESOLVED",
+                "reason": "Record alignment is not applicable to this claim domain."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "quran_metadata",
+      "input_claim": "سورة الملك تتكون من 30 آية.",
+      "claims": [
+        {
+          "phase2": {
+            "id": "claim_001",
+            "original_text": "سورة الملك تتكون من 30 آية.",
+            "normalized_claim": "سورة الملك تتكون من 30 آية",
+            "claim_type": "QURAN_RECORD",
+            "domain": "QURAN",
+            "search_queries": [
+              "سورة الملك عدد آياتها",
+              "كم آية في سورة الملك",
+              "سورة الملك 30 آية"
+            ],
+            "entities": [
+              {
+                "name": "سورة الملك",
+                "type": "SURAH"
+              }
+            ],
+            "attributes": [
+              {
+                "id": "attr_001",
+                "type": "SURAH",
+                "value": "الملك",
+                "asserted_by": null,
+                "qualifier": null,
+                "requires_evidence": true
+              },
+              {
+                "id": "attr_002",
+                "type": "VERSE_COUNT",
+                "value": "30",
+                "asserted_by": null,
+                "qualifier": null,
+                "requires_evidence": true
+              }
+            ],
+            "requires_evidence": true,
+            "reason": "Factual claim about Quranic metadata (verse count of Surah Al-Mulk) that can be verified against Islamic sources"
+          },
+          "phase2_method": "anthropic_claim_extraction",
+          "phase3": {
+            "status": "COMPLETED",
+            "providers": [
+              "QURANPEDIA"
+            ],
+            "evidence": [
+              {
+                "provider": "QURANPEDIA",
+                "provider_record_id": "67",
+                "evidence_id": "quranpedia:surah:67",
+                "source_url": "https://api.quranpedia.net/v1/surah/information/67",
+                "target_attribute_ids": [
+                  "attr_001",
+                  "attr_002"
+                ],
+                "fixture": false,
+                "short_identifying_information": "سورة (المُلْكِ) من السُّوَر المكية، وتسمى أيضًا سورة { تَبَٰرَكَ }، وسورة (المُنْجِية)، وقد جاءت للدلالة على عظيمِ قدرة الله وجلال قَدْره، وتنزيهِه عن النقائص؛ فهو المستحِقُّ للعبادة، واشتملت على تخويفٍ من عذاب الله، وتهديد من مخالَفة أمره،",
+                "reference": "surah:67"
+              }
+            ]
+          },
+          "phase4": {
+            "claim_id": "claim_001",
+            "validations": [
+              {
+                "attribute_id": "attr_001",
+                "attribute_type": "SURAH",
+                "claimed_value": "الملك",
+                "status": "SUPPORTED",
+                "evidence_ids": [
+                  "quranpedia:surah:67"
+                ],
+                "supporting_evidence_ids": [
+                  "quranpedia:surah:67"
+                ],
+                "contradicting_evidence_ids": [],
+                "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+                "asserted_by": null,
+                "validation_method": "deterministic",
+                "validator_confidence": 1.0
+              },
+              {
+                "attribute_id": "attr_002",
+                "attribute_type": "VERSE_COUNT",
+                "claimed_value": "30",
+                "status": "SUPPORTED",
+                "evidence_ids": [
+                  "quranpedia:surah:67"
+                ],
+                "supporting_evidence_ids": [
+                  "quranpedia:surah:67"
+                ],
+                "contradicting_evidence_ids": [],
+                "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+                "asserted_by": null,
+                "validation_method": "deterministic",
+                "validator_confidence": 1.0
+              }
+            ],
+            "validation_status": "COMPLETED",
+            "retrieval_status": "COMPLETED",
+            "missing_context": [],
+            "reason": null,
+            "warnings": [],
+            "trace": [
+              {
+                "attribute_id": "attr_001",
+                "method": "deterministic",
+                "candidate_ids": [
+                  "quranpedia:surah:67"
+                ],
+                "fields_compared": [
+                  "raw_metadata.surah",
+                  "raw_metadata.surah_number",
+                  "reference"
+                ],
+                "result": "SUPPORTED"
+              },
+              {
+                "attribute_id": "attr_002",
+                "method": "deterministic",
+                "candidate_ids": [
+                  "quranpedia:surah:67"
+                ],
+                "fields_compared": [
+                  "raw_metadata.ayahs_count",
+                  "raw_metadata.verse_count"
+                ],
+                "result": "SUPPORTED"
+              }
+            ],
+            "execution_failures": [],
+            "candidate_alignment": [
+              {
+                "evidence_id": "quranpedia:surah:67",
+                "alignment": "UNRESOLVED",
+                "reason": "Record alignment is not applicable to this claim domain."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "quran_metadata_negative",
+      "input_claim": "سورة الملك تتكون من 31 آية.",
+      "claims": [
+        {
+          "phase2": {
+            "id": "claim_001",
+            "original_text": "سورة الملك تتكون من 31 آية.",
+            "normalized_claim": "سورة الملك تتكون من 31 آية",
+            "claim_type": "QURAN_RECORD",
+            "domain": "QURAN",
+            "search_queries": [
+              "سورة الملك عدد الآيات",
+              "كم آية في سورة الملك",
+              "سورة الملك 31 آية"
+            ],
+            "entities": [
+              {
+                "name": "سورة الملك",
+                "type": "SURAH"
+              }
+            ],
+            "attributes": [
+              {
+                "id": "attr_001",
+                "type": "SURAH",
+                "value": "الملك",
+                "asserted_by": null,
+                "qualifier": null,
+                "requires_evidence": true
+              },
+              {
+                "id": "attr_002",
+                "type": "VERSE_COUNT",
+                "value": "31",
+                "asserted_by": null,
+                "qualifier": null,
+                "requires_evidence": true
+              }
+            ],
+            "requires_evidence": true,
+            "reason": "Factual claim about the number of verses in Surah Al-Mulk that can be verified against Quranic records"
+          },
+          "phase2_method": "anthropic_claim_extraction",
+          "phase3": {
+            "status": "COMPLETED",
+            "providers": [
+              "QURANPEDIA"
+            ],
+            "evidence": [
+              {
+                "provider": "QURANPEDIA",
+                "provider_record_id": "67",
+                "evidence_id": "quranpedia:surah:67",
+                "source_url": "https://api.quranpedia.net/v1/surah/information/67",
+                "target_attribute_ids": [
+                  "attr_001",
+                  "attr_002"
+                ],
+                "fixture": false,
+                "short_identifying_information": "سورة (المُلْكِ) من السُّوَر المكية، وتسمى أيضًا سورة { تَبَٰرَكَ }، وسورة (المُنْجِية)، وقد جاءت للدلالة على عظيمِ قدرة الله وجلال قَدْره، وتنزيهِه عن النقائص؛ فهو المستحِقُّ للعبادة، واشتملت على تخويفٍ من عذاب الله، وتهديد من مخالَفة أمره،",
+                "reference": "surah:67"
+              }
+            ]
+          },
+          "phase4": {
+            "claim_id": "claim_001",
+            "validations": [
+              {
+                "attribute_id": "attr_001",
+                "attribute_type": "SURAH",
+                "claimed_value": "الملك",
+                "status": "SUPPORTED",
+                "evidence_ids": [
+                  "quranpedia:surah:67"
+                ],
+                "supporting_evidence_ids": [
+                  "quranpedia:surah:67"
+                ],
+                "contradicting_evidence_ids": [],
+                "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+                "asserted_by": null,
+                "validation_method": "deterministic",
+                "validator_confidence": 1.0
+              },
+              {
+                "attribute_id": "attr_002",
+                "attribute_type": "VERSE_COUNT",
+                "claimed_value": "31",
+                "status": "CONTRADICTED",
+                "evidence_ids": [
+                  "quranpedia:surah:67"
+                ],
+                "supporting_evidence_ids": [],
+                "contradicting_evidence_ids": [
+                  "quranpedia:surah:67"
+                ],
+                "rationale": "Structured evidence explicitly establishes an incompatible value.",
+                "asserted_by": null,
+                "validation_method": "deterministic",
+                "validator_confidence": 1.0
+              }
+            ],
+            "validation_status": "COMPLETED",
+            "retrieval_status": "COMPLETED",
+            "missing_context": [],
+            "reason": null,
+            "warnings": [],
+            "trace": [
+              {
+                "attribute_id": "attr_001",
+                "method": "deterministic",
+                "candidate_ids": [
+                  "quranpedia:surah:67"
+                ],
+                "fields_compared": [
+                  "raw_metadata.surah",
+                  "raw_metadata.surah_number",
+                  "reference"
+                ],
+                "result": "SUPPORTED"
+              },
+              {
+                "attribute_id": "attr_002",
+                "method": "deterministic",
+                "candidate_ids": [
+                  "quranpedia:surah:67"
+                ],
+                "fields_compared": [
+                  "raw_metadata.ayahs_count",
+                  "raw_metadata.verse_count"
+                ],
+                "result": "CONTRADICTED"
+              }
+            ],
+            "execution_failures": [],
+            "candidate_alignment": [
+              {
+                "evidence_id": "quranpedia:surah:67",
+                "alignment": "UNRESOLVED",
+                "reason": "Record alignment is not applicable to this claim domain."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "hadith_record",
+      "input_claim": "حديث إنما الأعمال بالنيات عن عمر بن الخطاب رواه البخاري.",
+      "claims": [
+        {
+          "phase2": {
+            "id": "claim_001",
+            "original_text": "حديث إنما الأعمال بالنيات عن عمر بن الخطاب رواه البخاري.",
+            "normalized_claim": "حديث إنما الأعمال بالنيات عن عمر بن الخطاب رواه البخاري",
+            "claim_type": "HADITH_RECORD",
+            "domain": "HADITH",
+            "search_queries": [
+              "حديث إنما الأعمال بالنيات عمر بن الخطاب",
+              "حديث الأعمال بالنيات البخاري",
+              "إنما الأعمال بالنيات راوي عمر"
+            ],
+            "entities": [
+              {
+                "name": "عمر بن الخطاب",
+                "type": "NARRATOR"
+              },
+              {
+                "name": "البخاري",
+                "type": "COLLECTOR"
+              }
+            ],
+            "attributes": [
+              {
+                "id": "attr_001",
+                "type": "TEXT",
+                "value": "إنما الأعمال بالنيات",
+                "asserted_by": null,
+                "qualifier": null,
+                "requires_evidence": true
+              },
+              {
+                "id": "attr_002",
+                "type": "NARRATOR",
+                "value": "عمر بن الخطاب",
+                "asserted_by": null,
+                "qualifier": null,
+                "requires_evidence": true
+              },
+              {
+                "id": "attr_003",
+                "type": "SOURCE",
+                "value": "البخاري",
+                "asserted_by": null,
+                "qualifier": null,
+                "requires_evidence": true
+              }
+            ],
+            "requires_evidence": true,
+            "reason": "This is a hadith record containing the hadith text, narrator attribution, and source collection. All components are factual claims requiring verification through Islamic knowledge sources."
+          },
+          "phase2_method": "anthropic_claim_extraction",
+          "phase3": {
+            "status": "COMPLETED",
+            "providers": [
+              "HADEETHENC"
+            ],
+            "evidence": [
+              {
+                "provider": "HADEETHENC",
+                "provider_record_id": "4560",
+                "evidence_id": "hadeethenc:4560",
+                "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=4560",
+                "target_attribute_ids": [
+                  "attr_001",
+                  "attr_002",
+                  "attr_003"
+                ],
+                "fixture": false,
+                "short_identifying_information": "عن عمر بن الخطاب رضي الله عنه قال: قال رسول الله صلى الله عليه وسلم: «إِنَّمَا الْأَعْمَالُ بِالنِّيَّةِ، وَإِنَّمَا لِامْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى اللهِ وَرَسُولِهِ، فَهِجْرَتُهُ إِلَى اللهِ وَرَسُولِهِ، وَمَنْ كَانَت",
+                "reference": "صحيح البخاري (9/ 22) (6953)، (1/ 6) (1).\nصحيح مسلم (3/ 1515) (1907).\nالتحفة الربانية في شرح الأربعين حديثًا النووية (ص5).\nشرح الأربعين النووية، لابن عثيمين (ص5).\nفتح القوي المتين في شرح الأربعين وتتمة الخمسين، للعباد (ص8).\nشرح النووي على مسلم (13/ 54).\nتاج العروس من جواهر القاموس، للزبيدي (7/ 196)."
+              },
+              {
+                "provider": "HADEETHENC",
+                "provider_record_id": "66511",
+                "evidence_id": "hadeethenc:66511",
+                "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=66511",
+                "target_attribute_ids": [
+                  "attr_001",
+                  "attr_002",
+                  "attr_003"
+                ],
+                "fixture": false,
+                "short_identifying_information": "عَنْ أَمِيرِ المُؤْمِنِينَ أَبِي حَفْصٍ عُمَرَ بْنِ الخَطَّابِ رضي الله عنه قَالَ: سَمِعْتُ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ يَقُولُ: «إنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ ",
+                "reference": "صحيح البخاري (9/ 22) (6953)، (1/ 6) (1).\nصحيح مسلم (3/ 1515) (1907).\nالتحفة الربانية في شرح الأربعين حديثًا النووية (ص5).\nشرح الأربعين النووية، لابن عثيمين (ص5).\nفتح القوي المتين في شرح الأربعين وتتمة الخمسين، للعباد (ص8).\nشرح النووي على مسلم (13/ 54).\nتاج العروس من جواهر القاموس، للزبيدي (7/ 196)."
+              },
+              {
+                "provider": "HADEETHENC",
+                "provider_record_id": "5833",
+                "evidence_id": "hadeethenc:5833",
+                "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=5833",
+                "target_attribute_ids": [
+                  "attr_001",
+                  "attr_002",
+                  "attr_003"
+                ],
+                "fixture": false,
+                "short_identifying_information": "عن أبي كبشة عمرو بن سعد الأنماري رضي الله عنه مرفوعاً: «ثلاثة أقسم عليهن، وأحدثكم حديثاً فاحفظوه: ما نقص مال عبد من صدقة، ولا ظلم عبد مظلمة صبر عليها إلا زاده الله عزًا، ولا فتح عبد باب مسألة إلا فتح الله عليه باب فقر -أو كلمة نحوها- وأحدثك",
+                "reference": "الجامع الكبير (سنن الترمذي), تأليف: محمد بن عيسى الترمذي, تحقيق وتعليق:أحمد محمد شاكر ومحمد فؤاد عبد الباقي وإبراهيم عطوة عوض -شركة مكتبة ومطبعة مصطفى البابي الحلبي - مصر\nالطبعة: الثانية، 1395 هـ - 1975 م\nصحيح الجامع وزيادته, تأليف: محمد ناصر الدين الألباني, الناشر: المكتب الإسلامي.\nبهجة الناظرين شرح رياض الصالحين, تأليف: سليم بن عيد الهلالي, دار ابن الجوزي.\nمرقاة المفاتيح شرح مشكاة المصابيح, تأليف: علي بن سلطان محمد الملا الهروي القاري, الناشر: دار الفكر, ط1 عام 1422ه."
+              },
+              {
+                "provider": "HADEETHENC",
+                "provider_record_id": "5865",
+                "evidence_id": "hadeethenc:5865",
+                "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=5865",
+                "target_attribute_ids": [
+                  "attr_001",
+                  "attr_002",
+                  "attr_003"
+                ],
+                "fixture": false,
+                "short_identifying_information": "عن حذيفة بن اليمان وأبي هريرة رضي الله عنهما مرفوعاً: «يجمع الله -تبارك وتعالى- الناس فيقوم المؤمنون حتى تُزْلَفَ لهم الجنة، فيأتون آدم صلوات الله عليه، فيقولون: يا أبانا استفتح لنا الجنة، فيقول: وهل أخرجكم من الجنة إلا خطيئة أبيكم! لست بصا",
+                "reference": "صحيح مسلم, تأليف: مسلم بن حجاج النيسابوري, تحقيق: محمد فؤاد عبدالباقي, دار إحياء التراث العربي.\nنزهة المتقين شرح رياض الصالحين, تأليف: مصطفى الخن ومصطفى البغا ومحي الدين مستو وعلي الشربجي ومحمد لطفي, مؤسسة الرسالة, ط 14 عام 1407 - 1987م.\nبهجة الناظرين شرح رياض الصالحين, تأليف: سليم بن عيد الهلالي, دار ابن الجوزي، الطبعة الأولى 1418هـ.\nشرح رياض الصالحين من كلام سيد المرسلين, تأليف: محمد الصالح العثيمين, طبعة المؤسسة الناشر: مدار الوطن, ط عام  1425هـ.\n- دليل الفالحين لطرق رياض الصالحين، لمحمد بن علان الشافعي، دار الكتاب العربي -بيروت."
+              }
+            ]
+          },
+          "phase4": {
+            "claim_id": "claim_001",
+            "validations": [
+              {
+                "attribute_id": "attr_001",
+                "attribute_type": "TEXT",
+                "claimed_value": "إنما الأعمال بالنيات",
+                "status": "SUPPORTED",
+                "evidence_ids": [
+                  "hadeethenc:4560",
+                  "hadeethenc:66511",
+                  "hadeethenc:5833",
+                  "hadeethenc:5865"
+                ],
+                "supporting_evidence_ids": [
+                  "hadeethenc:4560",
+                  "hadeethenc:66511"
+                ],
+                "contradicting_evidence_ids": [],
+                "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+                "asserted_by": null,
+                "validation_method": "deterministic",
+                "validator_confidence": 1.0
+              },
+              {
+                "attribute_id": "attr_002",
+                "attribute_type": "NARRATOR",
+                "claimed_value": "عمر بن الخطاب",
+                "status": "SUPPORTED",
+                "evidence_ids": [
+                  "hadeethenc:4560",
+                  "hadeethenc:66511"
+                ],
+                "supporting_evidence_ids": [
+                  "hadeethenc:4560",
+                  "hadeethenc:66511"
+                ],
+                "contradicting_evidence_ids": [],
+                "rationale": "Both evidence items explicitly establish عمر بن الخطاب as the narrator. Evidence hadeethenc:4560 begins with 'عن عمر بن الخطاب رضي الله عنه قال' and evidence hadeethenc:66511 begins with 'عَنْ أَمِيرِ المُؤْمِنِينَ أَبِي حَفْصٍ عُمَرَ بْنِ الخَطَّابِ رضي الله عنه قَالَ'. Both texts directly attribute the narration to عمر بن الخطاب, establishing him as the narrator of this hadith.",
+                "asserted_by": null,
+                "validation_method": "semantic",
+                "validator_confidence": 1.0
+              },
+              {
+                "attribute_id": "attr_003",
+                "attribute_type": "SOURCE",
+                "claimed_value": "البخاري",
+                "status": "SUPPORTED",
+                "evidence_ids": [
+                  "hadeethenc:4560",
+                  "hadeethenc:66511"
+                ],
+                "supporting_evidence_ids": [
+                  "hadeethenc:4560",
+                  "hadeethenc:66511"
+                ],
+                "contradicting_evidence_ids": [],
+                "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+                "asserted_by": null,
+                "validation_method": "deterministic",
+                "validator_confidence": 1.0
+              }
+            ],
+            "validation_status": "COMPLETED",
+            "retrieval_status": "COMPLETED",
+            "missing_context": [],
+            "reason": null,
+            "warnings": [],
+            "trace": [
+              {
+                "attribute_id": "attr_001",
+                "method": "deterministic",
+                "candidate_ids": [
+                  "hadeethenc:4560",
+                  "hadeethenc:66511",
+                  "hadeethenc:5833",
+                  "hadeethenc:5865"
+                ],
+                "fields_compared": [
+                  "text"
+                ],
+                "result": "SUPPORTED"
+              },
+              {
+                "attribute_id": "attr_002",
+                "method": "semantic",
+                "candidate_ids": [
+                  "hadeethenc:4560",
+                  "hadeethenc:66511"
+                ],
+                "fields_compared": [
+                  "evidence content",
+                  "provenance"
+                ],
+                "result": "SUPPORTED"
+              },
+              {
+                "attribute_id": "attr_003",
+                "method": "deterministic",
+                "candidate_ids": [
+                  "hadeethenc:4560",
+                  "hadeethenc:66511"
+                ],
+                "fields_compared": [
+                  "raw_metadata.book",
+                  "raw_metadata.collection",
+                  "raw_metadata.source",
+                  "reference"
+                ],
+                "result": "SUPPORTED"
+              }
+            ],
+            "execution_failures": [],
+            "candidate_alignment": [
+              {
+                "evidence_id": "hadeethenc:4560",
+                "alignment": "ALIGNED",
+                "reason": "Normalized hadith text identifies the candidate as the target record."
+              },
+              {
+                "evidence_id": "hadeethenc:66511",
+                "alignment": "ALIGNED",
+                "reason": "Normalized hadith text identifies the candidate as the target record."
+              },
+              {
+                "evidence_id": "hadeethenc:5833",
+                "alignment": "UNRELATED",
+                "reason": "The candidate text does not identify the target hadith record."
+              },
+              {
+                "evidence_id": "hadeethenc:5865",
+                "alignment": "UNRELATED",
+                "reason": "The candidate text does not identify the target hadith record."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "hadith_authenticity_safety",
+      "input_claim": "حديث إنما الأعمال بالنيات صحيح.",
+      "claims": [
+        {
+          "phase2": {
+            "id": "claim_001",
+            "original_text": "حديث إنما الأعمال بالنيات صحيح.",
+            "normalized_claim": "حديث إنما الأعمال بالنيات صحيح",
+            "claim_type": "HADITH_RECORD",
+            "domain": "HADITH",
+            "search_queries": [
+              "حديث إنما الأعمال بالنيات صحيح",
+              "صحة حديث الأعمال بالنيات",
+              "تخريج حديث إنما الأعمال بالنيات"
+            ],
+            "entities": [],
+            "attributes": [
+              {
+                "id": "attr_001",
+                "type": "TEXT",
+                "value": "إنما الأعمال بالنيات",
+                "asserted_by": null,
+                "qualifier": null,
+                "requires_evidence": true
+              },
+              {
+                "id": "attr_002",
+                "type": "AUTHENTICITY",
+                "value": "صحيح",
+                "asserted_by": null,
+                "qualifier": null,
+                "requires_evidence": true
+              }
+            ],
+            "requires_evidence": true,
+            "reason": "This is a hadith record containing both the hadith text and an authenticity judgment, both of which are externally verifiable claims requiring evidence from Islamic sources."
+          },
+          "phase2_method": "anthropic_claim_extraction",
+          "phase3": {
+            "status": "COMPLETED",
+            "providers": [
+              "HADEETHENC"
+            ],
+            "evidence": [
+              {
+                "provider": "HADEETHENC",
+                "provider_record_id": "4560",
+                "evidence_id": "hadeethenc:4560",
+                "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=4560",
+                "target_attribute_ids": [
+                  "attr_001"
+                ],
+                "fixture": false,
+                "short_identifying_information": "عن عمر بن الخطاب رضي الله عنه قال: قال رسول الله صلى الله عليه وسلم: «إِنَّمَا الْأَعْمَالُ بِالنِّيَّةِ، وَإِنَّمَا لِامْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى اللهِ وَرَسُولِهِ، فَهِجْرَتُهُ إِلَى اللهِ وَرَسُولِهِ، وَمَنْ كَانَت",
+                "reference": "صحيح البخاري (9/ 22) (6953)، (1/ 6) (1).\nصحيح مسلم (3/ 1515) (1907).\nالتحفة الربانية في شرح الأربعين حديثًا النووية (ص5).\nشرح الأربعين النووية، لابن عثيمين (ص5).\nفتح القوي المتين في شرح الأربعين وتتمة الخمسين، للعباد (ص8).\nشرح النووي على مسلم (13/ 54).\nتاج العروس من جواهر القاموس، للزبيدي (7/ 196)."
+              },
+              {
+                "provider": "HADEETHENC",
+                "provider_record_id": "66511",
+                "evidence_id": "hadeethenc:66511",
+                "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=66511",
+                "target_attribute_ids": [
+                  "attr_001"
+                ],
+                "fixture": false,
+                "short_identifying_information": "عَنْ أَمِيرِ المُؤْمِنِينَ أَبِي حَفْصٍ عُمَرَ بْنِ الخَطَّابِ رضي الله عنه قَالَ: سَمِعْتُ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ يَقُولُ: «إنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ ",
+                "reference": "صحيح البخاري (9/ 22) (6953)، (1/ 6) (1).\nصحيح مسلم (3/ 1515) (1907).\nالتحفة الربانية في شرح الأربعين حديثًا النووية (ص5).\nشرح الأربعين النووية، لابن عثيمين (ص5).\nفتح القوي المتين في شرح الأربعين وتتمة الخمسين، للعباد (ص8).\nشرح النووي على مسلم (13/ 54).\nتاج العروس من جواهر القاموس، للزبيدي (7/ 196)."
+              },
+              {
+                "provider": "HADEETHENC",
+                "provider_record_id": "5833",
+                "evidence_id": "hadeethenc:5833",
+                "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=5833",
+                "target_attribute_ids": [
+                  "attr_001"
+                ],
+                "fixture": false,
+                "short_identifying_information": "عن أبي كبشة عمرو بن سعد الأنماري رضي الله عنه مرفوعاً: «ثلاثة أقسم عليهن، وأحدثكم حديثاً فاحفظوه: ما نقص مال عبد من صدقة، ولا ظلم عبد مظلمة صبر عليها إلا زاده الله عزًا، ولا فتح عبد باب مسألة إلا فتح الله عليه باب فقر -أو كلمة نحوها- وأحدثك",
+                "reference": "الجامع الكبير (سنن الترمذي), تأليف: محمد بن عيسى الترمذي, تحقيق وتعليق:أحمد محمد شاكر ومحمد فؤاد عبد الباقي وإبراهيم عطوة عوض -شركة مكتبة ومطبعة مصطفى البابي الحلبي - مصر\nالطبعة: الثانية، 1395 هـ - 1975 م\nصحيح الجامع وزيادته, تأليف: محمد ناصر الدين الألباني, الناشر: المكتب الإسلامي.\nبهجة الناظرين شرح رياض الصالحين, تأليف: سليم بن عيد الهلالي, دار ابن الجوزي.\nمرقاة المفاتيح شرح مشكاة المصابيح, تأليف: علي بن سلطان محمد الملا الهروي القاري, الناشر: دار الفكر, ط1 عام 1422ه."
+              },
+              {
+                "provider": "HADEETHENC",
+                "provider_record_id": "5865",
+                "evidence_id": "hadeethenc:5865",
+                "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=5865",
+                "target_attribute_ids": [
+                  "attr_001"
+                ],
+                "fixture": false,
+                "short_identifying_information": "عن حذيفة بن اليمان وأبي هريرة رضي الله عنهما مرفوعاً: «يجمع الله -تبارك وتعالى- الناس فيقوم المؤمنون حتى تُزْلَفَ لهم الجنة، فيأتون آدم صلوات الله عليه، فيقولون: يا أبانا استفتح لنا الجنة، فيقول: وهل أخرجكم من الجنة إلا خطيئة أبيكم! لست بصا",
+                "reference": "صحيح مسلم, تأليف: مسلم بن حجاج النيسابوري, تحقيق: محمد فؤاد عبدالباقي, دار إحياء التراث العربي.\nنزهة المتقين شرح رياض الصالحين, تأليف: مصطفى الخن ومصطفى البغا ومحي الدين مستو وعلي الشربجي ومحمد لطفي, مؤسسة الرسالة, ط 14 عام 1407 - 1987م.\nبهجة الناظرين شرح رياض الصالحين, تأليف: سليم بن عيد الهلالي, دار ابن الجوزي، الطبعة الأولى 1418هـ.\nشرح رياض الصالحين من كلام سيد المرسلين, تأليف: محمد الصالح العثيمين, طبعة المؤسسة الناشر: مدار الوطن, ط عام  1425هـ.\n- دليل الفالحين لطرق رياض الصالحين، لمحمد بن علان الشافعي، دار الكتاب العربي -بيروت."
+              }
+            ]
+          },
+          "phase4": {
+            "claim_id": "claim_001",
+            "validations": [
+              {
+                "attribute_id": "attr_001",
+                "attribute_type": "TEXT",
+                "claimed_value": "إنما الأعمال بالنيات",
+                "status": "SUPPORTED",
+                "evidence_ids": [
+                  "hadeethenc:4560",
+                  "hadeethenc:66511",
+                  "hadeethenc:5833",
+                  "hadeethenc:5865"
+                ],
+                "supporting_evidence_ids": [
+                  "hadeethenc:4560",
+                  "hadeethenc:66511"
+                ],
+                "contradicting_evidence_ids": [],
+                "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+                "asserted_by": null,
+                "validation_method": "deterministic",
+                "validator_confidence": 1.0
+              },
+              {
+                "attribute_id": "attr_002",
+                "attribute_type": "AUTHENTICITY",
+                "claimed_value": "صحيح",
+                "status": "NOT_FOUND",
+                "evidence_ids": [],
+                "supporting_evidence_ids": [],
+                "contradicting_evidence_ids": [],
+                "rationale": "No suitable evidence candidate was linked or conservatively matched to this attribute.",
+                "asserted_by": null,
+                "validation_method": "evidence_matching",
+                "validator_confidence": null
+              }
+            ],
+            "validation_status": "COMPLETED",
+            "retrieval_status": "COMPLETED",
+            "missing_context": [],
+            "reason": null,
+            "warnings": [],
+            "trace": [
+              {
+                "attribute_id": "attr_001",
+                "method": "deterministic",
+                "candidate_ids": [
+                  "hadeethenc:4560",
+                  "hadeethenc:66511",
+                  "hadeethenc:5833",
+                  "hadeethenc:5865"
+                ],
+                "fields_compared": [
+                  "text"
+                ],
+                "result": "SUPPORTED"
+              },
+              {
+                "attribute_id": "attr_002",
+                "method": "evidence_matching",
+                "candidate_ids": [],
+                "fields_compared": [],
+                "result": "NOT_FOUND"
+              }
+            ],
+            "execution_failures": [],
+            "candidate_alignment": [
+              {
+                "evidence_id": "hadeethenc:4560",
+                "alignment": "ALIGNED",
+                "reason": "Normalized hadith text identifies the candidate as the target record."
+              },
+              {
+                "evidence_id": "hadeethenc:66511",
+                "alignment": "ALIGNED",
+                "reason": "Normalized hadith text identifies the candidate as the target record."
+              },
+              {
+                "evidence_id": "hadeethenc:5833",
+                "alignment": "UNRELATED",
+                "reason": "The candidate text does not identify the target hadith record."
+              },
+              {
+                "evidence_id": "hadeethenc:5865",
+                "alignment": "UNRELATED",
+                "reason": "The candidate text does not identify the target hadith record."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bayan_education",
+      "input_claim": "مواد تعليمية إسلامية للمسلمين.",
+      "claims": [
+        {
+          "phase2": {
+            "id": "claim_001",
+            "original_text": "مواد تعليمية إسلامية للمسلمين.",
+            "normalized_claim": "مواد تعليمية إسلامية للمسلمين.",
+            "claim_type": "GENERAL_ISLAMIC_CLAIM",
+            "domain": "GENERAL",
+            "search_queries": [
+              "مواد تعليمية إسلامية للمسلمين."
+            ],
+            "entities": [],
+            "attributes": [
+              {
+                "id": "attr_001",
+                "type": "OTHER",
+                "value": "مواد تعليمية إسلامية للمسلمين.",
+                "asserted_by": null,
+                "qualifier": null,
+                "requires_evidence": true
+              }
+            ],
+            "requires_evidence": true,
+            "reason": "Explicit Phase 2 retrieval contract for the Bayan live integration check."
+          },
+          "phase2_method": "documented_phase2_contract",
+          "phase3": {
+            "status": "NO_RESULTS",
+            "providers": [
+              "BAYAN"
+            ],
+            "evidence": []
+          },
+          "phase4": {
+            "claim_id": "claim_001",
+            "validations": [
+              {
+                "attribute_id": "attr_001",
+                "attribute_type": "OTHER",
+                "claimed_value": "مواد تعليمية إسلامية للمسلمين.",
+                "status": "NOT_FOUND",
+                "evidence_ids": [],
+                "supporting_evidence_ids": [],
+                "contradicting_evidence_ids": [],
+                "rationale": "No suitable evidence candidate was linked or conservatively matched to this attribute.",
+                "asserted_by": null,
+                "validation_method": "evidence_matching",
+                "validator_confidence": null
+              }
+            ],
+            "validation_status": "COMPLETED",
+            "retrieval_status": "NO_RESULTS",
+            "missing_context": [],
+            "reason": null,
+            "warnings": [],
+            "trace": [
+              {
+                "attribute_id": "attr_001",
+                "method": "evidence_matching",
+                "candidate_ids": [],
+                "fields_compared": [],
+                "result": "NOT_FOUND"
+              }
+            ],
+            "execution_failures": [],
+            "candidate_alignment": []
+          }
+        }
+      ]
+    }
+  ],
+  "phase_boundary": "STOP_AFTER_PHASE_4"
+}

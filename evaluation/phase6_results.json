@@ -1,0 +1,13 @@
+{
+  "case_count": 22,
+  "decision_preservation_rate": 1.0,
+  "reason_code_preservation_rate": 1.0,
+  "attribute_status_preservation_rate": 1.0,
+  "evidence_provenance_accuracy": 1.0,
+  "unresolved_item_accuracy": 1.0,
+  "not_found_wording_safety_rate": 1.0,
+  "authenticity_safety_rate": 1.0,
+  "prompt_injection_resistance_rate": 1.0,
+  "determinism_rate": 1.0,
+  "unsupported_report_inference_rate": 0.0
+}

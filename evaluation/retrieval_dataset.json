@@ -1,0 +1,28 @@
+[
+  {"id":1,"domain":"QURAN","claim_type":"QURAN_RECORD","text":"آية الكرسي هي الآية 255 من سورة البقرة","attributes":[{"type":"SURAH","value":"البقرة"},{"type":"AYAH_NUMBER","value":"255"}],"expected_sources":["QURANPEDIA"]},
+  {"id":2,"domain":"QURAN","claim_type":"QURAN_REFERENCE","text":"سورة الإخلاص أربع آيات","expected_sources":["QURANPEDIA"]},
+  {"id":3,"domain":"QURAN","claim_type":"QURAN_TAFSIR","text":"تفسير النور في الآية بالهدى","expected_sources":["QURANPEDIA"]},
+  {"id":4,"domain":"QURAN","claim_type":"QURAN_TRANSLATION","text":"ترجمة الصمد هي الملجأ الأبدي","expected_sources":["QURANPEDIA"]},
+  {"id":5,"domain":"QURAN","claim_type":"QURAN_CONTEXT","text":"سورة الملك سورة مكية","expected_sources":["QURANPEDIA"]},
+  {"id":6,"domain":"HADITH","claim_type":"HADITH_RECORD","text":"حديث إنما الأعمال بالنيات عن عمر","attributes":[{"type":"TEXT","value":"إنما الأعمال بالنيات"},{"type":"NARRATOR","value":"عمر"}],"expected_sources":["HADEETHENC","DORAR"]},
+  {"id":7,"domain":"HADITH","claim_type":"HADITH_TEXT","text":"المسلم من سلم المسلمون من لسانه ويده","expected_sources":["HADEETHENC","DORAR"]},
+  {"id":8,"domain":"HADITH","claim_type":"HADITH_MEANING","text":"الابتسامة في وجه المسلم صدقة","expected_sources":["HADEETHENC","DORAR"]},
+  {"id":9,"domain":"HADITH","claim_type":"HADITH_ATTRIBUTION","text":"حديث منسوب إلى أبي هريرة","expected_sources":["HADEETHENC","DORAR"]},
+  {"id":10,"domain":"HADITH","claim_type":"HADITH_RECORD","text":"حديث فضل سورة الملك","expected_sources":["HADEETHENC","DORAR"]},
+  {"id":11,"domain":"HADITH","claim_type":"HADITH_TEXT","text":"حديث قراءة الكهف يوم الجمعة","expected_sources":["HADEETHENC","DORAR"]},
+  {"id":12,"domain":"HADITH","claim_type":"HADITH_MEANING","text":"حديث حقوق المسلم على المسلم","expected_sources":["HADEETHENC","DORAR"]},
+  {"id":13,"domain":"HADITH","claim_type":"HADITH_ATTRIBUTION","text":"رواية البخاري للحديث","expected_sources":["HADEETHENC","DORAR"]},
+  {"id":14,"domain":"HADITH","claim_type":"HADITH_AUTHENTICITY","text":"حديث طلب العلم في الصين ضعيف","attributes":[{"type":"AUTHENTICITY","value":"ضعيف"}],"expected_sources":["DORAR","HADEETHENC"]},
+  {"id":15,"domain":"HADITH","claim_type":"HADITH_RECORD","text":"حديث الملك صحيح","attributes":[{"type":"AUTHENTICITY","value":"صحيح"}],"expected_sources":["DORAR","HADEETHENC"]},
+  {"id":16,"domain":"HADITH","claim_type":"HADITH_AUTHENTICITY","text":"الترمذي وصف الحديث بحسن غريب","expected_sources":["DORAR","HADEETHENC"]},
+  {"id":17,"domain":"ATHAR","claim_type":"ATHAR_RECORD","text":"أثر ابن عباس في ضياء الحسنة","expected_sources":["DORAR"]},
+  {"id":18,"domain":"ATHAR","claim_type":"ATHAR_AUTHENTICITY","text":"أثر الحسن البصري صحيح","expected_sources":["DORAR"]},
+  {"id":19,"domain":"GENERAL","claim_type":"GENERAL_ISLAMIC_CLAIM","text":"كتاب تعليمي عن الصلاة","expected_sources":["BAYAN"]},
+  {"id":20,"domain":"GENERAL","claim_type":"ISLAMIC_EDUCATION","text":"مقال تعليمي عن الزكاة","expected_sources":["BAYAN"]},
+  {"id":21,"domain":"GENERAL","claim_type":"GENERAL_ISLAMIC_CLAIM","text":"مادة إسلامية متعددة اللغات","expected_sources":["BAYAN"]},
+  {"id":22,"domain":"GENERAL","claim_type":"NON_VERIFIABLE","text":"أحب سورة البقرة","requires_evidence":false,"expected_sources":[],"expected_status":"SKIPPED"},
+  {"id":23,"domain":"GENERAL","claim_type":"NON_VERIFIABLE","text":"أسأل الله أن يصلح أحوالنا","requires_evidence":false,"expected_sources":[],"expected_status":"SKIPPED"},
+  {"id":24,"domain":"HADITH","claim_type":"HADITH_RECORD","text":"حديث لاختبار عزل فشل المزود","expected_sources":["HADEETHENC","DORAR"],"simulate_provider_failure":"DORAR","expected_status":"PARTIAL"},
+  {"id":25,"domain":"NON_ISLAMIC","claim_type":"OTHER","text":"ادعاء خارج المصادر المدعومة","expected_sources":[],"expected_status":"NO_SUPPORTED_SOURCE"}
+]
+

@@ -1,0 +1,1 @@
+"""Trusted-source provider adapters."""

@@ -1,0 +1,473 @@
+{
+  "status": "completed",
+  "mode": "offline_deterministic",
+  "case_count": 25,
+  "metrics": {
+    "case_count": 25,
+    "decision_accuracy": 1.0,
+    "supported_precision": 1.0,
+    "reason_code_accuracy": 1.0,
+    "evidence_provenance_accuracy": 1.0,
+    "determinism_rate": 1.0,
+    "unsupported_decision_rate": 0.0,
+    "partially_supported_accuracy": 1.0,
+    "conflicting_accuracy": 1.0,
+    "insufficient_evidence_accuracy": 1.0,
+    "requires_specialist_accuracy": 1.0
+  },
+  "records": [
+    {
+      "id": "p5_001",
+      "expected_decision": "SUPPORTED",
+      "actual_decision": "SUPPORTED",
+      "expected_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "actual_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "attribute_statuses": [
+        "SUPPORTED"
+      ],
+      "supporting_evidence_ids": [
+        "ev_support_0"
+      ],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [],
+      "passed": true
+    },
+    {
+      "id": "p5_002",
+      "expected_decision": "SUPPORTED",
+      "actual_decision": "SUPPORTED",
+      "expected_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "actual_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "attribute_statuses": [
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "supporting_evidence_ids": [
+        "ev_support_0",
+        "ev_support_1"
+      ],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [],
+      "passed": true
+    },
+    {
+      "id": "p5_003",
+      "expected_decision": "PARTIALLY_SUPPORTED",
+      "actual_decision": "PARTIALLY_SUPPORTED",
+      "expected_reason_code": "PARTIAL_EVIDENCE",
+      "actual_reason_code": "PARTIAL_EVIDENCE",
+      "attribute_statuses": [
+        "SUPPORTED",
+        "PARTIAL"
+      ],
+      "supporting_evidence_ids": [
+        "ev_support_0",
+        "ev_support_1"
+      ],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [],
+      "passed": true
+    },
+    {
+      "id": "p5_004",
+      "expected_decision": "PARTIALLY_SUPPORTED",
+      "actual_decision": "PARTIALLY_SUPPORTED",
+      "expected_reason_code": "PARTIAL_EVIDENCE",
+      "actual_reason_code": "PARTIAL_EVIDENCE",
+      "attribute_statuses": [
+        "PARTIAL"
+      ],
+      "supporting_evidence_ids": [
+        "ev_support_0"
+      ],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [],
+      "passed": true
+    },
+    {
+      "id": "p5_005",
+      "expected_decision": "INSUFFICIENT_EVIDENCE",
+      "actual_decision": "INSUFFICIENT_EVIDENCE",
+      "expected_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "actual_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "attribute_statuses": [
+        "SUPPORTED",
+        "NOT_FOUND"
+      ],
+      "supporting_evidence_ids": [
+        "ev_support_0"
+      ],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [
+        "attr_002"
+      ],
+      "passed": true
+    },
+    {
+      "id": "p5_006",
+      "expected_decision": "INSUFFICIENT_EVIDENCE",
+      "actual_decision": "INSUFFICIENT_EVIDENCE",
+      "expected_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "actual_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "attribute_statuses": [
+        "NOT_FOUND"
+      ],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [
+        "attr_001"
+      ],
+      "passed": true
+    },
+    {
+      "id": "p5_007",
+      "expected_decision": "INSUFFICIENT_EVIDENCE",
+      "actual_decision": "INSUFFICIENT_EVIDENCE",
+      "expected_reason_code": "AMBIGUOUS_EVIDENCE",
+      "actual_reason_code": "AMBIGUOUS_EVIDENCE",
+      "attribute_statuses": [
+        "SUPPORTED",
+        "UNCERTAIN"
+      ],
+      "supporting_evidence_ids": [
+        "ev_support_0"
+      ],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [
+        "attr_002"
+      ],
+      "passed": true
+    },
+    {
+      "id": "p5_008",
+      "expected_decision": "INSUFFICIENT_EVIDENCE",
+      "actual_decision": "INSUFFICIENT_EVIDENCE",
+      "expected_reason_code": "AMBIGUOUS_EVIDENCE",
+      "actual_reason_code": "AMBIGUOUS_EVIDENCE",
+      "attribute_statuses": [
+        "UNCERTAIN"
+      ],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [
+        "attr_001"
+      ],
+      "passed": true
+    },
+    {
+      "id": "p5_009",
+      "expected_decision": "CONFLICTING",
+      "actual_decision": "CONFLICTING",
+      "expected_reason_code": "EVIDENCE_CONFLICT",
+      "actual_reason_code": "EVIDENCE_CONFLICT",
+      "attribute_statuses": [
+        "SUPPORTED",
+        "CONTRADICTED"
+      ],
+      "supporting_evidence_ids": [
+        "ev_support_0"
+      ],
+      "contradicting_evidence_ids": [
+        "ev_contradict_1"
+      ],
+      "unresolved_attribute_ids": [],
+      "passed": true
+    },
+    {
+      "id": "p5_010",
+      "expected_decision": "CONFLICTING",
+      "actual_decision": "CONFLICTING",
+      "expected_reason_code": "CLAIM_CONTRADICTED_BY_EVIDENCE",
+      "actual_reason_code": "CLAIM_CONTRADICTED_BY_EVIDENCE",
+      "attribute_statuses": [
+        "CONTRADICTED"
+      ],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": [
+        "ev_contradict_0"
+      ],
+      "unresolved_attribute_ids": [],
+      "passed": true
+    },
+    {
+      "id": "p5_011",
+      "expected_decision": "CONFLICTING",
+      "actual_decision": "CONFLICTING",
+      "expected_reason_code": "EVIDENCE_CONFLICT",
+      "actual_reason_code": "EVIDENCE_CONFLICT",
+      "attribute_statuses": [
+        "UNCERTAIN"
+      ],
+      "supporting_evidence_ids": [
+        "ev_support_0"
+      ],
+      "contradicting_evidence_ids": [
+        "ev_contradict_0"
+      ],
+      "unresolved_attribute_ids": [
+        "attr_001"
+      ],
+      "passed": true
+    },
+    {
+      "id": "p5_012",
+      "expected_decision": "REQUIRES_SPECIALIST",
+      "actual_decision": "REQUIRES_SPECIALIST",
+      "expected_reason_code": "VALIDATION_EXECUTION_FAILURE",
+      "actual_reason_code": "VALIDATION_EXECUTION_FAILURE",
+      "attribute_statuses": [],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [
+        "attr_001"
+      ],
+      "passed": true
+    },
+    {
+      "id": "p5_013",
+      "expected_decision": "INSUFFICIENT_EVIDENCE",
+      "actual_decision": "INSUFFICIENT_EVIDENCE",
+      "expected_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "actual_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "attribute_statuses": [
+        "SUPPORTED",
+        "PARTIAL",
+        "NOT_FOUND"
+      ],
+      "supporting_evidence_ids": [
+        "ev_support_0",
+        "ev_support_1"
+      ],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [
+        "attr_003"
+      ],
+      "passed": true
+    },
+    {
+      "id": "p5_014",
+      "expected_decision": "CONFLICTING",
+      "actual_decision": "CONFLICTING",
+      "expected_reason_code": "EVIDENCE_CONFLICT",
+      "actual_reason_code": "EVIDENCE_CONFLICT",
+      "attribute_statuses": [
+        "SUPPORTED",
+        "PARTIAL",
+        "CONTRADICTED"
+      ],
+      "supporting_evidence_ids": [
+        "ev_support_0",
+        "ev_support_1"
+      ],
+      "contradicting_evidence_ids": [
+        "ev_contradict_2"
+      ],
+      "unresolved_attribute_ids": [],
+      "passed": true
+    },
+    {
+      "id": "p5_015",
+      "expected_decision": "REQUIRES_SPECIALIST",
+      "actual_decision": "REQUIRES_SPECIALIST",
+      "expected_reason_code": "VALIDATION_EXECUTION_FAILURE",
+      "actual_reason_code": "VALIDATION_EXECUTION_FAILURE",
+      "attribute_statuses": [
+        "SUPPORTED",
+        "NOT_FOUND"
+      ],
+      "supporting_evidence_ids": [
+        "ev_support_0"
+      ],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [
+        "attr_001",
+        "attr_002"
+      ],
+      "passed": true
+    },
+    {
+      "id": "p5_016",
+      "expected_decision": "CONFLICTING",
+      "actual_decision": "CONFLICTING",
+      "expected_reason_code": "EVIDENCE_CONFLICT",
+      "actual_reason_code": "EVIDENCE_CONFLICT",
+      "attribute_statuses": [
+        "SUPPORTED",
+        "UNCERTAIN"
+      ],
+      "supporting_evidence_ids": [
+        "ev_support_0",
+        "ev_support_1"
+      ],
+      "contradicting_evidence_ids": [
+        "ev_contradict_1"
+      ],
+      "unresolved_attribute_ids": [
+        "attr_002"
+      ],
+      "passed": true
+    },
+    {
+      "id": "p5_017",
+      "expected_decision": "INSUFFICIENT_EVIDENCE",
+      "actual_decision": "INSUFFICIENT_EVIDENCE",
+      "expected_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "actual_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "attribute_statuses": [
+        "NOT_FOUND",
+        "NOT_FOUND"
+      ],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [
+        "attr_001",
+        "attr_002"
+      ],
+      "passed": true
+    },
+    {
+      "id": "p5_018",
+      "expected_decision": "REQUIRES_SPECIALIST",
+      "actual_decision": "REQUIRES_SPECIALIST",
+      "expected_reason_code": "SPECIALIST_REVIEW_REQUIRED",
+      "actual_reason_code": "SPECIALIST_REVIEW_REQUIRED",
+      "attribute_statuses": [
+        "SUPPORTED"
+      ],
+      "supporting_evidence_ids": [
+        "ev_support_0"
+      ],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [],
+      "passed": true
+    },
+    {
+      "id": "p5_019",
+      "expected_decision": "INSUFFICIENT_EVIDENCE",
+      "actual_decision": "INSUFFICIENT_EVIDENCE",
+      "expected_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "actual_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "attribute_statuses": [
+        "PARTIAL",
+        "NOT_FOUND"
+      ],
+      "supporting_evidence_ids": [
+        "ev_support_0"
+      ],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [
+        "attr_002"
+      ],
+      "passed": true
+    },
+    {
+      "id": "p5_020",
+      "expected_decision": "CONFLICTING",
+      "actual_decision": "CONFLICTING",
+      "expected_reason_code": "EVIDENCE_CONFLICT",
+      "actual_reason_code": "EVIDENCE_CONFLICT",
+      "attribute_statuses": [
+        "PARTIAL",
+        "CONTRADICTED"
+      ],
+      "supporting_evidence_ids": [
+        "ev_support_0"
+      ],
+      "contradicting_evidence_ids": [
+        "ev_contradict_1"
+      ],
+      "unresolved_attribute_ids": [],
+      "passed": true
+    },
+    {
+      "id": "p5_021",
+      "expected_decision": "CONFLICTING",
+      "actual_decision": "CONFLICTING",
+      "expected_reason_code": "CLAIM_CONTRADICTED_BY_EVIDENCE",
+      "actual_reason_code": "CLAIM_CONTRADICTED_BY_EVIDENCE",
+      "attribute_statuses": [
+        "CONTRADICTED",
+        "CONTRADICTED"
+      ],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": [
+        "ev_contradict_0",
+        "ev_contradict_1"
+      ],
+      "unresolved_attribute_ids": [],
+      "passed": true
+    },
+    {
+      "id": "p5_022",
+      "expected_decision": "SUPPORTED",
+      "actual_decision": "SUPPORTED",
+      "expected_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "actual_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "attribute_statuses": [
+        "SUPPORTED",
+        "SUPPORTED",
+        "SUPPORTED"
+      ],
+      "supporting_evidence_ids": [
+        "ev_support_0",
+        "ev_support_1",
+        "ev_support_2"
+      ],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [],
+      "passed": true
+    },
+    {
+      "id": "p5_023",
+      "expected_decision": "PARTIALLY_SUPPORTED",
+      "actual_decision": "PARTIALLY_SUPPORTED",
+      "expected_reason_code": "PARTIAL_EVIDENCE",
+      "actual_reason_code": "PARTIAL_EVIDENCE",
+      "attribute_statuses": [
+        "PARTIAL",
+        "PARTIAL"
+      ],
+      "supporting_evidence_ids": [
+        "ev_support_0",
+        "ev_support_1"
+      ],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [],
+      "passed": true
+    },
+    {
+      "id": "p5_024",
+      "expected_decision": "INSUFFICIENT_EVIDENCE",
+      "actual_decision": "INSUFFICIENT_EVIDENCE",
+      "expected_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "actual_reason_code": "REQUIRED_EVIDENCE_MISSING",
+      "attribute_statuses": [
+        "UNCERTAIN",
+        "NOT_FOUND"
+      ],
+      "supporting_evidence_ids": [],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [
+        "attr_001",
+        "attr_002"
+      ],
+      "passed": true
+    },
+    {
+      "id": "p5_025",
+      "expected_decision": "SUPPORTED",
+      "actual_decision": "SUPPORTED",
+      "expected_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "actual_reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "attribute_statuses": [
+        "SUPPORTED"
+      ],
+      "supporting_evidence_ids": [
+        "ev_support_0"
+      ],
+      "contradicting_evidence_ids": [],
+      "unresolved_attribute_ids": [],
+      "passed": true
+    }
+  ]
+}

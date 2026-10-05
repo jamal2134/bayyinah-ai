@@ -1,0 +1,967 @@
+{
+  "evaluation_version": "stage5.1",
+  "mode": "live",
+  "status": "COMPLETED",
+  "generated_at": "2026-10-04T17:29:54.349511+00:00",
+  "input_text": "قال الله تعالى: ﴿قُلْ هُوَ اللَّهُ أَحَدٌ﴾، وهي الآية الأولى من سورة الإخلاص. وقال النبي ﷺ: «إنما الأعمال بالنيات»، رواه البخاري عن عمر بن الخطاب.",
+  "claims": [
+    {
+      "id": "claim_001",
+      "original_text": "قال الله تعالى: ﴿قُلْ هُوَ اللَّهُ أَحَدٌ﴾، وهي الآية الأولى من سورة الإخلاص",
+      "normalized_claim": "قال الله تعالى: ﴿قُلْ هُوَ اللَّهُ أَحَدٌ﴾، وهي الآية الأولى من سورة الإخلاص",
+      "claim_type": "QURAN_RECORD",
+      "domain": "QURAN",
+      "search_queries": [
+        "قل هو الله أحد سورة الإخلاص",
+        "الآية الأولى من سورة الإخلاص",
+        "قل هو الله أحد الآية الأولى"
+      ],
+      "entities": [
+        {
+          "name": "سورة الإخلاص",
+          "type": "SURAH"
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr_001",
+          "type": "QURAN_TEXT",
+          "value": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+          "ayah_numbers": null,
+          "asserted_by": null,
+          "qualifier": null,
+          "requires_evidence": true
+        },
+        {
+          "id": "attr_002",
+          "type": "SURAH",
+          "value": "الإخلاص",
+          "ayah_numbers": null,
+          "asserted_by": null,
+          "qualifier": null,
+          "requires_evidence": true
+        },
+        {
+          "id": "attr_003",
+          "type": "AYAH_NUMBER",
+          "value": "1",
+          "ayah_numbers": [
+            1
+          ],
+          "asserted_by": null,
+          "qualifier": null,
+          "requires_evidence": true
+        }
+      ],
+      "parent_claim_id": null,
+      "relationship": null,
+      "subject_context": null,
+      "normalization_warnings": [],
+      "requires_evidence": true,
+      "reason": "This is a Quran quotation with explicit reference to surah and ayah number, forming one complete Quran record that requires verification against Quranic text."
+    },
+    {
+      "id": "claim_002",
+      "original_text": "قال النبي ﷺ: «إنما الأعمال بالنيات»، رواه البخاري عن عمر بن الخطاب",
+      "normalized_claim": "قال النبي ﷺ: «إنما الأعمال بالنيات»، رواه البخاري عن عمر بن الخطاب",
+      "claim_type": "HADITH_RECORD",
+      "domain": "HADITH",
+      "search_queries": [
+        "حديث إنما الأعمال بالنيات",
+        "إنما الأعمال بالنيات البخاري عمر",
+        "حديث النيات عمر بن الخطاب البخاري"
+      ],
+      "entities": [
+        {
+          "name": "النبي محمد",
+          "type": "PROPHET"
+        },
+        {
+          "name": "عمر بن الخطاب",
+          "type": "COMPANION"
+        },
+        {
+          "name": "البخاري",
+          "type": "HADITH_SCHOLAR"
+        }
+      ],
+      "attributes": [
+        {
+          "id": "attr_001",
+          "type": "HADITH_TEXT",
+          "value": "إنما الأعمال بالنيات",
+          "ayah_numbers": null,
+          "asserted_by": null,
+          "qualifier": null,
+          "requires_evidence": true
+        },
+        {
+          "id": "attr_002",
+          "type": "NARRATOR",
+          "value": "عمر بن الخطاب",
+          "ayah_numbers": null,
+          "asserted_by": null,
+          "qualifier": null,
+          "requires_evidence": true
+        },
+        {
+          "id": "attr_003",
+          "type": "SOURCE",
+          "value": "البخاري",
+          "ayah_numbers": null,
+          "asserted_by": null,
+          "qualifier": null,
+          "requires_evidence": true
+        }
+      ],
+      "parent_claim_id": null,
+      "relationship": null,
+      "subject_context": null,
+      "normalization_warnings": [],
+      "requires_evidence": true,
+      "reason": "This is a hadith text with narrator and source attribution, forming one complete hadith record that requires verification for text accuracy, chain of narration, and source attribution."
+    }
+  ],
+  "routing": [
+    {
+      "claim_id": "claim_001",
+      "expected_provider_family": [
+        "QURANPEDIA"
+      ],
+      "planned_sources": [
+        {
+          "provider": "QURANPEDIA",
+          "purpose": "QURAN_RETRIEVAL",
+          "priority": 1
+        }
+      ],
+      "tasks": [
+        {
+          "task_id": "task_001",
+          "claim_id": "claim_001",
+          "target_attribute_ids": [
+            "attr_001",
+            "attr_002",
+            "attr_003"
+          ],
+          "provider": "QURANPEDIA",
+          "purpose": "QURAN_RETRIEVAL",
+          "query": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+          "queries": [
+            "قُلْ هُوَ اللَّهُ أَحَدٌ",
+            "قل هو الله أحد سورة الإخلاص",
+            "الآية الأولى من سورة الإخلاص"
+          ],
+          "max_results": null,
+          "depends_on_task_id": null,
+          "dependency_evidence_id": null,
+          "execution_condition": null
+        }
+      ]
+    },
+    {
+      "claim_id": "claim_002",
+      "expected_provider_family": [
+        "DORAR_HADITH",
+        "HADEETHENC"
+      ],
+      "planned_sources": [
+        {
+          "provider": "HADEETHENC",
+          "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+          "priority": 1
+        },
+        {
+          "provider": "DORAR_HADITH",
+          "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+          "priority": 2
+        }
+      ],
+      "tasks": [
+        {
+          "task_id": "task_001",
+          "claim_id": "claim_002",
+          "target_attribute_ids": [
+            "attr_001",
+            "attr_002",
+            "attr_003"
+          ],
+          "provider": "HADEETHENC",
+          "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+          "query": "إنما الأعمال بالنيات",
+          "queries": [
+            "إنما الأعمال بالنيات",
+            "حديث إنما الأعمال بالنيات",
+            "إنما الأعمال بالنيات البخاري عمر"
+          ],
+          "max_results": null,
+          "depends_on_task_id": null,
+          "dependency_evidence_id": null,
+          "execution_condition": null
+        },
+        {
+          "task_id": "task_002",
+          "claim_id": "claim_002",
+          "target_attribute_ids": [
+            "attr_001",
+            "attr_002",
+            "attr_003"
+          ],
+          "provider": "DORAR_HADITH",
+          "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+          "query": "إنما الأعمال بالنيات",
+          "queries": [
+            "إنما الأعمال بالنيات",
+            "حديث إنما الأعمال بالنيات"
+          ],
+          "max_results": 15,
+          "depends_on_task_id": null,
+          "dependency_evidence_id": null,
+          "execution_condition": null
+        }
+      ]
+    }
+  ],
+  "retrieval": [
+    {
+      "claim_id": "claim_001",
+      "status": "COMPLETED",
+      "reason": null,
+      "providers": [
+        {
+          "provider": "QURANPEDIA",
+          "success": true,
+          "query_attempts": [
+            {
+              "query": "112:1",
+              "attempt": 1,
+              "duration_ms": 473.38,
+              "result_count": 1,
+              "success": true,
+              "endpoint": "/mushafs/1/112/1",
+              "http_status": 200,
+              "parameters": {},
+              "parser_success": true
+            }
+          ],
+          "candidate_count": 1,
+          "candidates": [
+            {
+              "evidence_id": "quranpedia:112:1",
+              "provider": "QURANPEDIA",
+              "evidence_type": "QURAN_AYAH",
+              "provider_record_id": "6222",
+              "target_attribute_ids": [
+                "attr_001",
+                "attr_002",
+                "attr_003"
+              ],
+              "source_url": "https://api.quranpedia.net/v1/mushafs/1/112/1",
+              "parent_evidence_id": null,
+              "fragment_id": null,
+              "fragment_label": null,
+              "title": null,
+              "text": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+              "structured_fields": {}
+            }
+          ],
+          "error": null
+        }
+      ]
+    },
+    {
+      "claim_id": "claim_002",
+      "status": "PARTIAL",
+      "reason": null,
+      "providers": [
+        {
+          "provider": "HADEETHENC",
+          "success": true,
+          "query_attempts": [
+            {
+              "query": "إنما الأعمال بالنيات",
+              "attempt": 1,
+              "duration_ms": 554.11,
+              "result_count": 4,
+              "success": true,
+              "endpoint": "/hadeeths/search/",
+              "http_status": 200,
+              "parameters": {
+                "phrase": "إنما الأعمال بالنيات",
+                "language": "ar"
+              },
+              "parser_success": true
+            },
+            {
+              "query": "4560",
+              "attempt": 2,
+              "duration_ms": 276.11,
+              "result_count": 1,
+              "success": true,
+              "endpoint": "/hadeeths/one/",
+              "http_status": 200,
+              "parameters": {
+                "language": "ar",
+                "id": "4560"
+              },
+              "parser_success": true
+            },
+            {
+              "query": "66511",
+              "attempt": 3,
+              "duration_ms": 262.04,
+              "result_count": 1,
+              "success": true,
+              "endpoint": "/hadeeths/one/",
+              "http_status": 200,
+              "parameters": {
+                "language": "ar",
+                "id": "66511"
+              },
+              "parser_success": true
+            },
+            {
+              "query": "5833",
+              "attempt": 4,
+              "duration_ms": 244.47,
+              "result_count": 1,
+              "success": true,
+              "endpoint": "/hadeeths/one/",
+              "http_status": 200,
+              "parameters": {
+                "language": "ar",
+                "id": "5833"
+              },
+              "parser_success": true
+            },
+            {
+              "query": "5865",
+              "attempt": 5,
+              "duration_ms": 242.22,
+              "result_count": 1,
+              "success": true,
+              "endpoint": "/hadeeths/one/",
+              "http_status": 200,
+              "parameters": {
+                "language": "ar",
+                "id": "5865"
+              },
+              "parser_success": true
+            }
+          ],
+          "candidate_count": 4,
+          "candidates": [
+            {
+              "evidence_id": "hadeethenc:4560",
+              "provider": "HADEETHENC",
+              "evidence_type": "HADITH",
+              "provider_record_id": "4560",
+              "target_attribute_ids": [
+                "attr_001",
+                "attr_002",
+                "attr_003"
+              ],
+              "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=4560",
+              "parent_evidence_id": null,
+              "fragment_id": null,
+              "fragment_label": null,
+              "title": "إنما الأعمال بالنيات، وإنما لكل امرئ ما نوى",
+              "text": "عن عمر بن الخطاب رضي الله عنه قال: قال رسول الله صلى الله عليه وسلم: «إِنَّمَا الْأَعْمَالُ بِالنِّيَّةِ، وَإِنَّمَا لِامْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى اللهِ وَرَسُولِهِ، فَهِجْرَتُهُ إِلَى اللهِ وَرَسُولِهِ، وَمَنْ كَانَتْ هِجْرَتُهُ لِدُنْيَا يُصِيبُهَا أَوِ امْرَأَةٍ يَتَزَوَّجُهَا، فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ».\nوفي لفظ للبخاري: «إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى».",
+              "structured_fields": {}
+            },
+            {
+              "evidence_id": "hadeethenc:66511",
+              "provider": "HADEETHENC",
+              "evidence_type": "HADITH",
+              "provider_record_id": "66511",
+              "target_attribute_ids": [
+                "attr_001",
+                "attr_002",
+                "attr_003"
+              ],
+              "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=66511",
+              "parent_evidence_id": null,
+              "fragment_id": null,
+              "fragment_label": null,
+              "title": "إنما الأعمال بالنيات، وإنما لكل امرئ ما نوى",
+              "text": "عَنْ أَمِيرِ المُؤْمِنِينَ أَبِي حَفْصٍ عُمَرَ بْنِ الخَطَّابِ رضي الله عنه قَالَ: سَمِعْتُ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ يَقُولُ: «إنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إلَى اللَّهِ وَرَسُولِهِ فَهِجْرَتُهُ إلَى اللَّهِ وَرَسُولِهِ، وَمَنْ كَانَتْ هِجْرَتُهُ لِدُنْيَا يُصِيبُهَا أَوْ امْرَأَةٍ يَنْكِحُهَا فَهِجْرَتُهُ إلَى مَا هَاجَرَ إلَيْهِ».",
+              "structured_fields": {}
+            },
+            {
+              "evidence_id": "hadeethenc:5833",
+              "provider": "HADEETHENC",
+              "evidence_type": "HADITH",
+              "provider_record_id": "5833",
+              "target_attribute_ids": [
+                "attr_001",
+                "attr_002",
+                "attr_003"
+              ],
+              "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=5833",
+              "parent_evidence_id": null,
+              "fragment_id": null,
+              "fragment_label": null,
+              "title": "ما نقص مال عبد من صدقة، ولا ظلم عبد مظلمة صبر عليها إلا زاده الله عزا، ولا فتح عبد باب مسألة إلا فتح الله عليه باب فقر",
+              "text": "عن أبي كبشة عمرو بن سعد الأنماري رضي الله عنه مرفوعاً: «ثلاثة أقسم عليهن، وأحدثكم حديثاً فاحفظوه: ما نقص مال عبد من صدقة، ولا ظلم عبد مظلمة صبر عليها إلا زاده الله عزًا، ولا فتح عبد باب مسألة إلا فتح الله عليه باب فقر -أو كلمة نحوها- وأحدثكم حديثًا فاحفظوه»، قال: «إنما الدنيا لأربعة نفر: عبد رزقه الله مالاً وعلمًا، فهو يتقي فيه ربه، ويَصِلُ فيه رحمه، ويعلم لله فيه حقًا، فهذا بأفضل المنازل. وعبد رزقه الله علما، ولم يرزقه مالاً، فهو صادق النية، يقول: لو أن لي مالا لَعَمِلْتُ بعمل فلان، فهو بنيته، فأجرهما سواء. وعبد رزقه الله مالاً، ولم يرزقه علما، فهو يخبط في ماله بغير علم، لا يتقي فيه ربه، ولا يصل فيه رحمه، ولا يعلم لله فيه حقًا، فهذا بأخبث المنازل. وعبد لم يرزقه الله مالاً ولا علمًا، فهو يقول: لو أن لي مالا لعملت فيه بعمل فلان، فهو بنيته، فوزرهما سواء».",
+              "structured_fields": {}
+            },
+            {
+              "evidence_id": "hadeethenc:5865",
+              "provider": "HADEETHENC",
+              "evidence_type": "HADITH",
+              "provider_record_id": "5865",
+              "target_attribute_ids": [
+                "attr_001",
+                "attr_002",
+                "attr_003"
+              ],
+              "source_url": "https://hadeethenc.com/api/v1/hadeeths/one/?language=ar&id=5865",
+              "parent_evidence_id": null,
+              "fragment_id": null,
+              "fragment_label": null,
+              "title": "حديث الشفاعة",
+              "text": "عن حذيفة بن اليمان وأبي هريرة رضي الله عنهما مرفوعاً: «يجمع الله -تبارك وتعالى- الناس فيقوم المؤمنون حتى تُزْلَفَ لهم الجنة، فيأتون آدم صلوات الله عليه، فيقولون: يا أبانا استفتح لنا الجنة، فيقول: وهل أخرجكم من الجنة إلا خطيئة أبيكم! لست بصاحب ذلك، اذهبوا إلى ابني إبراهيم خليل الله، قال: فيأتون إبراهيم فيقول إبراهيم: لستُ بصاحب ذلك إنما كنت خليلا من وراءِ وراء، اعمدوا إلى موسى الذي كلمه الله تكليما، فيأتون موسى، فيقول: لستُ بصاحب ذلك، اذهبوا إلى عيسى كلمة الله وروحه، فيقول عيسى: لست بصاحب ذلك، فيأتون محمدا صلى الله عليه وسلم فيقوم فيؤذن له، وتُرسَلُ الأمانة والرحم فيقومان جَنْبَتَي الصِّرَاطَ يمينا وشمالا فيَمُرُّ أوَّلُكُم كالبَرْقِ» قلتُ: بأبي وأمي، أي شيء كَمَرِّ البرْقِ؟ قال: «ألم تروا كيف يمر ويرجع في طَرْفِة عَيْنٍ، ثم كَمَرِّ الرِّيح، ثم كَمَرِّ الطَّيْرِ، وشَدِّ الرِّجال تجري بهم أعمالهم، ونبيكم قائم على الصراط، يقول: رب سَلِّمْ سَلِّمْ، حتى تعجز أعمال العباد، حتى يجيء الرجل لا يستطيع السير إلا زَحْفَا، وفي حافتي الصراط كَلالِيبُ مُعَلَّقَةٌ مأمورة بأخذ من أُمِرَتْ به، فَمَخْدُوشٌ نَاجٍ، ومُكَرْدَسٌ في النار». والذي نفس أبي هريرة بيده، إن قَعْرَ جهنم لسبعون خريفا.",
+              "structured_fields": {}
+            }
+          ],
+          "error": null
+        },
+        {
+          "provider": "DORAR_HADITH",
+          "success": false,
+          "query_attempts": [
+            {
+              "query": "إنما الأعمال بالنيات",
+              "attempt": 1,
+              "duration_ms": 75.98,
+              "result_count": 0,
+              "success": false,
+              "endpoint": "/hadith/search",
+              "http_status": null,
+              "parameters": {
+                "max_results": 15
+              },
+              "parser_success": false
+            }
+          ],
+          "candidate_count": 0,
+          "candidates": [],
+          "error": {
+            "provider": "DORAR_HADITH",
+            "error_type": "ACCESS_DENIED",
+            "message": "403 Client Error: Forbidden for url: https://dorar.net/hadith/search?q=%D8%A5%D9%86%D9%85%D8%A7+%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84+%D8%A8%D8%A7%D9%84%D9%86%D9%8A%D8%A7%D8%AA",
+            "retryable": false,
+            "http_status": 403
+          }
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "validations": [
+    {
+      "claim_id": "claim_001",
+      "validations": [
+        {
+          "attribute_id": "attr_001",
+          "attribute_type": "QURAN_TEXT",
+          "claimed_value": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+          "status": "SUPPORTED",
+          "evidence_ids": [
+            "quranpedia:112:1"
+          ],
+          "supporting_evidence_ids": [
+            "quranpedia:112:1"
+          ],
+          "contradicting_evidence_ids": [],
+          "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+          "asserted_by": null,
+          "validation_method": "deterministic",
+          "validator_confidence": 1.0
+        },
+        {
+          "attribute_id": "attr_002",
+          "attribute_type": "SURAH",
+          "claimed_value": "الإخلاص",
+          "status": "SUPPORTED",
+          "evidence_ids": [
+            "quranpedia:112:1"
+          ],
+          "supporting_evidence_ids": [
+            "quranpedia:112:1"
+          ],
+          "contradicting_evidence_ids": [],
+          "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+          "asserted_by": null,
+          "validation_method": "deterministic",
+          "validator_confidence": 1.0
+        },
+        {
+          "attribute_id": "attr_003",
+          "attribute_type": "AYAH_NUMBER",
+          "claimed_value": "1",
+          "status": "SUPPORTED",
+          "evidence_ids": [
+            "quranpedia:112:1"
+          ],
+          "supporting_evidence_ids": [
+            "quranpedia:112:1"
+          ],
+          "contradicting_evidence_ids": [],
+          "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+          "asserted_by": null,
+          "validation_method": "deterministic",
+          "validator_confidence": 1.0
+        }
+      ],
+      "validation_status": "COMPLETED",
+      "retrieval_status": "COMPLETED",
+      "missing_context": [],
+      "reason": null,
+      "warnings": [],
+      "trace": [
+        {
+          "attribute_id": "attr_001",
+          "method": "deterministic",
+          "candidate_ids": [
+            "quranpedia:112:1"
+          ],
+          "fields_compared": [
+            "text"
+          ],
+          "result": "SUPPORTED"
+        },
+        {
+          "attribute_id": "attr_002",
+          "method": "deterministic",
+          "candidate_ids": [
+            "quranpedia:112:1"
+          ],
+          "fields_compared": [
+            "raw_metadata.surah",
+            "raw_metadata.surah_number",
+            "reference"
+          ],
+          "result": "SUPPORTED"
+        },
+        {
+          "attribute_id": "attr_003",
+          "method": "deterministic",
+          "candidate_ids": [
+            "quranpedia:112:1"
+          ],
+          "fields_compared": [
+            "raw_metadata.ayah",
+            "raw_metadata.ayah_number",
+            "reference"
+          ],
+          "result": "SUPPORTED"
+        }
+      ],
+      "execution_failures": [],
+      "candidate_alignment": [
+        {
+          "evidence_id": "quranpedia:112:1",
+          "alignment": "UNRESOLVED",
+          "reason": "Record alignment is not applicable to this claim domain.",
+          "attribute_id": null
+        }
+      ],
+      "quran_record_alignment": "ALIGNED"
+    },
+    {
+      "claim_id": "claim_002",
+      "validations": [
+        {
+          "attribute_id": "attr_001",
+          "attribute_type": "HADITH_TEXT",
+          "claimed_value": "إنما الأعمال بالنيات",
+          "status": "SUPPORTED",
+          "evidence_ids": [
+            "hadeethenc:4560",
+            "hadeethenc:66511"
+          ],
+          "supporting_evidence_ids": [
+            "hadeethenc:4560",
+            "hadeethenc:66511"
+          ],
+          "contradicting_evidence_ids": [],
+          "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+          "asserted_by": null,
+          "validation_method": "deterministic",
+          "validator_confidence": 1.0
+        },
+        {
+          "attribute_id": "attr_002",
+          "attribute_type": "NARRATOR",
+          "claimed_value": "عمر بن الخطاب",
+          "status": "SUPPORTED",
+          "evidence_ids": [
+            "hadeethenc:4560",
+            "hadeethenc:66511"
+          ],
+          "supporting_evidence_ids": [
+            "hadeethenc:4560",
+            "hadeethenc:66511"
+          ],
+          "contradicting_evidence_ids": [],
+          "rationale": "Both evidence items explicitly identify عمر بن الخطاب (Umar ibn al-Khattab) as the narrator. Evidence hadeethenc:4560 begins with 'عن عمر بن الخطاب رضي الله عنه قال' and evidence hadeethenc:66511 begins with 'عَنْ أَمِيرِ المُؤْمِنِينَ أَبِي حَفْصٍ عُمَرَ بْنِ الخَطَّابِ رضي الله عنه قَالَ'. Both clearly establish that Umar ibn al-Khattab is the narrator of this hadith, directly supporting the attribute value.",
+          "asserted_by": null,
+          "validation_method": "semantic",
+          "validator_confidence": 1.0
+        },
+        {
+          "attribute_id": "attr_003",
+          "attribute_type": "SOURCE",
+          "claimed_value": "البخاري",
+          "status": "SUPPORTED",
+          "evidence_ids": [
+            "hadeethenc:4560",
+            "hadeethenc:66511"
+          ],
+          "supporting_evidence_ids": [
+            "hadeethenc:4560",
+            "hadeethenc:66511"
+          ],
+          "contradicting_evidence_ids": [],
+          "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+          "asserted_by": null,
+          "validation_method": "deterministic",
+          "validator_confidence": 1.0
+        }
+      ],
+      "validation_status": "COMPLETED",
+      "retrieval_status": "PARTIAL",
+      "missing_context": [],
+      "reason": null,
+      "warnings": [],
+      "trace": [
+        {
+          "attribute_id": "attr_001",
+          "method": "deterministic",
+          "candidate_ids": [
+            "hadeethenc:4560",
+            "hadeethenc:66511"
+          ],
+          "fields_compared": [
+            "text"
+          ],
+          "result": "SUPPORTED"
+        },
+        {
+          "attribute_id": "attr_002",
+          "method": "semantic",
+          "candidate_ids": [
+            "hadeethenc:4560",
+            "hadeethenc:66511"
+          ],
+          "fields_compared": [
+            "evidence content",
+            "provenance"
+          ],
+          "result": "SUPPORTED"
+        },
+        {
+          "attribute_id": "attr_003",
+          "method": "deterministic",
+          "candidate_ids": [
+            "hadeethenc:4560",
+            "hadeethenc:66511"
+          ],
+          "fields_compared": [
+            "raw_metadata.book",
+            "raw_metadata.collection",
+            "raw_metadata.source",
+            "reference"
+          ],
+          "result": "SUPPORTED"
+        }
+      ],
+      "execution_failures": [],
+      "candidate_alignment": [
+        {
+          "evidence_id": "hadeethenc:4560",
+          "alignment": "ALIGNED",
+          "reason": "Normalized hadith text identifies the candidate as the target record.",
+          "attribute_id": null
+        },
+        {
+          "evidence_id": "hadeethenc:66511",
+          "alignment": "ALIGNED",
+          "reason": "Normalized hadith text identifies the candidate as the target record.",
+          "attribute_id": null
+        },
+        {
+          "evidence_id": "hadeethenc:5833",
+          "alignment": "UNRELATED",
+          "reason": "The candidate text does not identify the target hadith record.",
+          "attribute_id": null
+        },
+        {
+          "evidence_id": "hadeethenc:5865",
+          "alignment": "UNRELATED",
+          "reason": "The candidate text does not identify the target hadith record.",
+          "attribute_id": null
+        }
+      ],
+      "quran_record_alignment": null
+    }
+  ],
+  "decisions": [
+    {
+      "claim_id": "claim_001",
+      "final_status": "SUPPORTED",
+      "reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "evidence_ids": [
+        "quranpedia:112:1"
+      ]
+    },
+    {
+      "claim_id": "claim_002",
+      "final_status": "SUPPORTED",
+      "reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+      "evidence_ids": [
+        "hadeethenc:4560",
+        "hadeethenc:66511"
+      ]
+    }
+  ],
+  "metrics": {
+    "unsupported_inference_count": 0,
+    "total_support_or_contradiction_decisions": 9,
+    "unsupported_inference_rate": 0.0,
+    "validated_decisions_with_evidence_ids": 9,
+    "total_evidence_based_decisions": 9,
+    "evidence_traceability": 1.0,
+    "routing_precision": 1.0,
+    "unauthorized_explanation_calls": 0
+  },
+  "relationship_audit": [
+    {
+      "claim_id": "claim_001",
+      "attribute_id": "attr_001",
+      "evidence_id": "quranpedia:112:1",
+      "role": "SUPPORT",
+      "compatible_and_aligned": true
+    },
+    {
+      "claim_id": "claim_001",
+      "attribute_id": "attr_002",
+      "evidence_id": "quranpedia:112:1",
+      "role": "SUPPORT",
+      "compatible_and_aligned": true
+    },
+    {
+      "claim_id": "claim_001",
+      "attribute_id": "attr_003",
+      "evidence_id": "quranpedia:112:1",
+      "role": "SUPPORT",
+      "compatible_and_aligned": true
+    },
+    {
+      "claim_id": "claim_002",
+      "attribute_id": "attr_001",
+      "evidence_id": "hadeethenc:4560",
+      "role": "SUPPORT",
+      "compatible_and_aligned": true
+    },
+    {
+      "claim_id": "claim_002",
+      "attribute_id": "attr_001",
+      "evidence_id": "hadeethenc:66511",
+      "role": "SUPPORT",
+      "compatible_and_aligned": true
+    },
+    {
+      "claim_id": "claim_002",
+      "attribute_id": "attr_002",
+      "evidence_id": "hadeethenc:4560",
+      "role": "SUPPORT",
+      "compatible_and_aligned": true
+    },
+    {
+      "claim_id": "claim_002",
+      "attribute_id": "attr_002",
+      "evidence_id": "hadeethenc:66511",
+      "role": "SUPPORT",
+      "compatible_and_aligned": true
+    },
+    {
+      "claim_id": "claim_002",
+      "attribute_id": "attr_003",
+      "evidence_id": "hadeethenc:4560",
+      "role": "SUPPORT",
+      "compatible_and_aligned": true
+    },
+    {
+      "claim_id": "claim_002",
+      "attribute_id": "attr_003",
+      "evidence_id": "hadeethenc:66511",
+      "role": "SUPPORT",
+      "compatible_and_aligned": true
+    }
+  ],
+  "cost": {
+    "llm_calls": 4,
+    "input_tokens": 21803,
+    "output_tokens": 2781,
+    "provider_calls": 7,
+    "provider_breakdown": [
+      {
+        "provider": "DORAR_HADITH",
+        "request_count": 1
+      },
+      {
+        "provider": "HADEETHENC",
+        "request_count": 5
+      },
+      {
+        "provider": "QURANPEDIA",
+        "request_count": 1
+      }
+    ],
+    "duration_ms": 19248.937,
+    "cost_status": "AVAILABLE",
+    "estimated_cost_usd": "0.107124",
+    "estimated_cost_sar": "0.40171500",
+    "usd_sar_rate": "3.75",
+    "usage_records": [
+      {
+        "phase": "CLAIM_EXTRACTION",
+        "model": "claude-sonnet-4-5",
+        "input_tokens": 5839,
+        "output_tokens": 841,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_type": "CALCULATED_FROM_API_USAGE",
+        "cost_status": "AVAILABLE",
+        "estimated_cost_usd": "0.030132",
+        "estimated_cost_sar": "0.11299500"
+      },
+      {
+        "phase": "CLAIM_EXTRACTION",
+        "model": "claude-sonnet-4-5",
+        "input_tokens": 5839,
+        "output_tokens": 841,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_type": "CALCULATED_FROM_API_USAGE",
+        "cost_status": "AVAILABLE",
+        "estimated_cost_usd": "0.030132",
+        "estimated_cost_sar": "0.11299500"
+      },
+      {
+        "phase": "CLAIM_EXTRACTION",
+        "model": "claude-sonnet-4-5",
+        "input_tokens": 5839,
+        "output_tokens": 860,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_type": "CALCULATED_FROM_API_USAGE",
+        "cost_status": "AVAILABLE",
+        "estimated_cost_usd": "0.030417",
+        "estimated_cost_sar": "0.11406375"
+      },
+      {
+        "phase": "SEMANTIC_VALIDATION",
+        "model": "claude-sonnet-4-5",
+        "input_tokens": 4286,
+        "output_tokens": 239,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_type": "CALCULATED_FROM_API_USAGE",
+        "cost_status": "AVAILABLE",
+        "estimated_cost_usd": "0.016443",
+        "estimated_cost_sar": "0.06166125"
+      }
+    ]
+  },
+  "failures": [],
+  "extraction_stability": {
+    "runs": [
+      {
+        "run": 1,
+        "duration_ms": 10938.848,
+        "claim_count": 2,
+        "signature": [
+          {
+            "claim_type": "QURAN_RECORD",
+            "domain": "QURAN",
+            "parent_index": null,
+            "relationship": null
+          },
+          {
+            "claim_type": "HADITH_RECORD",
+            "domain": "HADITH",
+            "parent_index": null,
+            "relationship": null
+          }
+        ]
+      },
+      {
+        "run": 2,
+        "duration_ms": 10131.627,
+        "claim_count": 2,
+        "signature": [
+          {
+            "claim_type": "QURAN_RECORD",
+            "domain": "QURAN",
+            "parent_index": null,
+            "relationship": null
+          },
+          {
+            "claim_type": "HADITH_RECORD",
+            "domain": "HADITH",
+            "parent_index": null,
+            "relationship": null
+          }
+        ]
+      },
+      {
+        "run": 3,
+        "duration_ms": 11466.202,
+        "claim_count": 2,
+        "signature": [
+          {
+            "claim_type": "QURAN_RECORD",
+            "domain": "QURAN",
+            "parent_index": null,
+            "relationship": null
+          },
+          {
+            "claim_type": "HADITH_RECORD",
+            "domain": "HADITH",
+            "parent_index": null,
+            "relationship": null
+          }
+        ]
+      }
+    ],
+    "stable": true,
+    "claim_counts": [
+      2,
+      2,
+      2
+    ]
+  },
+  "provider_availability": [
+    {
+      "provider": "QURANPEDIA",
+      "availability": "AVAILABLE",
+      "candidate_count": 1,
+      "error_type": null
+    },
+    {
+      "provider": "HADEETHENC",
+      "availability": "AVAILABLE",
+      "candidate_count": 4,
+      "error_type": null
+    },
+    {
+      "provider": "DORAR_HADITH",
+      "availability": "UNAVAILABLE",
+      "candidate_count": 0,
+      "error_type": "ACCESS_DENIED"
+    }
+  ]
+}

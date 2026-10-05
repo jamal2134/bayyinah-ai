@@ -1,0 +1,16 @@
+{
+  "classification_cases": {"passed": 3, "total": 3},
+  "relationship_cases": {"passed": 2, "total": 2},
+  "mixed_content_case": {"passed": true, "claim_count": 4},
+  "authenticity_safety": {"passed": 1, "total": 1},
+  "parent_child_evidence_isolation": {"passed": 2, "total": 2},
+  "regression_summary": {"passed": 133, "failed": 0, "skipped": 1, "status": "passed"},
+  "metrics": {
+    "quran_hadith_classification_accuracy": 1.0,
+    "relationship_linking_accuracy": 1.0,
+    "context_propagation_accuracy": 1.0,
+    "parent_child_evidence_isolation_rate": 1.0,
+    "authenticity_safety_rate": 1.0,
+    "unsupported_inference_rate": 0.0
+  }
+}

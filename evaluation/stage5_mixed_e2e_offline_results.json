@@ -1,0 +1,5388 @@
+{
+  "evaluation_version": "stage5",
+  "mode": "offline",
+  "generated_at": "2026-10-04T17:06:47.960831+00:00",
+  "cases": [
+    {
+      "case_id": "mixed_valid",
+      "input_text": "قال الله تعالى: الله لا إله إلا هو الحي القيوم، وهي الآية 255 من سورة البقرة، ومعناها أن الله كامل الحياة والقيومية. وقال النبي ﷺ: إنما الأعمال بالنيات، رواه عمر بن الخطاب، ومعناه أن صلاح العمل مرتبط بالنية. وصلاة الوتر سنة مؤكدة. والله متصف بالعلم. وكان صلح الحديبية سنة 6 هـ.",
+      "claims": [
+        {
+          "id": "claim_001",
+          "original_text": "الله لا إله إلا هو الحي القيوم من البقرة 255",
+          "normalized_claim": "الله لا إله إلا هو الحي القيوم من البقرة 255",
+          "claim_type": "QURAN_RECORD",
+          "domain": "QURAN",
+          "search_queries": [
+            "الله لا إله إلا هو الحي القيوم من البقرة 255 مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "QURAN_TEXT",
+              "value": "الله لا إله إلا هو الحي القيوم",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            },
+            {
+              "id": "attr_002",
+              "type": "SURAH",
+              "value": "2",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            },
+            {
+              "id": "attr_003",
+              "type": "AYAH_NUMBER",
+              "value": "255",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": null,
+          "relationship": null,
+          "subject_context": null,
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_002",
+          "original_text": "تفسير آية الكرسي أن الله كامل الحياة والقيومية",
+          "normalized_claim": "تفسير آية الكرسي أن الله كامل الحياة والقيومية",
+          "claim_type": "QURAN_INTERPRETATION",
+          "domain": "QURAN",
+          "search_queries": [
+            "تفسير آية الكرسي أن الله كامل الحياة والقيومية مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "INTERPRETATION",
+              "value": "الله كامل الحياة والقيومية",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": "claim_001",
+          "relationship": "INTERPRETS",
+          "subject_context": {
+            "type": "QURAN",
+            "surah": "2",
+            "ayah_number": "255",
+            "ayah_numbers": null,
+            "text": null
+          },
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_003",
+          "original_text": "حديث إنما الأعمال بالنيات رواه عمر بن الخطاب",
+          "normalized_claim": "حديث إنما الأعمال بالنيات رواه عمر بن الخطاب",
+          "claim_type": "HADITH_RECORD",
+          "domain": "HADITH",
+          "search_queries": [
+            "حديث إنما الأعمال بالنيات رواه عمر بن الخطاب مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "HADITH_TEXT",
+              "value": "إنما الأعمال بالنيات",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            },
+            {
+              "id": "attr_002",
+              "type": "NARRATOR",
+              "value": "عمر بن الخطاب",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": null,
+          "relationship": null,
+          "subject_context": null,
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_004",
+          "original_text": "شرح حديث إنما الأعمال بالنيات أن صلاح العمل مرتبط بالنية",
+          "normalized_claim": "شرح حديث إنما الأعمال بالنيات أن صلاح العمل مرتبط بالنية",
+          "claim_type": "HADITH_INTERPRETATION",
+          "domain": "HADITH",
+          "search_queries": [
+            "شرح حديث إنما الأعمال بالنيات أن صلاح العمل مرتبط بالنية مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "INTERPRETATION",
+              "value": "صلاح العمل مرتبط بالنية",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": "claim_003",
+          "relationship": "EXPLAINS",
+          "subject_context": {
+            "type": "HADITH",
+            "surah": null,
+            "ayah_number": null,
+            "ayah_numbers": null,
+            "text": "إنما الأعمال بالنيات"
+          },
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_005",
+          "original_text": "صلاة الوتر سنة مؤكدة",
+          "normalized_claim": "صلاة الوتر سنة مؤكدة",
+          "claim_type": "FIQH_RULING",
+          "domain": "FIQH",
+          "search_queries": [
+            "صلاة الوتر سنة مؤكدة مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "RULING",
+              "value": "سنة مؤكدة",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": null,
+          "relationship": null,
+          "subject_context": null,
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_006",
+          "original_text": "الله متصف بالعلم",
+          "normalized_claim": "الله متصف بالعلم",
+          "claim_type": "AQEEDAH",
+          "domain": "AQEEDAH",
+          "search_queries": [
+            "الله متصف بالعلم مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "OTHER",
+              "value": "الله متصف بالعلم",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": null,
+          "relationship": null,
+          "subject_context": null,
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_007",
+          "original_text": "صلح الحديبية سنة 6 هـ",
+          "normalized_claim": "صلح الحديبية سنة 6 هـ",
+          "claim_type": "ISLAMIC_HISTORY",
+          "domain": "HISTORY",
+          "search_queries": [
+            "صلح الحديبية سنة 6 هـ مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "DATE",
+              "value": "6 هـ",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": null,
+          "relationship": null,
+          "subject_context": null,
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        }
+      ],
+      "routing": [
+        {
+          "claim_id": "claim_001",
+          "expected_provider_family": [
+            "QURANPEDIA"
+          ],
+          "planned_sources": [
+            {
+              "provider": "QURANPEDIA",
+              "purpose": "QURAN_RETRIEVAL",
+              "priority": 1
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_001",
+              "target_attribute_ids": [
+                "attr_001",
+                "attr_002",
+                "attr_003"
+              ],
+              "provider": "QURANPEDIA",
+              "purpose": "QURAN_RETRIEVAL",
+              "query": "الله لا إله إلا هو الحي القيوم",
+              "queries": [
+                "الله لا إله إلا هو الحي القيوم"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_002",
+          "expected_provider_family": [
+            "DORAR_TAFSEER",
+            "QURANPEDIA"
+          ],
+          "planned_sources": [
+            {
+              "provider": "DORAR_TAFSEER",
+              "purpose": "QURAN_TAFSIR",
+              "priority": 1
+            },
+            {
+              "provider": "QURANPEDIA",
+              "purpose": "QURAN_TAFSIR",
+              "priority": 2
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_002",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR_TAFSEER",
+              "purpose": "QURAN_TAFSIR",
+              "query": "2 255 الله كامل الحياة والقيومية",
+              "queries": [
+                "2 255 الله كامل الحياة والقيومية"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            },
+            {
+              "task_id": "task_002",
+              "claim_id": "claim_002",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "QURANPEDIA",
+              "purpose": "QURAN_TAFSIR",
+              "query": "تفسير معنى 2 255 تفسير آية الكرسي أن الله كامل الحياة والقيومية",
+              "queries": [
+                "تفسير معنى 2 255 تفسير آية الكرسي أن الله كامل الحياة والقيومية"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_003",
+          "expected_provider_family": [
+            "DORAR_HADITH",
+            "HADEETHENC"
+          ],
+          "planned_sources": [
+            {
+              "provider": "HADEETHENC",
+              "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+              "priority": 1
+            },
+            {
+              "provider": "DORAR_HADITH",
+              "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+              "priority": 2
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_003",
+              "target_attribute_ids": [
+                "attr_001",
+                "attr_002"
+              ],
+              "provider": "HADEETHENC",
+              "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+              "query": "إنما الأعمال بالنيات",
+              "queries": [
+                "إنما الأعمال بالنيات"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            },
+            {
+              "task_id": "task_002",
+              "claim_id": "claim_003",
+              "target_attribute_ids": [
+                "attr_001",
+                "attr_002"
+              ],
+              "provider": "DORAR_HADITH",
+              "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+              "query": "إنما الأعمال بالنيات",
+              "queries": [
+                "إنما الأعمال بالنيات"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_004",
+          "expected_provider_family": [
+            "DORAR_HADITH",
+            "HADEETHENC"
+          ],
+          "planned_sources": [
+            {
+              "provider": "DORAR_HADITH",
+              "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+              "priority": 1
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_004",
+              "target_attribute_ids": [],
+              "provider": "DORAR_HADITH",
+              "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+              "query": "إنما الأعمال بالنيات",
+              "queries": [
+                "إنما الأعمال بالنيات"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            },
+            {
+              "task_id": "task_002",
+              "claim_id": "claim_004",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR_HADITH_EXPLANATION",
+              "purpose": "HADITH_EXPLANATION",
+              "query": null,
+              "queries": [],
+              "max_results": null,
+              "depends_on_task_id": "task_001",
+              "dependency_evidence_id": "dorar-hadith:child-1",
+              "execution_condition": "PARENT_ALIGNED_AND_EXPLANATION_AVAILABLE_AND_ID_PRESENT"
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_005",
+          "expected_provider_family": [
+            "DORAR_FEQHIA"
+          ],
+          "planned_sources": [
+            {
+              "provider": "DORAR_FEQHIA",
+              "purpose": "FIQH_RETRIEVAL",
+              "priority": 1
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_005",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR_FEQHIA",
+              "purpose": "FIQH_RETRIEVAL",
+              "query": "صلاة الوتر سنة مؤكدة",
+              "queries": [
+                "صلاة الوتر سنة مؤكدة"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_006",
+          "expected_provider_family": [
+            "DORAR_AQEEDA"
+          ],
+          "planned_sources": [
+            {
+              "provider": "DORAR_AQEEDA",
+              "purpose": "AQEEDAH_RETRIEVAL",
+              "priority": 1
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_006",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR_AQEEDA",
+              "purpose": "AQEEDAH_RETRIEVAL",
+              "query": "الله متصف بالعلم",
+              "queries": [
+                "الله متصف بالعلم"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_007",
+          "expected_provider_family": [
+            "DORAR_HISTORY"
+          ],
+          "planned_sources": [
+            {
+              "provider": "DORAR_HISTORY",
+              "purpose": "HISTORY_RETRIEVAL",
+              "priority": 1
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_007",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR_HISTORY",
+              "purpose": "HISTORY_RETRIEVAL",
+              "query": "صلح الحديبية سنة 6 هـ",
+              "queries": [
+                "صلح الحديبية سنة 6 هـ"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        }
+      ],
+      "retrieval": [
+        {
+          "claim_id": "claim_001",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "QURANPEDIA",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "الله لا إله إلا هو الحي القيوم من البقرة 255 مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "quran:2:255",
+                  "target_attribute_ids": [
+                    "attr_001",
+                    "attr_002",
+                    "attr_003"
+                  ],
+                  "provider": "QURANPEDIA",
+                  "evidence_type": "QURAN_AYAH",
+                  "title": null,
+                  "text": "الله لا إله إلا هو الحي القيوم",
+                  "provider_record_id": "2:255",
+                  "source_url": "https://fixture.local/quran/2/255",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {}
+                }
+              ],
+              "error": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_002",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "DORAR_TAFSEER",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "تفسير آية الكرسي أن الله كامل الحياة والقيومية مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "tafseer:2:255:1",
+                  "target_attribute_ids": [
+                    "attr_001"
+                  ],
+                  "provider": "DORAR_TAFSEER",
+                  "evidence_type": "TAFSEER_SECTION",
+                  "title": "تفسير آية الكرسي",
+                  "text": "تثبت الآية كمال حياة الله وقيوميته",
+                  "provider_record_id": "taf-255",
+                  "source_url": "https://fixture.local/tafseer/255",
+                  "parent_evidence_id": null,
+                  "fragment_id": "section-1",
+                  "fragment_label": "المعنى الإجمالي",
+                  "structured_fields": {
+                    "surah_id": 2,
+                    "page_id": 255
+                  }
+                }
+              ],
+              "error": null
+            },
+            {
+              "provider": "QURANPEDIA",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "تفسير آية الكرسي أن الله كامل الحياة والقيومية مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 0,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 0,
+              "candidates": [],
+              "error": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_003",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "HADEETHENC",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "حديث إنما الأعمال بالنيات رواه عمر بن الخطاب مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "hadeethenc:1",
+                  "target_attribute_ids": [
+                    "attr_001",
+                    "attr_002"
+                  ],
+                  "provider": "HADEETHENC",
+                  "evidence_type": "HADITH",
+                  "title": null,
+                  "text": "إنما الأعمال بالنيات",
+                  "provider_record_id": "1",
+                  "source_url": "https://fixture.local/hadith/1",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {}
+                }
+              ],
+              "error": null
+            },
+            {
+              "provider": "DORAR_HADITH",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "حديث إنما الأعمال بالنيات رواه عمر بن الخطاب مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "dorar-hadith:1",
+                  "target_attribute_ids": [
+                    "attr_001",
+                    "attr_002"
+                  ],
+                  "provider": "DORAR_HADITH",
+                  "evidence_type": "HADITH_JUDGMENT",
+                  "title": null,
+                  "text": "إنما الأعمال بالنيات",
+                  "provider_record_id": "1",
+                  "source_url": "https://fixture.local/dorar/h/1",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {
+                    "hadith_id": "1",
+                    "explanation_available": true,
+                    "explanation_id": "exp-1"
+                  }
+                }
+              ],
+              "error": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_004",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "DORAR_HADITH",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "شرح حديث إنما الأعمال بالنيات أن صلاح العمل مرتبط بالنية مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "dorar-hadith:child-1",
+                  "target_attribute_ids": [],
+                  "provider": "DORAR_HADITH",
+                  "evidence_type": "HADITH_JUDGMENT",
+                  "title": null,
+                  "text": "إنما الأعمال بالنيات",
+                  "provider_record_id": "1",
+                  "source_url": "https://fixture.local/dorar/h/1",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {
+                    "hadith_id": "1",
+                    "explanation_available": true,
+                    "explanation_id": "exp-1"
+                  }
+                }
+              ],
+              "error": null
+            },
+            {
+              "provider": "DORAR_HADITH_EXPLANATION",
+              "success": true,
+              "query_attempts": [],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "hadith-explanation:exp-1",
+                  "target_attribute_ids": [
+                    "attr_001"
+                  ],
+                  "provider": "DORAR_HADITH_EXPLANATION",
+                  "evidence_type": "HADITH_EXPLANATION",
+                  "title": null,
+                  "text": "صلاح العمل وقبوله مرتبط بالنية",
+                  "provider_record_id": "exp-1",
+                  "source_url": "https://fixture.local/hadith/explanation/exp-1",
+                  "parent_evidence_id": "dorar-hadith:child-1",
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {
+                    "hadith_id": "1",
+                    "explanation_id": "exp-1",
+                    "hadith_text": "إنما الأعمال بالنيات"
+                  }
+                }
+              ],
+              "error": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_005",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "DORAR_FEQHIA",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "صلاة الوتر سنة مؤكدة مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "fiqh:1",
+                  "target_attribute_ids": [
+                    "attr_001"
+                  ],
+                  "provider": "DORAR_FEQHIA",
+                  "evidence_type": "FIQH_CONTENT",
+                  "title": "حكم صلاة الوتر",
+                  "text": "صلاة الوتر سنة مؤكدة وليست فرضا",
+                  "provider_record_id": "fiqh-1",
+                  "source_url": "https://fixture.local/fiqh/1",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {}
+                }
+              ],
+              "error": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_006",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "DORAR_AQEEDA",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "الله متصف بالعلم مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "aqeeda:1",
+                  "target_attribute_ids": [
+                    "attr_001"
+                  ],
+                  "provider": "DORAR_AQEEDA",
+                  "evidence_type": "AQEEDA_CONTENT",
+                  "title": "الله متصف بالعلم",
+                  "text": "أهل السنة يثبتون صفة العلم لله",
+                  "provider_record_id": "aq-1",
+                  "source_url": "https://fixture.local/aqeeda/1",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {}
+                }
+              ],
+              "error": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_007",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "DORAR_HISTORY",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "صلح الحديبية سنة 6 هـ مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "history:1",
+                  "target_attribute_ids": [
+                    "attr_001"
+                  ],
+                  "provider": "DORAR_HISTORY",
+                  "evidence_type": "HISTORY_EVENT",
+                  "title": "صلح الحديبية",
+                  "text": "تفاصيل صلح الحديبية",
+                  "provider_record_id": "hist-1",
+                  "source_url": "https://fixture.local/history/1",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {
+                    "hijri_year": 6,
+                    "gregorian_year": 628
+                  }
+                }
+              ],
+              "error": null
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "claim_id": "claim_004",
+          "provider": "DORAR_HADITH_EXPLANATION",
+          "status": "ACCEPTED",
+          "parent_task_id": "task_001",
+          "dependent_task_id": "task_002",
+          "parent_evidence_id": "dorar-hadith:child-1",
+          "dependency_record_id": "exp-1",
+          "reason": "Explanation identity is aligned to the authorizing Hadith record."
+        }
+      ],
+      "validations": [
+        {
+          "claim_id": "claim_001",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "QURAN_TEXT",
+              "claimed_value": "الله لا إله إلا هو الحي القيوم",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "quran:2:255"
+              ],
+              "supporting_evidence_ids": [
+                "quran:2:255"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+              "asserted_by": null,
+              "validation_method": "deterministic",
+              "validator_confidence": 1.0
+            },
+            {
+              "attribute_id": "attr_002",
+              "attribute_type": "SURAH",
+              "claimed_value": "2",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "quran:2:255"
+              ],
+              "supporting_evidence_ids": [
+                "quran:2:255"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+              "asserted_by": null,
+              "validation_method": "deterministic",
+              "validator_confidence": 1.0
+            },
+            {
+              "attribute_id": "attr_003",
+              "attribute_type": "AYAH_NUMBER",
+              "claimed_value": "255",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "quran:2:255"
+              ],
+              "supporting_evidence_ids": [
+                "quran:2:255"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+              "asserted_by": null,
+              "validation_method": "deterministic",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "deterministic",
+              "candidate_ids": [
+                "quran:2:255"
+              ],
+              "fields_compared": [
+                "text"
+              ],
+              "result": "SUPPORTED"
+            },
+            {
+              "attribute_id": "attr_002",
+              "method": "deterministic",
+              "candidate_ids": [
+                "quran:2:255"
+              ],
+              "fields_compared": [
+                "raw_metadata.surah",
+                "raw_metadata.surah_number",
+                "reference"
+              ],
+              "result": "SUPPORTED"
+            },
+            {
+              "attribute_id": "attr_003",
+              "method": "deterministic",
+              "candidate_ids": [
+                "quran:2:255"
+              ],
+              "fields_compared": [
+                "raw_metadata.ayah",
+                "raw_metadata.ayah_number",
+                "reference"
+              ],
+              "result": "SUPPORTED"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "quran:2:255",
+              "alignment": "UNRESOLVED",
+              "reason": "Record alignment is not applicable to this claim domain.",
+              "attribute_id": null
+            }
+          ],
+          "quran_record_alignment": "ALIGNED"
+        },
+        {
+          "claim_id": "claim_002",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "INTERPRETATION",
+              "claimed_value": "الله كامل الحياة والقيومية",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "tafseer:2:255:1"
+              ],
+              "supporting_evidence_ids": [
+                "tafseer:2:255:1"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "Controlled relationship derived only from supplied fixture evidence.",
+              "asserted_by": null,
+              "validation_method": "semantic",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "semantic",
+              "candidate_ids": [
+                "tafseer:2:255:1"
+              ],
+              "fields_compared": [
+                "evidence content",
+                "provenance"
+              ],
+              "result": "SUPPORTED"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "tafseer:2:255:1",
+              "alignment": "UNRESOLVED",
+              "reason": "Record alignment is not applicable to this claim domain.",
+              "attribute_id": null
+            },
+            {
+              "evidence_id": "tafseer:2:255:1",
+              "alignment": "ALIGNED",
+              "reason": "Tafseer provenance matches the structured Quran parent context.",
+              "attribute_id": "attr_001"
+            }
+          ],
+          "quran_record_alignment": null
+        },
+        {
+          "claim_id": "claim_003",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "HADITH_TEXT",
+              "claimed_value": "إنما الأعمال بالنيات",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "hadeethenc:1",
+                "dorar-hadith:1"
+              ],
+              "supporting_evidence_ids": [
+                "hadeethenc:1",
+                "dorar-hadith:1"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+              "asserted_by": null,
+              "validation_method": "deterministic",
+              "validator_confidence": 1.0
+            },
+            {
+              "attribute_id": "attr_002",
+              "attribute_type": "NARRATOR",
+              "claimed_value": "عمر بن الخطاب",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "hadeethenc:1",
+                "dorar-hadith:1"
+              ],
+              "supporting_evidence_ids": [
+                "hadeethenc:1",
+                "dorar-hadith:1"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+              "asserted_by": null,
+              "validation_method": "deterministic",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "deterministic",
+              "candidate_ids": [
+                "hadeethenc:1",
+                "dorar-hadith:1"
+              ],
+              "fields_compared": [
+                "text"
+              ],
+              "result": "SUPPORTED"
+            },
+            {
+              "attribute_id": "attr_002",
+              "method": "deterministic",
+              "candidate_ids": [
+                "hadeethenc:1",
+                "dorar-hadith:1"
+              ],
+              "fields_compared": [
+                "narrator",
+                "raw_metadata.narrator"
+              ],
+              "result": "SUPPORTED"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "hadeethenc:1",
+              "alignment": "ALIGNED",
+              "reason": "Normalized hadith text identifies the candidate as the target record.",
+              "attribute_id": null
+            },
+            {
+              "evidence_id": "dorar-hadith:1",
+              "alignment": "ALIGNED",
+              "reason": "Normalized hadith text identifies the candidate as the target record.",
+              "attribute_id": null
+            }
+          ],
+          "quran_record_alignment": null
+        },
+        {
+          "claim_id": "claim_004",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "INTERPRETATION",
+              "claimed_value": "صلاح العمل مرتبط بالنية",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "hadith-explanation:exp-1"
+              ],
+              "supporting_evidence_ids": [
+                "hadith-explanation:exp-1"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "Controlled relationship derived only from supplied fixture evidence.",
+              "asserted_by": null,
+              "validation_method": "semantic",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "semantic",
+              "candidate_ids": [
+                "hadith-explanation:exp-1"
+              ],
+              "fields_compared": [
+                "evidence content",
+                "provenance"
+              ],
+              "result": "SUPPORTED"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "dorar-hadith:child-1",
+              "alignment": "ALIGNED",
+              "reason": "Normalized hadith text identifies the candidate as the target record.",
+              "attribute_id": null
+            },
+            {
+              "evidence_id": "hadith-explanation:exp-1",
+              "alignment": "UNRELATED",
+              "reason": "The candidate is not a hadith or athar record.",
+              "attribute_id": null
+            }
+          ],
+          "quran_record_alignment": null
+        },
+        {
+          "claim_id": "claim_005",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "RULING",
+              "claimed_value": "سنة مؤكدة",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "fiqh:1"
+              ],
+              "supporting_evidence_ids": [
+                "fiqh:1"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "Controlled relationship derived only from supplied fixture evidence.",
+              "asserted_by": null,
+              "validation_method": "semantic",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "semantic",
+              "candidate_ids": [
+                "fiqh:1"
+              ],
+              "fields_compared": [
+                "evidence content",
+                "provenance"
+              ],
+              "result": "SUPPORTED"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "fiqh:1",
+              "alignment": "UNRESOLVED",
+              "reason": "Record alignment is not applicable to this claim domain.",
+              "attribute_id": null
+            },
+            {
+              "evidence_id": "fiqh:1",
+              "alignment": "ALIGNED",
+              "reason": "The evidence explicitly addresses the claimed subject.",
+              "attribute_id": "attr_001"
+            }
+          ],
+          "quran_record_alignment": null
+        },
+        {
+          "claim_id": "claim_006",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "OTHER",
+              "claimed_value": "الله متصف بالعلم",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "aqeeda:1"
+              ],
+              "supporting_evidence_ids": [
+                "aqeeda:1"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "Controlled relationship derived only from supplied fixture evidence.",
+              "asserted_by": null,
+              "validation_method": "semantic",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "semantic",
+              "candidate_ids": [
+                "aqeeda:1"
+              ],
+              "fields_compared": [
+                "evidence content",
+                "provenance"
+              ],
+              "result": "SUPPORTED"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "aqeeda:1",
+              "alignment": "UNRESOLVED",
+              "reason": "Record alignment is not applicable to this claim domain.",
+              "attribute_id": null
+            },
+            {
+              "evidence_id": "aqeeda:1",
+              "alignment": "ALIGNED",
+              "reason": "The evidence explicitly addresses the claimed subject.",
+              "attribute_id": "attr_001"
+            }
+          ],
+          "quran_record_alignment": null
+        },
+        {
+          "claim_id": "claim_007",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "DATE",
+              "claimed_value": "6 هـ",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "history:1"
+              ],
+              "supporting_evidence_ids": [
+                "history:1"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+              "asserted_by": null,
+              "validation_method": "deterministic",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "deterministic",
+              "candidate_ids": [
+                "history:1"
+              ],
+              "fields_compared": [
+                "structured_fields.hijri_year"
+              ],
+              "result": "SUPPORTED"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "history:1",
+              "alignment": "UNRESOLVED",
+              "reason": "Record alignment is not applicable to this claim domain.",
+              "attribute_id": null
+            },
+            {
+              "evidence_id": "history:1",
+              "alignment": "ALIGNED",
+              "reason": "The event title identifies the claimed historical event.",
+              "attribute_id": "attr_001"
+            }
+          ],
+          "quran_record_alignment": null
+        }
+      ],
+      "decisions": [
+        {
+          "claim_id": "claim_001",
+          "phase4_statuses": [
+            "SUPPORTED",
+            "SUPPORTED",
+            "SUPPORTED"
+          ],
+          "final_status": "SUPPORTED",
+          "reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+          "evidence_ids": [
+            "quran:2:255"
+          ]
+        },
+        {
+          "claim_id": "claim_002",
+          "phase4_statuses": [
+            "SUPPORTED"
+          ],
+          "final_status": "SUPPORTED",
+          "reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+          "evidence_ids": [
+            "tafseer:2:255:1"
+          ]
+        },
+        {
+          "claim_id": "claim_003",
+          "phase4_statuses": [
+            "SUPPORTED",
+            "SUPPORTED"
+          ],
+          "final_status": "SUPPORTED",
+          "reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+          "evidence_ids": [
+            "dorar-hadith:1",
+            "hadeethenc:1"
+          ]
+        },
+        {
+          "claim_id": "claim_004",
+          "phase4_statuses": [
+            "SUPPORTED"
+          ],
+          "final_status": "SUPPORTED",
+          "reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+          "evidence_ids": [
+            "hadith-explanation:exp-1"
+          ]
+        },
+        {
+          "claim_id": "claim_005",
+          "phase4_statuses": [
+            "SUPPORTED"
+          ],
+          "final_status": "SUPPORTED",
+          "reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+          "evidence_ids": [
+            "fiqh:1"
+          ]
+        },
+        {
+          "claim_id": "claim_006",
+          "phase4_statuses": [
+            "SUPPORTED"
+          ],
+          "final_status": "SUPPORTED",
+          "reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+          "evidence_ids": [
+            "aqeeda:1"
+          ]
+        },
+        {
+          "claim_id": "claim_007",
+          "phase4_statuses": [
+            "SUPPORTED"
+          ],
+          "final_status": "SUPPORTED",
+          "reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+          "evidence_ids": [
+            "history:1"
+          ]
+        }
+      ],
+      "relationship_audit": [
+        {
+          "claim_id": "claim_001",
+          "attribute_id": "attr_001",
+          "evidence_id": "quran:2:255",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_001",
+          "attribute_id": "attr_002",
+          "evidence_id": "quran:2:255",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_001",
+          "attribute_id": "attr_003",
+          "evidence_id": "quran:2:255",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_002",
+          "attribute_id": "attr_001",
+          "evidence_id": "tafseer:2:255:1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_003",
+          "attribute_id": "attr_001",
+          "evidence_id": "hadeethenc:1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_003",
+          "attribute_id": "attr_001",
+          "evidence_id": "dorar-hadith:1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_003",
+          "attribute_id": "attr_002",
+          "evidence_id": "hadeethenc:1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_003",
+          "attribute_id": "attr_002",
+          "evidence_id": "dorar-hadith:1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_004",
+          "attribute_id": "attr_001",
+          "evidence_id": "hadith-explanation:exp-1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_005",
+          "attribute_id": "attr_001",
+          "evidence_id": "fiqh:1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_006",
+          "attribute_id": "attr_001",
+          "evidence_id": "aqeeda:1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_007",
+          "attribute_id": "attr_001",
+          "evidence_id": "history:1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        }
+      ],
+      "metrics": {
+        "unsupported_inference_count": 0,
+        "total_support_or_contradiction_decisions": 12,
+        "unsupported_inference_rate": 0.0,
+        "validated_decisions_with_evidence_ids": 12,
+        "total_evidence_based_decisions": 12,
+        "evidence_traceability": 1.0,
+        "claims_with_only_expected_provider_family": 7,
+        "total_routable_claims": 7,
+        "routing_precision": 1.0,
+        "unauthorized_explanation_calls": 0
+      },
+      "explanation_calls": [
+        [
+          "exp-1",
+          "1",
+          "dorar-hadith:child-1"
+        ]
+      ],
+      "cost": {
+        "llm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "provider_calls": 9,
+        "provider_breakdown": [
+          {
+            "provider": "DORAR_AQEEDA",
+            "request_count": 1
+          },
+          {
+            "provider": "DORAR_FEQHIA",
+            "request_count": 1
+          },
+          {
+            "provider": "DORAR_HADITH",
+            "request_count": 2
+          },
+          {
+            "provider": "DORAR_HADITH_EXPLANATION",
+            "request_count": 0
+          },
+          {
+            "provider": "DORAR_HISTORY",
+            "request_count": 1
+          },
+          {
+            "provider": "DORAR_TAFSEER",
+            "request_count": 1
+          },
+          {
+            "provider": "HADEETHENC",
+            "request_count": 1
+          },
+          {
+            "provider": "QURANPEDIA",
+            "request_count": 2
+          }
+        ],
+        "duration_ms": 8.714,
+        "cost_status": "AVAILABLE",
+        "estimated_cost_usd": "0",
+        "estimated_cost_sar": "0.00",
+        "usd_sar_rate": "3.75",
+        "usage_records": []
+      },
+      "failures": []
+    },
+    {
+      "case_id": "mixed_adversarial",
+      "input_text": "آية الكرسي من سورة آل عمران آية 7، ومعناها نفي القيومية. وحديث إنما الأعمال بالنيات رواه أبو هريرة، ومعناه أن النية لا أثر لها. والشافعية يقولون إن الوتر فرض. ونسب نفي العلم إلى أهل السنة. وكان صلح الحديبية سنة 9 هـ.",
+      "claims": [
+        {
+          "id": "claim_001",
+          "original_text": "آية الكرسي من آل عمران 7",
+          "normalized_claim": "آية الكرسي من آل عمران 7",
+          "claim_type": "QURAN_RECORD",
+          "domain": "QURAN",
+          "search_queries": [
+            "آية الكرسي من آل عمران 7 مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "QURAN_TEXT",
+              "value": "الله لا إله إلا هو الحي القيوم",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            },
+            {
+              "id": "attr_002",
+              "type": "SURAH",
+              "value": "3",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            },
+            {
+              "id": "attr_003",
+              "type": "AYAH_NUMBER",
+              "value": "7",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": null,
+          "relationship": null,
+          "subject_context": null,
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_002",
+          "original_text": "تفسير آية الكرسي ينفي القيومية",
+          "normalized_claim": "تفسير آية الكرسي ينفي القيومية",
+          "claim_type": "QURAN_INTERPRETATION",
+          "domain": "QURAN",
+          "search_queries": [
+            "تفسير آية الكرسي ينفي القيومية مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "INTERPRETATION",
+              "value": "الآية تنفي القيومية",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": "claim_001",
+          "relationship": "INTERPRETS",
+          "subject_context": {
+            "type": "QURAN",
+            "surah": "3",
+            "ayah_number": "7",
+            "ayah_numbers": null,
+            "text": null
+          },
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_003",
+          "original_text": "حديث إنما الأعمال بالنيات رواه أبو هريرة",
+          "normalized_claim": "حديث إنما الأعمال بالنيات رواه أبو هريرة",
+          "claim_type": "HADITH_RECORD",
+          "domain": "HADITH",
+          "search_queries": [
+            "حديث إنما الأعمال بالنيات رواه أبو هريرة مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "HADITH_TEXT",
+              "value": "إنما الأعمال بالنيات",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            },
+            {
+              "id": "attr_002",
+              "type": "NARRATOR",
+              "value": "أبو هريرة",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": null,
+          "relationship": null,
+          "subject_context": null,
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_004",
+          "original_text": "شرح حديث إنما الأعمال بالنيات أن النية لا أثر لها",
+          "normalized_claim": "شرح حديث إنما الأعمال بالنيات أن النية لا أثر لها",
+          "claim_type": "HADITH_INTERPRETATION",
+          "domain": "HADITH",
+          "search_queries": [
+            "شرح حديث إنما الأعمال بالنيات أن النية لا أثر لها مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "INTERPRETATION",
+              "value": "النية لا أثر لها",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": "claim_003",
+          "relationship": "EXPLAINS",
+          "subject_context": {
+            "type": "HADITH",
+            "surah": null,
+            "ayah_number": null,
+            "ayah_numbers": null,
+            "text": "إنما الأعمال بالنيات"
+          },
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_005",
+          "original_text": "الشافعية يقولون الوتر فرض",
+          "normalized_claim": "الشافعية يقولون الوتر فرض",
+          "claim_type": "FIQH_RULING",
+          "domain": "FIQH",
+          "search_queries": [
+            "الشافعية يقولون الوتر فرض مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "RULING",
+              "value": "الوتر فرض",
+              "ayah_numbers": null,
+              "asserted_by": "الشافعية",
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": null,
+          "relationship": null,
+          "subject_context": null,
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_006",
+          "original_text": "أهل السنة ينفون علم الله",
+          "normalized_claim": "أهل السنة ينفون علم الله",
+          "claim_type": "AQEEDAH",
+          "domain": "AQEEDAH",
+          "search_queries": [
+            "أهل السنة ينفون علم الله مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "OTHER",
+              "value": "نفي علم الله",
+              "ayah_numbers": null,
+              "asserted_by": "أهل السنة",
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": null,
+          "relationship": null,
+          "subject_context": null,
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_007",
+          "original_text": "صلح الحديبية سنة 9 هـ",
+          "normalized_claim": "صلح الحديبية سنة 9 هـ",
+          "claim_type": "ISLAMIC_HISTORY",
+          "domain": "HISTORY",
+          "search_queries": [
+            "صلح الحديبية سنة 9 هـ مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "DATE",
+              "value": "9 هـ",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": null,
+          "relationship": null,
+          "subject_context": null,
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        }
+      ],
+      "routing": [
+        {
+          "claim_id": "claim_001",
+          "expected_provider_family": [
+            "QURANPEDIA"
+          ],
+          "planned_sources": [
+            {
+              "provider": "QURANPEDIA",
+              "purpose": "QURAN_RETRIEVAL",
+              "priority": 1
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_001",
+              "target_attribute_ids": [
+                "attr_001",
+                "attr_002",
+                "attr_003"
+              ],
+              "provider": "QURANPEDIA",
+              "purpose": "QURAN_RETRIEVAL",
+              "query": "الله لا إله إلا هو الحي القيوم",
+              "queries": [
+                "الله لا إله إلا هو الحي القيوم"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_002",
+          "expected_provider_family": [
+            "DORAR_TAFSEER",
+            "QURANPEDIA"
+          ],
+          "planned_sources": [
+            {
+              "provider": "DORAR_TAFSEER",
+              "purpose": "QURAN_TAFSIR",
+              "priority": 1
+            },
+            {
+              "provider": "QURANPEDIA",
+              "purpose": "QURAN_TAFSIR",
+              "priority": 2
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_002",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR_TAFSEER",
+              "purpose": "QURAN_TAFSIR",
+              "query": "3 7 الآية تنفي القيومية",
+              "queries": [
+                "3 7 الآية تنفي القيومية"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            },
+            {
+              "task_id": "task_002",
+              "claim_id": "claim_002",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "QURANPEDIA",
+              "purpose": "QURAN_TAFSIR",
+              "query": "تفسير معنى 3 7 تفسير آية الكرسي ينفي القيومية",
+              "queries": [
+                "تفسير معنى 3 7 تفسير آية الكرسي ينفي القيومية"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_003",
+          "expected_provider_family": [
+            "DORAR_HADITH",
+            "HADEETHENC"
+          ],
+          "planned_sources": [
+            {
+              "provider": "HADEETHENC",
+              "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+              "priority": 1
+            },
+            {
+              "provider": "DORAR_HADITH",
+              "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+              "priority": 2
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_003",
+              "target_attribute_ids": [
+                "attr_001",
+                "attr_002"
+              ],
+              "provider": "HADEETHENC",
+              "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+              "query": "إنما الأعمال بالنيات",
+              "queries": [
+                "إنما الأعمال بالنيات"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            },
+            {
+              "task_id": "task_002",
+              "claim_id": "claim_003",
+              "target_attribute_ids": [
+                "attr_001",
+                "attr_002"
+              ],
+              "provider": "DORAR_HADITH",
+              "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+              "query": "إنما الأعمال بالنيات",
+              "queries": [
+                "إنما الأعمال بالنيات"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_004",
+          "expected_provider_family": [
+            "DORAR_HADITH",
+            "HADEETHENC"
+          ],
+          "planned_sources": [
+            {
+              "provider": "DORAR_HADITH",
+              "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+              "priority": 1
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_004",
+              "target_attribute_ids": [],
+              "provider": "DORAR_HADITH",
+              "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+              "query": "إنما الأعمال بالنيات",
+              "queries": [
+                "إنما الأعمال بالنيات"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            },
+            {
+              "task_id": "task_002",
+              "claim_id": "claim_004",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR_HADITH_EXPLANATION",
+              "purpose": "HADITH_EXPLANATION",
+              "query": null,
+              "queries": [],
+              "max_results": null,
+              "depends_on_task_id": "task_001",
+              "dependency_evidence_id": "dorar-hadith:child-1",
+              "execution_condition": "PARENT_ALIGNED_AND_EXPLANATION_AVAILABLE_AND_ID_PRESENT"
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_005",
+          "expected_provider_family": [
+            "DORAR_FEQHIA"
+          ],
+          "planned_sources": [
+            {
+              "provider": "DORAR_FEQHIA",
+              "purpose": "FIQH_RETRIEVAL",
+              "priority": 1
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_005",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR_FEQHIA",
+              "purpose": "FIQH_RETRIEVAL",
+              "query": "الشافعية يقولون الوتر فرض",
+              "queries": [
+                "الشافعية يقولون الوتر فرض"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_006",
+          "expected_provider_family": [
+            "DORAR_AQEEDA"
+          ],
+          "planned_sources": [
+            {
+              "provider": "DORAR_AQEEDA",
+              "purpose": "AQEEDAH_RETRIEVAL",
+              "priority": 1
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_006",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR_AQEEDA",
+              "purpose": "AQEEDAH_RETRIEVAL",
+              "query": "أهل السنة ينفون علم الله",
+              "queries": [
+                "أهل السنة ينفون علم الله"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_007",
+          "expected_provider_family": [
+            "DORAR_HISTORY"
+          ],
+          "planned_sources": [
+            {
+              "provider": "DORAR_HISTORY",
+              "purpose": "HISTORY_RETRIEVAL",
+              "priority": 1
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_007",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR_HISTORY",
+              "purpose": "HISTORY_RETRIEVAL",
+              "query": "صلح الحديبية سنة 9 هـ",
+              "queries": [
+                "صلح الحديبية سنة 9 هـ"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        }
+      ],
+      "retrieval": [
+        {
+          "claim_id": "claim_001",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "QURANPEDIA",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "آية الكرسي من آل عمران 7 مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "quran:2:255",
+                  "target_attribute_ids": [
+                    "attr_001",
+                    "attr_002",
+                    "attr_003"
+                  ],
+                  "provider": "QURANPEDIA",
+                  "evidence_type": "QURAN_AYAH",
+                  "title": null,
+                  "text": "الله لا إله إلا هو الحي القيوم",
+                  "provider_record_id": "2:255",
+                  "source_url": "https://fixture.local/quran/2/255",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {}
+                }
+              ],
+              "error": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_002",
+          "status": "MISSING_CONTEXT",
+          "providers": []
+        },
+        {
+          "claim_id": "claim_003",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "HADEETHENC",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "حديث إنما الأعمال بالنيات رواه أبو هريرة مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "hadeethenc:1",
+                  "target_attribute_ids": [
+                    "attr_001",
+                    "attr_002"
+                  ],
+                  "provider": "HADEETHENC",
+                  "evidence_type": "HADITH",
+                  "title": null,
+                  "text": "إنما الأعمال بالنيات",
+                  "provider_record_id": "1",
+                  "source_url": "https://fixture.local/hadith/1",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {}
+                }
+              ],
+              "error": null
+            },
+            {
+              "provider": "DORAR_HADITH",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "حديث إنما الأعمال بالنيات رواه أبو هريرة مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "dorar-hadith:1",
+                  "target_attribute_ids": [
+                    "attr_001",
+                    "attr_002"
+                  ],
+                  "provider": "DORAR_HADITH",
+                  "evidence_type": "HADITH_JUDGMENT",
+                  "title": null,
+                  "text": "إنما الأعمال بالنيات",
+                  "provider_record_id": "1",
+                  "source_url": "https://fixture.local/dorar/h/1",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {
+                    "hadith_id": "1",
+                    "explanation_available": true,
+                    "explanation_id": "exp-1"
+                  }
+                }
+              ],
+              "error": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_004",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "DORAR_HADITH",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "شرح حديث إنما الأعمال بالنيات أن النية لا أثر لها مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "dorar-hadith:child-1",
+                  "target_attribute_ids": [],
+                  "provider": "DORAR_HADITH",
+                  "evidence_type": "HADITH_JUDGMENT",
+                  "title": null,
+                  "text": "إنما الأعمال بالنيات",
+                  "provider_record_id": "1",
+                  "source_url": "https://fixture.local/dorar/h/1",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {
+                    "hadith_id": "1",
+                    "explanation_available": true,
+                    "explanation_id": "exp-1"
+                  }
+                }
+              ],
+              "error": null
+            },
+            {
+              "provider": "DORAR_HADITH_EXPLANATION",
+              "success": true,
+              "query_attempts": [],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "hadith-explanation:exp-1",
+                  "target_attribute_ids": [
+                    "attr_001"
+                  ],
+                  "provider": "DORAR_HADITH_EXPLANATION",
+                  "evidence_type": "HADITH_EXPLANATION",
+                  "title": null,
+                  "text": "صلاح العمل وقبوله مرتبط بالنية",
+                  "provider_record_id": "exp-1",
+                  "source_url": "https://fixture.local/hadith/explanation/exp-1",
+                  "parent_evidence_id": "dorar-hadith:child-1",
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {
+                    "hadith_id": "1",
+                    "explanation_id": "exp-1",
+                    "hadith_text": "إنما الأعمال بالنيات"
+                  }
+                }
+              ],
+              "error": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_005",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "DORAR_FEQHIA",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "الشافعية يقولون الوتر فرض مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "fiqh:1",
+                  "target_attribute_ids": [
+                    "attr_001"
+                  ],
+                  "provider": "DORAR_FEQHIA",
+                  "evidence_type": "FIQH_CONTENT",
+                  "title": "حكم صلاة الوتر",
+                  "text": "صلاة الوتر سنة مؤكدة وليست فرضا",
+                  "provider_record_id": "fiqh-1",
+                  "source_url": "https://fixture.local/fiqh/1",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {}
+                }
+              ],
+              "error": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_006",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "DORAR_AQEEDA",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "أهل السنة ينفون علم الله مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "aqeeda:1",
+                  "target_attribute_ids": [
+                    "attr_001"
+                  ],
+                  "provider": "DORAR_AQEEDA",
+                  "evidence_type": "AQEEDA_CONTENT",
+                  "title": "أهل السنة ينفون علم الله",
+                  "text": "أهل السنة يثبتون صفة العلم لله",
+                  "provider_record_id": "aq-1",
+                  "source_url": "https://fixture.local/aqeeda/1",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {}
+                }
+              ],
+              "error": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_007",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "DORAR_HISTORY",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "صلح الحديبية سنة 9 هـ مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "history:1",
+                  "target_attribute_ids": [
+                    "attr_001"
+                  ],
+                  "provider": "DORAR_HISTORY",
+                  "evidence_type": "HISTORY_EVENT",
+                  "title": "صلح الحديبية",
+                  "text": "تفاصيل صلح الحديبية",
+                  "provider_record_id": "hist-1",
+                  "source_url": "https://fixture.local/history/1",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {
+                    "hijri_year": 6,
+                    "gregorian_year": 628
+                  }
+                }
+              ],
+              "error": null
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "claim_id": "claim_004",
+          "provider": "DORAR_HADITH_EXPLANATION",
+          "status": "ACCEPTED",
+          "parent_task_id": "task_001",
+          "dependent_task_id": "task_002",
+          "parent_evidence_id": "dorar-hadith:child-1",
+          "dependency_record_id": "exp-1",
+          "reason": "Explanation identity is aligned to the authorizing Hadith record."
+        }
+      ],
+      "validations": [
+        {
+          "claim_id": "claim_001",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "QURAN_TEXT",
+              "claimed_value": "الله لا إله إلا هو الحي القيوم",
+              "status": "CONTRADICTED",
+              "evidence_ids": [
+                "quran:2:255"
+              ],
+              "supporting_evidence_ids": [],
+              "contradicting_evidence_ids": [
+                "quran:2:255"
+              ],
+              "rationale": "The Quran text retrieved at the claimed Surah and ayah reference does not match the quoted Quran text.",
+              "asserted_by": null,
+              "validation_method": "quran_record_alignment",
+              "validator_confidence": 1.0
+            },
+            {
+              "attribute_id": "attr_002",
+              "attribute_type": "SURAH",
+              "claimed_value": "3",
+              "status": "CONTRADICTED",
+              "evidence_ids": [
+                "quran:2:255"
+              ],
+              "supporting_evidence_ids": [],
+              "contradicting_evidence_ids": [
+                "quran:2:255"
+              ],
+              "rationale": "The Quran text retrieved at the claimed Surah and ayah reference does not match the quoted Quran text.",
+              "asserted_by": null,
+              "validation_method": "quran_record_alignment",
+              "validator_confidence": 1.0
+            },
+            {
+              "attribute_id": "attr_003",
+              "attribute_type": "AYAH_NUMBER",
+              "claimed_value": "7",
+              "status": "CONTRADICTED",
+              "evidence_ids": [
+                "quran:2:255"
+              ],
+              "supporting_evidence_ids": [],
+              "contradicting_evidence_ids": [
+                "quran:2:255"
+              ],
+              "rationale": "The Quran text retrieved at the claimed Surah and ayah reference does not match the quoted Quran text.",
+              "asserted_by": null,
+              "validation_method": "quran_record_alignment",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "quran_record_alignment",
+              "candidate_ids": [
+                "quran:2:255"
+              ],
+              "fields_compared": [
+                "text",
+                "reference"
+              ],
+              "result": "CONTRADICTED"
+            },
+            {
+              "attribute_id": "attr_002",
+              "method": "quran_record_alignment",
+              "candidate_ids": [
+                "quran:2:255"
+              ],
+              "fields_compared": [
+                "text",
+                "reference"
+              ],
+              "result": "CONTRADICTED"
+            },
+            {
+              "attribute_id": "attr_003",
+              "method": "quran_record_alignment",
+              "candidate_ids": [
+                "quran:2:255"
+              ],
+              "fields_compared": [
+                "text",
+                "reference"
+              ],
+              "result": "CONTRADICTED"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "quran:2:255",
+              "alignment": "UNRESOLVED",
+              "reason": "Record alignment is not applicable to this claim domain.",
+              "attribute_id": null
+            }
+          ],
+          "quran_record_alignment": "MISMATCH"
+        },
+        {
+          "claim_id": "claim_002",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "INTERPRETATION",
+              "claimed_value": "الآية تنفي القيومية",
+              "status": "NOT_FOUND",
+              "evidence_ids": [],
+              "supporting_evidence_ids": [],
+              "contradicting_evidence_ids": [],
+              "rationale": "Validation was not attempted because Phase 3 could not retrieve evidence: PARENT_QURAN_REFERENCE_NOT_ALIGNED",
+              "asserted_by": null,
+              "validation_method": "retrieval_readiness",
+              "validator_confidence": null
+            }
+          ],
+          "validation_status": "SKIPPED",
+          "retrieval_status": "MISSING_CONTEXT",
+          "missing_context": [
+            "PARENT_QURAN_ALIGNMENT"
+          ],
+          "reason": "PARENT_QURAN_REFERENCE_NOT_ALIGNED",
+          "warnings": [
+            "Phase 3 retrieval was skipped because required context is missing."
+          ],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "retrieval_readiness",
+              "candidate_ids": [],
+              "fields_compared": [],
+              "result": "NOT_FOUND"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [],
+          "quran_record_alignment": null
+        },
+        {
+          "claim_id": "claim_003",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "HADITH_TEXT",
+              "claimed_value": "إنما الأعمال بالنيات",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "hadeethenc:1",
+                "dorar-hadith:1"
+              ],
+              "supporting_evidence_ids": [
+                "hadeethenc:1",
+                "dorar-hadith:1"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+              "asserted_by": null,
+              "validation_method": "deterministic",
+              "validator_confidence": 1.0
+            },
+            {
+              "attribute_id": "attr_002",
+              "attribute_type": "NARRATOR",
+              "claimed_value": "أبو هريرة",
+              "status": "CONTRADICTED",
+              "evidence_ids": [
+                "hadeethenc:1",
+                "dorar-hadith:1"
+              ],
+              "supporting_evidence_ids": [],
+              "contradicting_evidence_ids": [
+                "hadeethenc:1",
+                "dorar-hadith:1"
+              ],
+              "rationale": "Structured evidence explicitly establishes an incompatible value.",
+              "asserted_by": null,
+              "validation_method": "deterministic",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "deterministic",
+              "candidate_ids": [
+                "hadeethenc:1",
+                "dorar-hadith:1"
+              ],
+              "fields_compared": [
+                "text"
+              ],
+              "result": "SUPPORTED"
+            },
+            {
+              "attribute_id": "attr_002",
+              "method": "deterministic",
+              "candidate_ids": [
+                "hadeethenc:1",
+                "dorar-hadith:1"
+              ],
+              "fields_compared": [
+                "narrator",
+                "raw_metadata.narrator"
+              ],
+              "result": "CONTRADICTED"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "hadeethenc:1",
+              "alignment": "ALIGNED",
+              "reason": "Normalized hadith text identifies the candidate as the target record.",
+              "attribute_id": null
+            },
+            {
+              "evidence_id": "dorar-hadith:1",
+              "alignment": "ALIGNED",
+              "reason": "Normalized hadith text identifies the candidate as the target record.",
+              "attribute_id": null
+            }
+          ],
+          "quran_record_alignment": null
+        },
+        {
+          "claim_id": "claim_004",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "INTERPRETATION",
+              "claimed_value": "النية لا أثر لها",
+              "status": "CONTRADICTED",
+              "evidence_ids": [
+                "hadith-explanation:exp-1"
+              ],
+              "supporting_evidence_ids": [],
+              "contradicting_evidence_ids": [
+                "hadith-explanation:exp-1"
+              ],
+              "rationale": "Controlled relationship derived only from supplied fixture evidence.",
+              "asserted_by": null,
+              "validation_method": "semantic",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "semantic",
+              "candidate_ids": [
+                "hadith-explanation:exp-1"
+              ],
+              "fields_compared": [
+                "evidence content",
+                "provenance"
+              ],
+              "result": "CONTRADICTED"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "dorar-hadith:child-1",
+              "alignment": "ALIGNED",
+              "reason": "Normalized hadith text identifies the candidate as the target record.",
+              "attribute_id": null
+            },
+            {
+              "evidence_id": "hadith-explanation:exp-1",
+              "alignment": "UNRELATED",
+              "reason": "The candidate is not a hadith or athar record.",
+              "attribute_id": null
+            }
+          ],
+          "quran_record_alignment": null
+        },
+        {
+          "claim_id": "claim_005",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "RULING",
+              "claimed_value": "الوتر فرض",
+              "status": "UNCERTAIN",
+              "evidence_ids": [
+                "fiqh:1"
+              ],
+              "supporting_evidence_ids": [],
+              "contradicting_evidence_ids": [],
+              "rationale": "Candidate context or attribution could not be resolved safely.",
+              "asserted_by": "الشافعية",
+              "validation_method": "context_alignment",
+              "validator_confidence": null
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "context_alignment",
+              "candidate_ids": [],
+              "fields_compared": [],
+              "result": "UNCERTAIN"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "fiqh:1",
+              "alignment": "UNRESOLVED",
+              "reason": "Record alignment is not applicable to this claim domain.",
+              "attribute_id": null
+            },
+            {
+              "evidence_id": "fiqh:1",
+              "alignment": "UNRESOLVED",
+              "reason": "The evidence does not establish the claimed attribution.",
+              "attribute_id": "attr_001"
+            }
+          ],
+          "quran_record_alignment": null
+        },
+        {
+          "claim_id": "claim_006",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "OTHER",
+              "claimed_value": "نفي علم الله",
+              "status": "CONTRADICTED",
+              "evidence_ids": [
+                "aqeeda:1"
+              ],
+              "supporting_evidence_ids": [],
+              "contradicting_evidence_ids": [
+                "aqeeda:1"
+              ],
+              "rationale": "Controlled relationship derived only from supplied fixture evidence.",
+              "asserted_by": "أهل السنة",
+              "validation_method": "semantic",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "semantic",
+              "candidate_ids": [
+                "aqeeda:1"
+              ],
+              "fields_compared": [
+                "evidence content",
+                "provenance"
+              ],
+              "result": "CONTRADICTED"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "aqeeda:1",
+              "alignment": "UNRESOLVED",
+              "reason": "Record alignment is not applicable to this claim domain.",
+              "attribute_id": null
+            },
+            {
+              "evidence_id": "aqeeda:1",
+              "alignment": "ALIGNED",
+              "reason": "The evidence explicitly addresses the claimed subject.",
+              "attribute_id": "attr_001"
+            }
+          ],
+          "quran_record_alignment": null
+        },
+        {
+          "claim_id": "claim_007",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "DATE",
+              "claimed_value": "9 هـ",
+              "status": "CONTRADICTED",
+              "evidence_ids": [
+                "history:1"
+              ],
+              "supporting_evidence_ids": [],
+              "contradicting_evidence_ids": [
+                "history:1"
+              ],
+              "rationale": "Structured evidence explicitly establishes an incompatible value.",
+              "asserted_by": null,
+              "validation_method": "deterministic",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "deterministic",
+              "candidate_ids": [
+                "history:1"
+              ],
+              "fields_compared": [
+                "structured_fields.hijri_year"
+              ],
+              "result": "CONTRADICTED"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "history:1",
+              "alignment": "UNRESOLVED",
+              "reason": "Record alignment is not applicable to this claim domain.",
+              "attribute_id": null
+            },
+            {
+              "evidence_id": "history:1",
+              "alignment": "ALIGNED",
+              "reason": "The event title identifies the claimed historical event.",
+              "attribute_id": "attr_001"
+            }
+          ],
+          "quran_record_alignment": null
+        }
+      ],
+      "decisions": [
+        {
+          "claim_id": "claim_001",
+          "phase4_statuses": [
+            "CONTRADICTED",
+            "CONTRADICTED",
+            "CONTRADICTED"
+          ],
+          "final_status": "CONFLICTING",
+          "reason_code": "CLAIM_CONTRADICTED_BY_EVIDENCE",
+          "evidence_ids": [
+            "quran:2:255"
+          ]
+        },
+        {
+          "claim_id": "claim_002",
+          "phase4_statuses": [
+            "NOT_FOUND"
+          ],
+          "final_status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "REQUIRED_EVIDENCE_MISSING",
+          "evidence_ids": []
+        },
+        {
+          "claim_id": "claim_003",
+          "phase4_statuses": [
+            "SUPPORTED",
+            "CONTRADICTED"
+          ],
+          "final_status": "CONFLICTING",
+          "reason_code": "EVIDENCE_CONFLICT",
+          "evidence_ids": [
+            "dorar-hadith:1",
+            "hadeethenc:1"
+          ]
+        },
+        {
+          "claim_id": "claim_004",
+          "phase4_statuses": [
+            "CONTRADICTED"
+          ],
+          "final_status": "CONFLICTING",
+          "reason_code": "CLAIM_CONTRADICTED_BY_EVIDENCE",
+          "evidence_ids": [
+            "hadith-explanation:exp-1"
+          ]
+        },
+        {
+          "claim_id": "claim_005",
+          "phase4_statuses": [
+            "UNCERTAIN"
+          ],
+          "final_status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "AMBIGUOUS_EVIDENCE",
+          "evidence_ids": []
+        },
+        {
+          "claim_id": "claim_006",
+          "phase4_statuses": [
+            "CONTRADICTED"
+          ],
+          "final_status": "CONFLICTING",
+          "reason_code": "CLAIM_CONTRADICTED_BY_EVIDENCE",
+          "evidence_ids": [
+            "aqeeda:1"
+          ]
+        },
+        {
+          "claim_id": "claim_007",
+          "phase4_statuses": [
+            "CONTRADICTED"
+          ],
+          "final_status": "CONFLICTING",
+          "reason_code": "CLAIM_CONTRADICTED_BY_EVIDENCE",
+          "evidence_ids": [
+            "history:1"
+          ]
+        }
+      ],
+      "relationship_audit": [
+        {
+          "claim_id": "claim_001",
+          "attribute_id": "attr_001",
+          "evidence_id": "quran:2:255",
+          "role": "CONTRADICTION",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_001",
+          "attribute_id": "attr_002",
+          "evidence_id": "quran:2:255",
+          "role": "CONTRADICTION",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_001",
+          "attribute_id": "attr_003",
+          "evidence_id": "quran:2:255",
+          "role": "CONTRADICTION",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_003",
+          "attribute_id": "attr_001",
+          "evidence_id": "hadeethenc:1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_003",
+          "attribute_id": "attr_001",
+          "evidence_id": "dorar-hadith:1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_003",
+          "attribute_id": "attr_002",
+          "evidence_id": "hadeethenc:1",
+          "role": "CONTRADICTION",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_003",
+          "attribute_id": "attr_002",
+          "evidence_id": "dorar-hadith:1",
+          "role": "CONTRADICTION",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_004",
+          "attribute_id": "attr_001",
+          "evidence_id": "hadith-explanation:exp-1",
+          "role": "CONTRADICTION",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_006",
+          "attribute_id": "attr_001",
+          "evidence_id": "aqeeda:1",
+          "role": "CONTRADICTION",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_007",
+          "attribute_id": "attr_001",
+          "evidence_id": "history:1",
+          "role": "CONTRADICTION",
+          "compatible_and_aligned": true
+        }
+      ],
+      "metrics": {
+        "unsupported_inference_count": 0,
+        "total_support_or_contradiction_decisions": 10,
+        "unsupported_inference_rate": 0.0,
+        "validated_decisions_with_evidence_ids": 10,
+        "total_evidence_based_decisions": 10,
+        "evidence_traceability": 1.0,
+        "claims_with_only_expected_provider_family": 7,
+        "total_routable_claims": 7,
+        "routing_precision": 1.0,
+        "unauthorized_explanation_calls": 0
+      },
+      "explanation_calls": [
+        [
+          "exp-1",
+          "1",
+          "dorar-hadith:child-1"
+        ]
+      ],
+      "cost": {
+        "llm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "provider_calls": 7,
+        "provider_breakdown": [
+          {
+            "provider": "DORAR_AQEEDA",
+            "request_count": 1
+          },
+          {
+            "provider": "DORAR_FEQHIA",
+            "request_count": 1
+          },
+          {
+            "provider": "DORAR_HADITH",
+            "request_count": 2
+          },
+          {
+            "provider": "DORAR_HADITH_EXPLANATION",
+            "request_count": 0
+          },
+          {
+            "provider": "DORAR_HISTORY",
+            "request_count": 1
+          },
+          {
+            "provider": "HADEETHENC",
+            "request_count": 1
+          },
+          {
+            "provider": "QURANPEDIA",
+            "request_count": 1
+          }
+        ],
+        "duration_ms": 5.137,
+        "cost_status": "AVAILABLE",
+        "estimated_cost_usd": "0",
+        "estimated_cost_sar": "0.00",
+        "usd_sar_rate": "3.75",
+        "usage_records": []
+      },
+      "failures": []
+    },
+    {
+      "case_id": "partial_insufficient",
+      "input_text": "تفسير آية غير محددة، وقول فقهي منسوب إلى عالم غير مذكور، ومكان حادثة تاريخية لم يرد في المصدر.",
+      "claims": [
+        {
+          "id": "claim_001",
+          "original_text": "تفسير آية غير محددة",
+          "normalized_claim": "تفسير آية غير محددة",
+          "claim_type": "QURAN_TAFSIR",
+          "domain": "QURAN",
+          "search_queries": [
+            "تفسير آية غير محددة مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "INTERPRETATION",
+              "value": "معنى غير محدد",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": null,
+          "relationship": null,
+          "subject_context": null,
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_002",
+          "original_text": "قول الوتر منسوب إلى عالم غير مذكور",
+          "normalized_claim": "قول الوتر منسوب إلى عالم غير مذكور",
+          "claim_type": "FIQH_RULING",
+          "domain": "FIQH",
+          "search_queries": [
+            "قول الوتر منسوب إلى عالم غير مذكور مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "RULING",
+              "value": "الوتر مستحب",
+              "ayah_numbers": null,
+              "asserted_by": "العالم المجهول",
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": null,
+          "relationship": null,
+          "subject_context": null,
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_003",
+          "original_text": "مكان صلح الحديبية داخل مكة",
+          "normalized_claim": "مكان صلح الحديبية داخل مكة",
+          "claim_type": "ISLAMIC_HISTORY",
+          "domain": "HISTORY",
+          "search_queries": [
+            "مكان صلح الحديبية داخل مكة مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "LOCATION",
+              "value": "داخل مكة",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": null,
+          "relationship": null,
+          "subject_context": null,
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        }
+      ],
+      "routing": [
+        {
+          "claim_id": "claim_001",
+          "expected_provider_family": [
+            "DORAR_TAFSEER",
+            "QURANPEDIA"
+          ],
+          "planned_sources": [
+            {
+              "provider": "DORAR_TAFSEER",
+              "purpose": "QURAN_TAFSIR",
+              "priority": 1
+            },
+            {
+              "provider": "QURANPEDIA",
+              "purpose": "QURAN_TAFSIR",
+              "priority": 2
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_001",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR_TAFSEER",
+              "purpose": "QURAN_TAFSIR",
+              "query": "معنى غير محدد",
+              "queries": [
+                "معنى غير محدد"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            },
+            {
+              "task_id": "task_002",
+              "claim_id": "claim_001",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "QURANPEDIA",
+              "purpose": "QURAN_TAFSIR",
+              "query": "تفسير آية غير محددة مصدر",
+              "queries": [
+                "تفسير آية غير محددة مصدر"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_002",
+          "expected_provider_family": [
+            "DORAR_FEQHIA"
+          ],
+          "planned_sources": [
+            {
+              "provider": "DORAR_FEQHIA",
+              "purpose": "FIQH_RETRIEVAL",
+              "priority": 1
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_002",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR_FEQHIA",
+              "purpose": "FIQH_RETRIEVAL",
+              "query": "قول الوتر منسوب إلى عالم غير مذكور",
+              "queries": [
+                "قول الوتر منسوب إلى عالم غير مذكور"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_003",
+          "expected_provider_family": [
+            "DORAR_HISTORY"
+          ],
+          "planned_sources": [
+            {
+              "provider": "DORAR_HISTORY",
+              "purpose": "HISTORY_RETRIEVAL",
+              "priority": 1
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_003",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR_HISTORY",
+              "purpose": "HISTORY_RETRIEVAL",
+              "query": "مكان صلح الحديبية داخل مكة",
+              "queries": [
+                "مكان صلح الحديبية داخل مكة"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        }
+      ],
+      "retrieval": [
+        {
+          "claim_id": "claim_001",
+          "status": "MISSING_CONTEXT",
+          "providers": []
+        },
+        {
+          "claim_id": "claim_002",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "DORAR_FEQHIA",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "قول الوتر منسوب إلى عالم غير مذكور مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "fiqh:generic",
+                  "target_attribute_ids": [
+                    "attr_001"
+                  ],
+                  "provider": "DORAR_FEQHIA",
+                  "evidence_type": "FIQH_CONTENT",
+                  "title": "حكم الوتر",
+                  "text": "الوتر مستحب",
+                  "provider_record_id": null,
+                  "source_url": null,
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {}
+                }
+              ],
+              "error": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_003",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "DORAR_HISTORY",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "مكان صلح الحديبية داخل مكة مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "history:location-missing",
+                  "target_attribute_ids": [
+                    "attr_001"
+                  ],
+                  "provider": "DORAR_HISTORY",
+                  "evidence_type": "HISTORY_EVENT",
+                  "title": "صلح الحديبية",
+                  "text": "تفاصيل صلح الحديبية دون ذكر المكان",
+                  "provider_record_id": null,
+                  "source_url": null,
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {}
+                }
+              ],
+              "error": null
+            }
+          ]
+        }
+      ],
+      "dependencies": [],
+      "validations": [
+        {
+          "claim_id": "claim_001",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "INTERPRETATION",
+              "claimed_value": "معنى غير محدد",
+              "status": "NOT_FOUND",
+              "evidence_ids": [],
+              "supporting_evidence_ids": [],
+              "contradicting_evidence_ids": [],
+              "rationale": "Validation was not attempted because Phase 3 could not retrieve evidence: The referenced Quran verse cannot be uniquely identified.",
+              "asserted_by": null,
+              "validation_method": "retrieval_readiness",
+              "validator_confidence": null
+            }
+          ],
+          "validation_status": "SKIPPED",
+          "retrieval_status": "MISSING_CONTEXT",
+          "missing_context": [
+            "SURAH",
+            "AYAH_NUMBER"
+          ],
+          "reason": "The referenced Quran verse cannot be uniquely identified.",
+          "warnings": [
+            "Phase 3 retrieval was skipped because required context is missing."
+          ],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "retrieval_readiness",
+              "candidate_ids": [],
+              "fields_compared": [],
+              "result": "NOT_FOUND"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [],
+          "quran_record_alignment": null
+        },
+        {
+          "claim_id": "claim_002",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "RULING",
+              "claimed_value": "الوتر مستحب",
+              "status": "UNCERTAIN",
+              "evidence_ids": [
+                "fiqh:generic"
+              ],
+              "supporting_evidence_ids": [],
+              "contradicting_evidence_ids": [],
+              "rationale": "Candidate context or attribution could not be resolved safely.",
+              "asserted_by": "العالم المجهول",
+              "validation_method": "context_alignment",
+              "validator_confidence": null
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "context_alignment",
+              "candidate_ids": [],
+              "fields_compared": [],
+              "result": "UNCERTAIN"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "fiqh:generic",
+              "alignment": "UNRESOLVED",
+              "reason": "Record alignment is not applicable to this claim domain.",
+              "attribute_id": null
+            },
+            {
+              "evidence_id": "fiqh:generic",
+              "alignment": "UNRESOLVED",
+              "reason": "The evidence does not establish the claimed attribution.",
+              "attribute_id": "attr_001"
+            }
+          ],
+          "quran_record_alignment": null
+        },
+        {
+          "claim_id": "claim_003",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "LOCATION",
+              "claimed_value": "داخل مكة",
+              "status": "NOT_FOUND",
+              "evidence_ids": [
+                "history:location-missing"
+              ],
+              "supporting_evidence_ids": [],
+              "contradicting_evidence_ids": [],
+              "rationale": "Controlled relationship derived only from supplied fixture evidence.",
+              "asserted_by": null,
+              "validation_method": "semantic",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "semantic",
+              "candidate_ids": [
+                "history:location-missing"
+              ],
+              "fields_compared": [
+                "evidence content",
+                "provenance"
+              ],
+              "result": "NOT_FOUND"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "history:location-missing",
+              "alignment": "UNRESOLVED",
+              "reason": "Record alignment is not applicable to this claim domain.",
+              "attribute_id": null
+            },
+            {
+              "evidence_id": "history:location-missing",
+              "alignment": "ALIGNED",
+              "reason": "The event title identifies the claimed historical event.",
+              "attribute_id": "attr_001"
+            }
+          ],
+          "quran_record_alignment": null
+        }
+      ],
+      "decisions": [
+        {
+          "claim_id": "claim_001",
+          "phase4_statuses": [
+            "NOT_FOUND"
+          ],
+          "final_status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "REQUIRED_EVIDENCE_MISSING",
+          "evidence_ids": []
+        },
+        {
+          "claim_id": "claim_002",
+          "phase4_statuses": [
+            "UNCERTAIN"
+          ],
+          "final_status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "AMBIGUOUS_EVIDENCE",
+          "evidence_ids": []
+        },
+        {
+          "claim_id": "claim_003",
+          "phase4_statuses": [
+            "NOT_FOUND"
+          ],
+          "final_status": "INSUFFICIENT_EVIDENCE",
+          "reason_code": "REQUIRED_EVIDENCE_MISSING",
+          "evidence_ids": []
+        }
+      ],
+      "relationship_audit": [],
+      "metrics": {
+        "unsupported_inference_count": 0,
+        "total_support_or_contradiction_decisions": 0,
+        "unsupported_inference_rate": 0,
+        "validated_decisions_with_evidence_ids": 0,
+        "total_evidence_based_decisions": 0,
+        "evidence_traceability": 1,
+        "claims_with_only_expected_provider_family": 3,
+        "total_routable_claims": 3,
+        "routing_precision": 1.0,
+        "unauthorized_explanation_calls": 0
+      },
+      "explanation_calls": [],
+      "cost": {
+        "llm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "provider_calls": 2,
+        "provider_breakdown": [
+          {
+            "provider": "DORAR_FEQHIA",
+            "request_count": 1
+          },
+          {
+            "provider": "DORAR_HISTORY",
+            "request_count": 1
+          }
+        ],
+        "duration_ms": 1.704,
+        "cost_status": "AVAILABLE",
+        "estimated_cost_usd": "0",
+        "estimated_cost_sar": "0.00",
+        "usd_sar_rate": "3.75",
+        "usage_records": []
+      },
+      "failures": []
+    },
+    {
+      "case_id": "provider_failure_isolation",
+      "input_text": "قال الله تعالى: الله لا إله إلا هو الحي القيوم، وهي الآية 255 من سورة البقرة، ومعناها أن الله كامل الحياة والقيومية. وقال النبي ﷺ: إنما الأعمال بالنيات، رواه عمر بن الخطاب، ومعناه أن صلاح العمل مرتبط بالنية. وصلاة الوتر سنة مؤكدة. والله متصف بالعلم. وكان صلح الحديبية سنة 6 هـ.",
+      "claims": [
+        {
+          "id": "claim_001",
+          "original_text": "الله لا إله إلا هو الحي القيوم من البقرة 255",
+          "normalized_claim": "الله لا إله إلا هو الحي القيوم من البقرة 255",
+          "claim_type": "QURAN_RECORD",
+          "domain": "QURAN",
+          "search_queries": [
+            "الله لا إله إلا هو الحي القيوم من البقرة 255 مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "QURAN_TEXT",
+              "value": "الله لا إله إلا هو الحي القيوم",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            },
+            {
+              "id": "attr_002",
+              "type": "SURAH",
+              "value": "2",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            },
+            {
+              "id": "attr_003",
+              "type": "AYAH_NUMBER",
+              "value": "255",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": null,
+          "relationship": null,
+          "subject_context": null,
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_002",
+          "original_text": "تفسير آية الكرسي أن الله كامل الحياة والقيومية",
+          "normalized_claim": "تفسير آية الكرسي أن الله كامل الحياة والقيومية",
+          "claim_type": "QURAN_INTERPRETATION",
+          "domain": "QURAN",
+          "search_queries": [
+            "تفسير آية الكرسي أن الله كامل الحياة والقيومية مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "INTERPRETATION",
+              "value": "الله كامل الحياة والقيومية",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": "claim_001",
+          "relationship": "INTERPRETS",
+          "subject_context": {
+            "type": "QURAN",
+            "surah": "2",
+            "ayah_number": "255",
+            "ayah_numbers": null,
+            "text": null
+          },
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_003",
+          "original_text": "حديث إنما الأعمال بالنيات رواه عمر بن الخطاب",
+          "normalized_claim": "حديث إنما الأعمال بالنيات رواه عمر بن الخطاب",
+          "claim_type": "HADITH_RECORD",
+          "domain": "HADITH",
+          "search_queries": [
+            "حديث إنما الأعمال بالنيات رواه عمر بن الخطاب مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "HADITH_TEXT",
+              "value": "إنما الأعمال بالنيات",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            },
+            {
+              "id": "attr_002",
+              "type": "NARRATOR",
+              "value": "عمر بن الخطاب",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": null,
+          "relationship": null,
+          "subject_context": null,
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_004",
+          "original_text": "شرح حديث إنما الأعمال بالنيات أن صلاح العمل مرتبط بالنية",
+          "normalized_claim": "شرح حديث إنما الأعمال بالنيات أن صلاح العمل مرتبط بالنية",
+          "claim_type": "HADITH_INTERPRETATION",
+          "domain": "HADITH",
+          "search_queries": [
+            "شرح حديث إنما الأعمال بالنيات أن صلاح العمل مرتبط بالنية مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "INTERPRETATION",
+              "value": "صلاح العمل مرتبط بالنية",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": "claim_003",
+          "relationship": "EXPLAINS",
+          "subject_context": {
+            "type": "HADITH",
+            "surah": null,
+            "ayah_number": null,
+            "ayah_numbers": null,
+            "text": "إنما الأعمال بالنيات"
+          },
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_005",
+          "original_text": "صلاة الوتر سنة مؤكدة",
+          "normalized_claim": "صلاة الوتر سنة مؤكدة",
+          "claim_type": "FIQH_RULING",
+          "domain": "FIQH",
+          "search_queries": [
+            "صلاة الوتر سنة مؤكدة مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "RULING",
+              "value": "سنة مؤكدة",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": null,
+          "relationship": null,
+          "subject_context": null,
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_006",
+          "original_text": "الله متصف بالعلم",
+          "normalized_claim": "الله متصف بالعلم",
+          "claim_type": "AQEEDAH",
+          "domain": "AQEEDAH",
+          "search_queries": [
+            "الله متصف بالعلم مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "OTHER",
+              "value": "الله متصف بالعلم",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": null,
+          "relationship": null,
+          "subject_context": null,
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        },
+        {
+          "id": "claim_007",
+          "original_text": "صلح الحديبية سنة 6 هـ",
+          "normalized_claim": "صلح الحديبية سنة 6 هـ",
+          "claim_type": "ISLAMIC_HISTORY",
+          "domain": "HISTORY",
+          "search_queries": [
+            "صلح الحديبية سنة 6 هـ مصدر"
+          ],
+          "entities": [],
+          "attributes": [
+            {
+              "id": "attr_001",
+              "type": "DATE",
+              "value": "6 هـ",
+              "ayah_numbers": null,
+              "asserted_by": null,
+              "qualifier": null,
+              "requires_evidence": true
+            }
+          ],
+          "parent_claim_id": null,
+          "relationship": null,
+          "subject_context": null,
+          "normalization_warnings": [],
+          "requires_evidence": true,
+          "reason": "Stage 5 controlled E2E fixture."
+        }
+      ],
+      "routing": [
+        {
+          "claim_id": "claim_001",
+          "expected_provider_family": [
+            "QURANPEDIA"
+          ],
+          "planned_sources": [
+            {
+              "provider": "QURANPEDIA",
+              "purpose": "QURAN_RETRIEVAL",
+              "priority": 1
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_001",
+              "target_attribute_ids": [
+                "attr_001",
+                "attr_002",
+                "attr_003"
+              ],
+              "provider": "QURANPEDIA",
+              "purpose": "QURAN_RETRIEVAL",
+              "query": "الله لا إله إلا هو الحي القيوم",
+              "queries": [
+                "الله لا إله إلا هو الحي القيوم"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_002",
+          "expected_provider_family": [
+            "DORAR_TAFSEER",
+            "QURANPEDIA"
+          ],
+          "planned_sources": [
+            {
+              "provider": "DORAR_TAFSEER",
+              "purpose": "QURAN_TAFSIR",
+              "priority": 1
+            },
+            {
+              "provider": "QURANPEDIA",
+              "purpose": "QURAN_TAFSIR",
+              "priority": 2
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_002",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR_TAFSEER",
+              "purpose": "QURAN_TAFSIR",
+              "query": "2 255 الله كامل الحياة والقيومية",
+              "queries": [
+                "2 255 الله كامل الحياة والقيومية"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            },
+            {
+              "task_id": "task_002",
+              "claim_id": "claim_002",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "QURANPEDIA",
+              "purpose": "QURAN_TAFSIR",
+              "query": "تفسير معنى 2 255 تفسير آية الكرسي أن الله كامل الحياة والقيومية",
+              "queries": [
+                "تفسير معنى 2 255 تفسير آية الكرسي أن الله كامل الحياة والقيومية"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_003",
+          "expected_provider_family": [
+            "DORAR_HADITH",
+            "HADEETHENC"
+          ],
+          "planned_sources": [
+            {
+              "provider": "HADEETHENC",
+              "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+              "priority": 1
+            },
+            {
+              "provider": "DORAR_HADITH",
+              "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+              "priority": 2
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_003",
+              "target_attribute_ids": [
+                "attr_001",
+                "attr_002"
+              ],
+              "provider": "HADEETHENC",
+              "purpose": "STRUCTURED_HADITH_RETRIEVAL",
+              "query": "إنما الأعمال بالنيات",
+              "queries": [
+                "إنما الأعمال بالنيات"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            },
+            {
+              "task_id": "task_002",
+              "claim_id": "claim_003",
+              "target_attribute_ids": [
+                "attr_001",
+                "attr_002"
+              ],
+              "provider": "DORAR_HADITH",
+              "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+              "query": "إنما الأعمال بالنيات",
+              "queries": [
+                "إنما الأعمال بالنيات"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_004",
+          "expected_provider_family": [
+            "DORAR_HADITH",
+            "HADEETHENC"
+          ],
+          "planned_sources": [
+            {
+              "provider": "DORAR_HADITH",
+              "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+              "priority": 1
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_004",
+              "target_attribute_ids": [],
+              "provider": "DORAR_HADITH",
+              "purpose": "HADITH_SOURCE_AND_JUDGMENT",
+              "query": "إنما الأعمال بالنيات",
+              "queries": [
+                "إنما الأعمال بالنيات"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            },
+            {
+              "task_id": "task_002",
+              "claim_id": "claim_004",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR_HADITH_EXPLANATION",
+              "purpose": "HADITH_EXPLANATION",
+              "query": null,
+              "queries": [],
+              "max_results": null,
+              "depends_on_task_id": "task_001",
+              "dependency_evidence_id": "dorar-hadith:child-1",
+              "execution_condition": "PARENT_ALIGNED_AND_EXPLANATION_AVAILABLE_AND_ID_PRESENT"
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_005",
+          "expected_provider_family": [
+            "DORAR_FEQHIA"
+          ],
+          "planned_sources": [
+            {
+              "provider": "DORAR_FEQHIA",
+              "purpose": "FIQH_RETRIEVAL",
+              "priority": 1
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_005",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR_FEQHIA",
+              "purpose": "FIQH_RETRIEVAL",
+              "query": "صلاة الوتر سنة مؤكدة",
+              "queries": [
+                "صلاة الوتر سنة مؤكدة"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_006",
+          "expected_provider_family": [
+            "DORAR_AQEEDA"
+          ],
+          "planned_sources": [
+            {
+              "provider": "DORAR_AQEEDA",
+              "purpose": "AQEEDAH_RETRIEVAL",
+              "priority": 1
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_006",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR_AQEEDA",
+              "purpose": "AQEEDAH_RETRIEVAL",
+              "query": "الله متصف بالعلم",
+              "queries": [
+                "الله متصف بالعلم"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_007",
+          "expected_provider_family": [
+            "DORAR_HISTORY"
+          ],
+          "planned_sources": [
+            {
+              "provider": "DORAR_HISTORY",
+              "purpose": "HISTORY_RETRIEVAL",
+              "priority": 1
+            }
+          ],
+          "tasks": [
+            {
+              "task_id": "task_001",
+              "claim_id": "claim_007",
+              "target_attribute_ids": [
+                "attr_001"
+              ],
+              "provider": "DORAR_HISTORY",
+              "purpose": "HISTORY_RETRIEVAL",
+              "query": "صلح الحديبية سنة 6 هـ",
+              "queries": [
+                "صلح الحديبية سنة 6 هـ"
+              ],
+              "max_results": 20,
+              "depends_on_task_id": null,
+              "dependency_evidence_id": null,
+              "execution_condition": null
+            }
+          ]
+        }
+      ],
+      "retrieval": [
+        {
+          "claim_id": "claim_001",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "QURANPEDIA",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "الله لا إله إلا هو الحي القيوم من البقرة 255 مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "quran:2:255",
+                  "target_attribute_ids": [
+                    "attr_001",
+                    "attr_002",
+                    "attr_003"
+                  ],
+                  "provider": "QURANPEDIA",
+                  "evidence_type": "QURAN_AYAH",
+                  "title": null,
+                  "text": "الله لا إله إلا هو الحي القيوم",
+                  "provider_record_id": "2:255",
+                  "source_url": "https://fixture.local/quran/2/255",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {}
+                }
+              ],
+              "error": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_002",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "DORAR_TAFSEER",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "تفسير آية الكرسي أن الله كامل الحياة والقيومية مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "tafseer:2:255:1",
+                  "target_attribute_ids": [
+                    "attr_001"
+                  ],
+                  "provider": "DORAR_TAFSEER",
+                  "evidence_type": "TAFSEER_SECTION",
+                  "title": "تفسير آية الكرسي",
+                  "text": "تثبت الآية كمال حياة الله وقيوميته",
+                  "provider_record_id": "taf-255",
+                  "source_url": "https://fixture.local/tafseer/255",
+                  "parent_evidence_id": null,
+                  "fragment_id": "section-1",
+                  "fragment_label": "المعنى الإجمالي",
+                  "structured_fields": {
+                    "surah_id": 2,
+                    "page_id": 255
+                  }
+                }
+              ],
+              "error": null
+            },
+            {
+              "provider": "QURANPEDIA",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "تفسير آية الكرسي أن الله كامل الحياة والقيومية مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 0,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 0,
+              "candidates": [],
+              "error": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_003",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "HADEETHENC",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "حديث إنما الأعمال بالنيات رواه عمر بن الخطاب مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "hadeethenc:1",
+                  "target_attribute_ids": [
+                    "attr_001",
+                    "attr_002"
+                  ],
+                  "provider": "HADEETHENC",
+                  "evidence_type": "HADITH",
+                  "title": null,
+                  "text": "إنما الأعمال بالنيات",
+                  "provider_record_id": "1",
+                  "source_url": "https://fixture.local/hadith/1",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {}
+                }
+              ],
+              "error": null
+            },
+            {
+              "provider": "DORAR_HADITH",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "حديث إنما الأعمال بالنيات رواه عمر بن الخطاب مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "dorar-hadith:1",
+                  "target_attribute_ids": [
+                    "attr_001",
+                    "attr_002"
+                  ],
+                  "provider": "DORAR_HADITH",
+                  "evidence_type": "HADITH_JUDGMENT",
+                  "title": null,
+                  "text": "إنما الأعمال بالنيات",
+                  "provider_record_id": "1",
+                  "source_url": "https://fixture.local/dorar/h/1",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {
+                    "hadith_id": "1",
+                    "explanation_available": true,
+                    "explanation_id": "exp-1"
+                  }
+                }
+              ],
+              "error": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_004",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "DORAR_HADITH",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "شرح حديث إنما الأعمال بالنيات أن صلاح العمل مرتبط بالنية مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "dorar-hadith:child-1",
+                  "target_attribute_ids": [],
+                  "provider": "DORAR_HADITH",
+                  "evidence_type": "HADITH_JUDGMENT",
+                  "title": null,
+                  "text": "إنما الأعمال بالنيات",
+                  "provider_record_id": "1",
+                  "source_url": "https://fixture.local/dorar/h/1",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {
+                    "hadith_id": "1",
+                    "explanation_available": true,
+                    "explanation_id": "exp-1"
+                  }
+                }
+              ],
+              "error": null
+            },
+            {
+              "provider": "DORAR_HADITH_EXPLANATION",
+              "success": true,
+              "query_attempts": [],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "hadith-explanation:exp-1",
+                  "target_attribute_ids": [
+                    "attr_001"
+                  ],
+                  "provider": "DORAR_HADITH_EXPLANATION",
+                  "evidence_type": "HADITH_EXPLANATION",
+                  "title": null,
+                  "text": "صلاح العمل وقبوله مرتبط بالنية",
+                  "provider_record_id": "exp-1",
+                  "source_url": "https://fixture.local/hadith/explanation/exp-1",
+                  "parent_evidence_id": "dorar-hadith:child-1",
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {
+                    "hadith_id": "1",
+                    "explanation_id": "exp-1",
+                    "hadith_text": "إنما الأعمال بالنيات"
+                  }
+                }
+              ],
+              "error": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_005",
+          "status": "SOURCE_ERROR",
+          "providers": [
+            {
+              "provider": "DORAR_FEQHIA",
+              "success": false,
+              "query_attempts": [
+                {
+                  "query": "صلاة الوتر سنة مؤكدة مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 0,
+                  "success": false,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 0,
+              "candidates": [],
+              "error": {
+                "provider": "DORAR_FEQHIA",
+                "error_type": "TIMEOUT",
+                "message": "Controlled specialist timeout",
+                "retryable": true,
+                "http_status": null
+              }
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_006",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "DORAR_AQEEDA",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "الله متصف بالعلم مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "aqeeda:1",
+                  "target_attribute_ids": [
+                    "attr_001"
+                  ],
+                  "provider": "DORAR_AQEEDA",
+                  "evidence_type": "AQEEDA_CONTENT",
+                  "title": "الله متصف بالعلم",
+                  "text": "أهل السنة يثبتون صفة العلم لله",
+                  "provider_record_id": "aq-1",
+                  "source_url": "https://fixture.local/aqeeda/1",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {}
+                }
+              ],
+              "error": null
+            }
+          ]
+        },
+        {
+          "claim_id": "claim_007",
+          "status": "COMPLETED",
+          "providers": [
+            {
+              "provider": "DORAR_HISTORY",
+              "success": true,
+              "query_attempts": [
+                {
+                  "query": "صلح الحديبية سنة 6 هـ مصدر",
+                  "attempt": 1,
+                  "duration_ms": 0.0,
+                  "result_count": 1,
+                  "success": true,
+                  "endpoint": "fixture://controlled",
+                  "http_status": null,
+                  "parameters": {},
+                  "parser_success": null
+                }
+              ],
+              "candidate_count": 1,
+              "candidates": [
+                {
+                  "evidence_id": "history:1",
+                  "target_attribute_ids": [
+                    "attr_001"
+                  ],
+                  "provider": "DORAR_HISTORY",
+                  "evidence_type": "HISTORY_EVENT",
+                  "title": "صلح الحديبية",
+                  "text": "تفاصيل صلح الحديبية",
+                  "provider_record_id": "hist-1",
+                  "source_url": "https://fixture.local/history/1",
+                  "parent_evidence_id": null,
+                  "fragment_id": null,
+                  "fragment_label": null,
+                  "structured_fields": {
+                    "hijri_year": 6,
+                    "gregorian_year": 628
+                  }
+                }
+              ],
+              "error": null
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "claim_id": "claim_004",
+          "provider": "DORAR_HADITH_EXPLANATION",
+          "status": "ACCEPTED",
+          "parent_task_id": "task_001",
+          "dependent_task_id": "task_002",
+          "parent_evidence_id": "dorar-hadith:child-1",
+          "dependency_record_id": "exp-1",
+          "reason": "Explanation identity is aligned to the authorizing Hadith record."
+        }
+      ],
+      "validations": [
+        {
+          "claim_id": "claim_001",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "QURAN_TEXT",
+              "claimed_value": "الله لا إله إلا هو الحي القيوم",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "quran:2:255"
+              ],
+              "supporting_evidence_ids": [
+                "quran:2:255"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+              "asserted_by": null,
+              "validation_method": "deterministic",
+              "validator_confidence": 1.0
+            },
+            {
+              "attribute_id": "attr_002",
+              "attribute_type": "SURAH",
+              "claimed_value": "2",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "quran:2:255"
+              ],
+              "supporting_evidence_ids": [
+                "quran:2:255"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+              "asserted_by": null,
+              "validation_method": "deterministic",
+              "validator_confidence": 1.0
+            },
+            {
+              "attribute_id": "attr_003",
+              "attribute_type": "AYAH_NUMBER",
+              "claimed_value": "255",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "quran:2:255"
+              ],
+              "supporting_evidence_ids": [
+                "quran:2:255"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+              "asserted_by": null,
+              "validation_method": "deterministic",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "deterministic",
+              "candidate_ids": [
+                "quran:2:255"
+              ],
+              "fields_compared": [
+                "text"
+              ],
+              "result": "SUPPORTED"
+            },
+            {
+              "attribute_id": "attr_002",
+              "method": "deterministic",
+              "candidate_ids": [
+                "quran:2:255"
+              ],
+              "fields_compared": [
+                "raw_metadata.surah",
+                "raw_metadata.surah_number",
+                "reference"
+              ],
+              "result": "SUPPORTED"
+            },
+            {
+              "attribute_id": "attr_003",
+              "method": "deterministic",
+              "candidate_ids": [
+                "quran:2:255"
+              ],
+              "fields_compared": [
+                "raw_metadata.ayah",
+                "raw_metadata.ayah_number",
+                "reference"
+              ],
+              "result": "SUPPORTED"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "quran:2:255",
+              "alignment": "UNRESOLVED",
+              "reason": "Record alignment is not applicable to this claim domain.",
+              "attribute_id": null
+            }
+          ],
+          "quran_record_alignment": "ALIGNED"
+        },
+        {
+          "claim_id": "claim_002",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "INTERPRETATION",
+              "claimed_value": "الله كامل الحياة والقيومية",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "tafseer:2:255:1"
+              ],
+              "supporting_evidence_ids": [
+                "tafseer:2:255:1"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "Controlled relationship derived only from supplied fixture evidence.",
+              "asserted_by": null,
+              "validation_method": "semantic",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "semantic",
+              "candidate_ids": [
+                "tafseer:2:255:1"
+              ],
+              "fields_compared": [
+                "evidence content",
+                "provenance"
+              ],
+              "result": "SUPPORTED"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "tafseer:2:255:1",
+              "alignment": "UNRESOLVED",
+              "reason": "Record alignment is not applicable to this claim domain.",
+              "attribute_id": null
+            },
+            {
+              "evidence_id": "tafseer:2:255:1",
+              "alignment": "ALIGNED",
+              "reason": "Tafseer provenance matches the structured Quran parent context.",
+              "attribute_id": "attr_001"
+            }
+          ],
+          "quran_record_alignment": null
+        },
+        {
+          "claim_id": "claim_003",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "HADITH_TEXT",
+              "claimed_value": "إنما الأعمال بالنيات",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "hadeethenc:1",
+                "dorar-hadith:1"
+              ],
+              "supporting_evidence_ids": [
+                "hadeethenc:1",
+                "dorar-hadith:1"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+              "asserted_by": null,
+              "validation_method": "deterministic",
+              "validator_confidence": 1.0
+            },
+            {
+              "attribute_id": "attr_002",
+              "attribute_type": "NARRATOR",
+              "claimed_value": "عمر بن الخطاب",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "hadeethenc:1",
+                "dorar-hadith:1"
+              ],
+              "supporting_evidence_ids": [
+                "hadeethenc:1",
+                "dorar-hadith:1"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+              "asserted_by": null,
+              "validation_method": "deterministic",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "deterministic",
+              "candidate_ids": [
+                "hadeethenc:1",
+                "dorar-hadith:1"
+              ],
+              "fields_compared": [
+                "text"
+              ],
+              "result": "SUPPORTED"
+            },
+            {
+              "attribute_id": "attr_002",
+              "method": "deterministic",
+              "candidate_ids": [
+                "hadeethenc:1",
+                "dorar-hadith:1"
+              ],
+              "fields_compared": [
+                "narrator",
+                "raw_metadata.narrator"
+              ],
+              "result": "SUPPORTED"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "hadeethenc:1",
+              "alignment": "ALIGNED",
+              "reason": "Normalized hadith text identifies the candidate as the target record.",
+              "attribute_id": null
+            },
+            {
+              "evidence_id": "dorar-hadith:1",
+              "alignment": "ALIGNED",
+              "reason": "Normalized hadith text identifies the candidate as the target record.",
+              "attribute_id": null
+            }
+          ],
+          "quran_record_alignment": null
+        },
+        {
+          "claim_id": "claim_004",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "INTERPRETATION",
+              "claimed_value": "صلاح العمل مرتبط بالنية",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "hadith-explanation:exp-1"
+              ],
+              "supporting_evidence_ids": [
+                "hadith-explanation:exp-1"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "Controlled relationship derived only from supplied fixture evidence.",
+              "asserted_by": null,
+              "validation_method": "semantic",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "semantic",
+              "candidate_ids": [
+                "hadith-explanation:exp-1"
+              ],
+              "fields_compared": [
+                "evidence content",
+                "provenance"
+              ],
+              "result": "SUPPORTED"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "dorar-hadith:child-1",
+              "alignment": "ALIGNED",
+              "reason": "Normalized hadith text identifies the candidate as the target record.",
+              "attribute_id": null
+            },
+            {
+              "evidence_id": "hadith-explanation:exp-1",
+              "alignment": "UNRELATED",
+              "reason": "The candidate is not a hadith or athar record.",
+              "attribute_id": null
+            }
+          ],
+          "quran_record_alignment": null
+        },
+        {
+          "claim_id": "claim_005",
+          "validations": [],
+          "validation_status": "ERROR",
+          "retrieval_status": "SOURCE_ERROR",
+          "missing_context": [],
+          "reason": "DORAR_PROVIDER_FAILURE",
+          "warnings": [
+            "تعذر الوصول إلى مصدر التفسير لإكمال التحقق."
+          ],
+          "trace": [],
+          "execution_failures": [
+            {
+              "attribute_id": "attr_001",
+              "stage": "retrieval",
+              "error_type": "DorarProviderFailure",
+              "message": "Dorar retrieval failed before evidence validation."
+            }
+          ],
+          "candidate_alignment": [],
+          "quran_record_alignment": null
+        },
+        {
+          "claim_id": "claim_006",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "OTHER",
+              "claimed_value": "الله متصف بالعلم",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "aqeeda:1"
+              ],
+              "supporting_evidence_ids": [
+                "aqeeda:1"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "Controlled relationship derived only from supplied fixture evidence.",
+              "asserted_by": null,
+              "validation_method": "semantic",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "semantic",
+              "candidate_ids": [
+                "aqeeda:1"
+              ],
+              "fields_compared": [
+                "evidence content",
+                "provenance"
+              ],
+              "result": "SUPPORTED"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "aqeeda:1",
+              "alignment": "UNRESOLVED",
+              "reason": "Record alignment is not applicable to this claim domain.",
+              "attribute_id": null
+            },
+            {
+              "evidence_id": "aqeeda:1",
+              "alignment": "ALIGNED",
+              "reason": "The evidence explicitly addresses the claimed subject.",
+              "attribute_id": "attr_001"
+            }
+          ],
+          "quran_record_alignment": null
+        },
+        {
+          "claim_id": "claim_007",
+          "validations": [
+            {
+              "attribute_id": "attr_001",
+              "attribute_type": "DATE",
+              "claimed_value": "6 هـ",
+              "status": "SUPPORTED",
+              "evidence_ids": [
+                "history:1"
+              ],
+              "supporting_evidence_ids": [
+                "history:1"
+              ],
+              "contradicting_evidence_ids": [],
+              "rationale": "One or more structured evidence fields explicitly match the claimed value.",
+              "asserted_by": null,
+              "validation_method": "deterministic",
+              "validator_confidence": 1.0
+            }
+          ],
+          "validation_status": "COMPLETED",
+          "retrieval_status": "COMPLETED",
+          "missing_context": [],
+          "reason": null,
+          "warnings": [],
+          "trace": [
+            {
+              "attribute_id": "attr_001",
+              "method": "deterministic",
+              "candidate_ids": [
+                "history:1"
+              ],
+              "fields_compared": [
+                "structured_fields.hijri_year"
+              ],
+              "result": "SUPPORTED"
+            }
+          ],
+          "execution_failures": [],
+          "candidate_alignment": [
+            {
+              "evidence_id": "history:1",
+              "alignment": "UNRESOLVED",
+              "reason": "Record alignment is not applicable to this claim domain.",
+              "attribute_id": null
+            },
+            {
+              "evidence_id": "history:1",
+              "alignment": "ALIGNED",
+              "reason": "The event title identifies the claimed historical event.",
+              "attribute_id": "attr_001"
+            }
+          ],
+          "quran_record_alignment": null
+        }
+      ],
+      "decisions": [
+        {
+          "claim_id": "claim_001",
+          "phase4_statuses": [
+            "SUPPORTED",
+            "SUPPORTED",
+            "SUPPORTED"
+          ],
+          "final_status": "SUPPORTED",
+          "reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+          "evidence_ids": [
+            "quran:2:255"
+          ]
+        },
+        {
+          "claim_id": "claim_002",
+          "phase4_statuses": [
+            "SUPPORTED"
+          ],
+          "final_status": "SUPPORTED",
+          "reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+          "evidence_ids": [
+            "tafseer:2:255:1"
+          ]
+        },
+        {
+          "claim_id": "claim_003",
+          "phase4_statuses": [
+            "SUPPORTED",
+            "SUPPORTED"
+          ],
+          "final_status": "SUPPORTED",
+          "reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+          "evidence_ids": [
+            "dorar-hadith:1",
+            "hadeethenc:1"
+          ]
+        },
+        {
+          "claim_id": "claim_004",
+          "phase4_statuses": [
+            "SUPPORTED"
+          ],
+          "final_status": "SUPPORTED",
+          "reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+          "evidence_ids": [
+            "hadith-explanation:exp-1"
+          ]
+        },
+        {
+          "claim_id": "claim_005",
+          "phase4_statuses": [],
+          "final_status": "REQUIRES_SPECIALIST",
+          "reason_code": "VALIDATION_EXECUTION_FAILURE",
+          "evidence_ids": []
+        },
+        {
+          "claim_id": "claim_006",
+          "phase4_statuses": [
+            "SUPPORTED"
+          ],
+          "final_status": "SUPPORTED",
+          "reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+          "evidence_ids": [
+            "aqeeda:1"
+          ]
+        },
+        {
+          "claim_id": "claim_007",
+          "phase4_statuses": [
+            "SUPPORTED"
+          ],
+          "final_status": "SUPPORTED",
+          "reason_code": "ALL_REQUIRED_ATTRIBUTES_SUPPORTED",
+          "evidence_ids": [
+            "history:1"
+          ]
+        }
+      ],
+      "relationship_audit": [
+        {
+          "claim_id": "claim_001",
+          "attribute_id": "attr_001",
+          "evidence_id": "quran:2:255",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_001",
+          "attribute_id": "attr_002",
+          "evidence_id": "quran:2:255",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_001",
+          "attribute_id": "attr_003",
+          "evidence_id": "quran:2:255",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_002",
+          "attribute_id": "attr_001",
+          "evidence_id": "tafseer:2:255:1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_003",
+          "attribute_id": "attr_001",
+          "evidence_id": "hadeethenc:1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_003",
+          "attribute_id": "attr_001",
+          "evidence_id": "dorar-hadith:1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_003",
+          "attribute_id": "attr_002",
+          "evidence_id": "hadeethenc:1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_003",
+          "attribute_id": "attr_002",
+          "evidence_id": "dorar-hadith:1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_004",
+          "attribute_id": "attr_001",
+          "evidence_id": "hadith-explanation:exp-1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_006",
+          "attribute_id": "attr_001",
+          "evidence_id": "aqeeda:1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        },
+        {
+          "claim_id": "claim_007",
+          "attribute_id": "attr_001",
+          "evidence_id": "history:1",
+          "role": "SUPPORT",
+          "compatible_and_aligned": true
+        }
+      ],
+      "metrics": {
+        "unsupported_inference_count": 0,
+        "total_support_or_contradiction_decisions": 11,
+        "unsupported_inference_rate": 0.0,
+        "validated_decisions_with_evidence_ids": 11,
+        "total_evidence_based_decisions": 11,
+        "evidence_traceability": 1.0,
+        "claims_with_only_expected_provider_family": 7,
+        "total_routable_claims": 7,
+        "routing_precision": 1.0,
+        "unauthorized_explanation_calls": 0
+      },
+      "explanation_calls": [
+        [
+          "exp-1",
+          "1",
+          "dorar-hadith:child-1"
+        ]
+      ],
+      "cost": {
+        "llm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "provider_calls": 9,
+        "provider_breakdown": [
+          {
+            "provider": "DORAR_AQEEDA",
+            "request_count": 1
+          },
+          {
+            "provider": "DORAR_FEQHIA",
+            "request_count": 1
+          },
+          {
+            "provider": "DORAR_HADITH",
+            "request_count": 2
+          },
+          {
+            "provider": "DORAR_HADITH_EXPLANATION",
+            "request_count": 0
+          },
+          {
+            "provider": "DORAR_HISTORY",
+            "request_count": 1
+          },
+          {
+            "provider": "DORAR_TAFSEER",
+            "request_count": 1
+          },
+          {
+            "provider": "HADEETHENC",
+            "request_count": 1
+          },
+          {
+            "provider": "QURANPEDIA",
+            "request_count": 2
+          }
+        ],
+        "duration_ms": 4.554,
+        "cost_status": "AVAILABLE",
+        "estimated_cost_usd": "0",
+        "estimated_cost_sar": "0.00",
+        "usd_sar_rate": "3.75",
+        "usage_records": []
+      },
+      "failures": [
+        {
+          "attribute_id": "attr_001",
+          "stage": "retrieval",
+          "error_type": "DorarProviderFailure",
+          "message": "Dorar retrieval failed before evidence validation."
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "unsupported_inference_count": 0,
+    "total_support_or_contradiction_decisions": 33,
+    "unsupported_inference_rate": 0.0,
+    "validated_decisions_with_evidence_ids": 33,
+    "total_evidence_based_decisions": 33,
+    "evidence_traceability": 1.0,
+    "routing_precision": 1.0,
+    "unauthorized_explanation_calls": 0
+  },
+  "phase5_deterministic_repeat": true,
+  "failures": []
+}

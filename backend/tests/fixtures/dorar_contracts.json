@@ -1,0 +1,19 @@
+{
+  "hadith": {
+    "source": "Dorar Hadith",
+    "query": "sample hadith query",
+    "retrieved_count": 2,
+    "results": [
+      {"rank": 1, "hadith_id": "H1", "hadith_text": "Original hadith text one", "narrator": "Narrator One", "scholar": "Scholar One", "source": "Book One", "page_or_number": "10", "grade": "Grade One", "takhrij": "Takhrij One", "categories": ["Category One"], "explanation_available": true, "explanation_id": "X1", "url": "https://dorar.net/h/H1"},
+      {"rank": 2, "hadith_id": "H2", "hadith_text": "Original hadith text two", "narrator": "Narrator Two", "scholar": "Scholar Two", "source": "Book Two", "page_or_number": "20", "grade": "Grade Two", "takhrij": "", "categories": [], "explanation_available": false, "explanation_id": "", "url": "https://dorar.net/h/H2"}
+    ]
+  },
+  "hadith_explanation": {"source": "Dorar Hadith Explanation", "hadith_id": "H1", "explanation_id": "X1", "hadith_text": "Original hadith text one", "narrator": "Narrator One", "scholar": "Scholar One", "hadith_source": "Book One", "page_or_number": "10", "grade": "Grade One", "takhrij": "Takhrij One", "explanation": "Exact original explanation content", "url": "https://www.dorar.net/hadith/sharh/X1"},
+  "tafseer": {"source": "Dorar Tafseer", "query": "sample verse", "search_result_count": 2, "unique_pages": 1, "results": [
+    {"search_match": "match", "source_url": "https://dorar.net/tafseer/2/25#tt1", "page_url": "https://dorar.net/tafseer/2/25", "matched_section": "tt1", "surah_id": 2, "page_id": 25, "page_title": "Page title", "headings": ["Heading"], "sections": {"Section A": "Exact section A", "Section B": "Exact section B"}},
+    {"search_match": "broken", "source_url": "https://dorar.net/tafseer/2/26", "page_url": "https://dorar.net/tafseer/2/26", "error": "detail failed"}
+  ]},
+  "feqhia": {"source": "Dorar Feqhia", "query": "sample ruling", "search_result_count": 2, "retrieved_count": 1, "results": [{"rank": 1, "feqhia_id": "F1", "title": "Fiqh title", "url": "https://dorar.net/feqhia/F1", "content": "Exact original fiqh content"}], "skipped": [{"feqhia_id": "F2", "title": "Skipped", "url": "https://dorar.net/feqhia/F2", "reason": "index_page"}]},
+  "aqeeda": {"source": "Dorar Aqeeda", "query": "sample proposition", "search_result_count": 2, "retrieved_count": 1, "results": [{"rank": 1, "aqeeda_id": "A1", "title": "Aqeeda title", "url": "https://dorar.net/aqeeda/A1", "content": "Exact original aqeeda content"}], "skipped": [{"aqeeda_id": "A2", "title": "Skipped", "url": "https://dorar.net/aqeeda/A2", "reason": "too_short"}]},
+  "history": [{"event_id": "E1", "title": "Event title", "hijri_year": "10 هـ", "gregorian_year": "632 م", "details": "Exact original event details", "url": "https://dorar.net/history/event/E1"}]
+}

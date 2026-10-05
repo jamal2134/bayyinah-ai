@@ -1,0 +1,116 @@
+{
+  "model": "claude-sonnet-4-5",
+  "claim_extraction": {
+    "status": "PASS",
+    "duration_ms": 7338.47,
+    "claim_count": 1,
+    "claims": [
+      {
+        "id": "claim_001",
+        "original_text": "قال الله تعالى: ﴿إِنَّ مَعَ الْعُسْرِ يُسْرًا﴾ وهي الآية السادسة من سورة الشرح.",
+        "normalized_claim": "قال الله تعالى: ﴿إِنَّ مَعَ الْعُسْرِ يُسْرًا﴾ وهي الآية السادسة من سورة الشرح",
+        "claim_type": "QURAN_RECORD",
+        "domain": "QURAN",
+        "search_queries": [
+          "إن مع العسر يسرا سورة الشرح",
+          "الآية السادسة من سورة الشرح",
+          "إن مع العسر يسرا الآية 6 الشرح"
+        ],
+        "entities": [
+          {
+            "name": "سورة الشرح",
+            "type": "SURAH"
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr_001",
+            "type": "QURAN_TEXT",
+            "value": "إِنَّ مَعَ الْعُسْرِ يُسْرًا",
+            "ayah_numbers": null,
+            "asserted_by": null,
+            "qualifier": null,
+            "requires_evidence": true
+          },
+          {
+            "id": "attr_002",
+            "type": "SURAH",
+            "value": "الشرح",
+            "ayah_numbers": null,
+            "asserted_by": null,
+            "qualifier": null,
+            "requires_evidence": true
+          },
+          {
+            "id": "attr_003",
+            "type": "AYAH_NUMBER",
+            "value": "6",
+            "ayah_numbers": [
+              6
+            ],
+            "asserted_by": null,
+            "qualifier": null,
+            "requires_evidence": true
+          }
+        ],
+        "parent_claim_id": null,
+        "relationship": null,
+        "subject_context": null,
+        "normalization_warnings": [],
+        "requires_evidence": true,
+        "reason": "This is a Quran quotation with explicit surah and ayah reference forming one complete QURAN_RECORD that requires verification of the text, surah name, and ayah number"
+      }
+    ]
+  },
+  "semantic_validation": {
+    "status": "PASS",
+    "duration_ms": 3269.045,
+    "result": {
+      "status": "SUPPORTED",
+      "supporting_evidence_ids": [
+        "smoke:fiqh:1"
+      ],
+      "contradicting_evidence_ids": [],
+      "rationale": "The evidence explicitly states 'صلاة الوتر سنة مؤكدة' which is an exact match to the attribute value. The evidence directly establishes the ruling that Witr prayer is a confirmed Sunnah.",
+      "confidence": 1.0
+    }
+  },
+  "cost": {
+    "llm_calls": 2,
+    "input_tokens": 6820,
+    "output_tokens": 556,
+    "provider_calls": 0,
+    "provider_breakdown": [],
+    "duration_ms": 10607.515,
+    "cost_status": "AVAILABLE",
+    "estimated_cost_usd": "0.028800",
+    "estimated_cost_sar": "0.10800000",
+    "usd_sar_rate": "3.75",
+    "usage_records": [
+      {
+        "phase": "CLAIM_EXTRACTION",
+        "model": "claude-sonnet-4-5",
+        "input_tokens": 5791,
+        "output_tokens": 454,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_type": "CALCULATED_FROM_API_USAGE",
+        "cost_status": "AVAILABLE",
+        "estimated_cost_usd": "0.024183",
+        "estimated_cost_sar": "0.09068625"
+      },
+      {
+        "phase": "SEMANTIC_VALIDATION",
+        "model": "claude-sonnet-4-5",
+        "input_tokens": 1029,
+        "output_tokens": 102,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "cost_type": "CALCULATED_FROM_API_USAGE",
+        "cost_status": "AVAILABLE",
+        "estimated_cost_usd": "0.004617",
+        "estimated_cost_sar": "0.01731375"
+      }
+    ]
+  }
+}

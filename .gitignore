@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+hadith_search_debug.html
+hadith_sharh_debug.html
+history_search_debug.html
+*_debug.html
+

@@ -1,0 +1,37 @@
+{
+  "ayah_retrieval_cases": {"passed": 5, "total": 5, "live_94_6": "passed"},
+  "surah_alias_cases": {"passed": 10, "total": 10},
+  "single_verse_cases": {"passed": 3, "total": 3},
+  "multi_verse_cases": {"passed": 2, "total": 2},
+  "tafsir_cases": {"passed": 4, "total": 4, "live_discovery_book_count": 74,
+                    "live_selected_book_id": 2012},
+  "provenance_cases": {"passed": 7, "total": 7},
+  "interpretation_isolation_cases": {"passed": 2, "total": 2},
+  "live_e2e": {
+    "status": "COMPLETED",
+    "claim_count": 4,
+    "claim_types": ["QURAN_RECORD", "QURAN_INTERPRETATION", "HADITH_RECORD", "HADITH_INTERPRETATION"],
+    "quran_evidence_id": "quranpedia:94:6",
+    "tafsir_evidence_id": "quranpedia:tafsir:94:6:2012",
+    "decisions": ["SUPPORTED", "SUPPORTED", "INSUFFICIENT_EVIDENCE", "INSUFFICIENT_EVIDENCE"],
+    "provider_calls": 14,
+    "llm_calls": 3,
+    "duration_ms": 30104.326,
+    "estimated_cost_usd": 0.056817,
+    "estimated_cost_sar": 0.21306375
+  },
+  "regression_summary": {"passed": 172, "failed": 0, "skipped": 1, "status": "passed"},
+  "metrics": {
+    "ayah_retrieval_accuracy": 1.0,
+    "surah_alias_normalization_accuracy": 1.0,
+    "single_verse_regression_accuracy": 1.0,
+    "multi_verse_regression_accuracy": 1.0,
+    "tafsir_discovery_accuracy": 1.0,
+    "tafsir_content_retrieval_accuracy": 1.0,
+    "tafsir_source_selection_accuracy": 1.0,
+    "tafsir_provenance_accuracy": 1.0,
+    "interpretation_evidence_isolation_accuracy": 1.0,
+    "unsupported_inference_rate": 0.0,
+    "regression_pass_rate": 1.0
+  }
+}

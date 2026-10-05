@@ -1,0 +1,285 @@
+{
+  "evaluation_version": "stage5",
+  "mode": "live",
+  "status": "failed",
+  "reason": "One or more real orchestration requests failed; no missing live results were fabricated.",
+  "cases": [
+    {
+      "request_id": "stage5_live_mixed_valid",
+      "status": "FAILED",
+      "input_text": "قال الله تعالى: الله لا إله إلا هو الحي القيوم، وهي الآية 255 من سورة البقرة، ومعناها أن الله كامل الحياة والقيومية. وقال النبي ﷺ: إنما الأعمال بالنيات، رواه عمر بن الخطاب، ومعناه أن صلاح العمل مرتبط بالنية. وصلاة الوتر سنة مؤكدة. والله متصف بالعلم. وكان صلح الحديبية سنة 6 هـ.",
+      "claims": [],
+      "execution": [
+        {
+          "step": "ANALYZE_TEXT",
+          "status": "FAILED",
+          "title_ar": "تحليل النص",
+          "summary_ar": "جارٍ التنفيذ...",
+          "started_at": "2026-10-04T17:07:21.033969Z",
+          "completed_at": "2026-10-04T17:07:21.154573Z",
+          "duration_ms": 120.604,
+          "details": {}
+        },
+        {
+          "step": "RETRIEVE_EVIDENCE",
+          "status": "PENDING",
+          "title_ar": "البحث عن الأدلة",
+          "summary_ar": "في انتظار التنفيذ.",
+          "started_at": null,
+          "completed_at": null,
+          "duration_ms": null,
+          "details": {}
+        },
+        {
+          "step": "ALIGN_EVIDENCE",
+          "status": "PENDING",
+          "title_ar": "مطابقة الأدلة",
+          "summary_ar": "في انتظار التنفيذ.",
+          "started_at": null,
+          "completed_at": null,
+          "duration_ms": null,
+          "details": {}
+        },
+        {
+          "step": "VALIDATE_EVIDENCE",
+          "status": "PENDING",
+          "title_ar": "التحقق من الأدلة",
+          "summary_ar": "في انتظار التنفيذ.",
+          "started_at": null,
+          "completed_at": null,
+          "duration_ms": null,
+          "details": {}
+        },
+        {
+          "step": "MAKE_DECISION",
+          "status": "PENDING",
+          "title_ar": "تحديد النتيجة",
+          "summary_ar": "في انتظار التنفيذ.",
+          "started_at": null,
+          "completed_at": null,
+          "duration_ms": null,
+          "details": {}
+        },
+        {
+          "step": "BUILD_REPORT",
+          "status": "PENDING",
+          "title_ar": "إعداد التقرير",
+          "summary_ar": "في انتظار التنفيذ.",
+          "started_at": null,
+          "completed_at": null,
+          "duration_ms": null,
+          "details": {}
+        }
+      ],
+      "cost": {
+        "llm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "provider_calls": 0,
+        "provider_breakdown": [],
+        "duration_ms": 149.513,
+        "cost_status": "AVAILABLE",
+        "estimated_cost_usd": "0",
+        "estimated_cost_sar": "0.00",
+        "usd_sar_rate": "3.75",
+        "usage_records": []
+      },
+      "error": "تعذر إكمال عملية التحقق. يرجى المحاولة مرة أخرى.",
+      "created_at": "2026-10-04T17:07:21.004963Z",
+      "completed_at": "2026-10-04T17:07:21.154573Z"
+    },
+    {
+      "request_id": "stage5_live_mixed_adversarial",
+      "status": "FAILED",
+      "input_text": "آية الكرسي من سورة آل عمران آية 7، ومعناها نفي القيومية. وحديث إنما الأعمال بالنيات رواه أبو هريرة، ومعناه أن النية لا أثر لها. والشافعية يقولون إن الوتر فرض. ونسب نفي العلم إلى أهل السنة. وكان صلح الحديبية سنة 9 هـ.",
+      "claims": [],
+      "execution": [
+        {
+          "step": "ANALYZE_TEXT",
+          "status": "FAILED",
+          "title_ar": "تحليل النص",
+          "summary_ar": "جارٍ التنفيذ...",
+          "started_at": "2026-10-04T17:07:21.165266Z",
+          "completed_at": "2026-10-04T17:07:21.263748Z",
+          "duration_ms": 98.482,
+          "details": {}
+        },
+        {
+          "step": "RETRIEVE_EVIDENCE",
+          "status": "PENDING",
+          "title_ar": "البحث عن الأدلة",
+          "summary_ar": "في انتظار التنفيذ.",
+          "started_at": null,
+          "completed_at": null,
+          "duration_ms": null,
+          "details": {}
+        },
+        {
+          "step": "ALIGN_EVIDENCE",
+          "status": "PENDING",
+          "title_ar": "مطابقة الأدلة",
+          "summary_ar": "في انتظار التنفيذ.",
+          "started_at": null,
+          "completed_at": null,
+          "duration_ms": null,
+          "details": {}
+        },
+        {
+          "step": "VALIDATE_EVIDENCE",
+          "status": "PENDING",
+          "title_ar": "التحقق من الأدلة",
+          "summary_ar": "في انتظار التنفيذ.",
+          "started_at": null,
+          "completed_at": null,
+          "duration_ms": null,
+          "details": {}
+        },
+        {
+          "step": "MAKE_DECISION",
+          "status": "PENDING",
+          "title_ar": "تحديد النتيجة",
+          "summary_ar": "في انتظار التنفيذ.",
+          "started_at": null,
+          "completed_at": null,
+          "duration_ms": null,
+          "details": {}
+        },
+        {
+          "step": "BUILD_REPORT",
+          "status": "PENDING",
+          "title_ar": "إعداد التقرير",
+          "summary_ar": "في انتظار التنفيذ.",
+          "started_at": null,
+          "completed_at": null,
+          "duration_ms": null,
+          "details": {}
+        }
+      ],
+      "cost": {
+        "llm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "provider_calls": 0,
+        "provider_breakdown": [],
+        "duration_ms": 108.156,
+        "cost_status": "AVAILABLE",
+        "estimated_cost_usd": "0",
+        "estimated_cost_sar": "0.00",
+        "usd_sar_rate": "3.75",
+        "usage_records": []
+      },
+      "error": "تعذر إكمال عملية التحقق. يرجى المحاولة مرة أخرى.",
+      "created_at": "2026-10-04T17:07:21.155573Z",
+      "completed_at": "2026-10-04T17:07:21.263748Z"
+    },
+    {
+      "request_id": "stage5_live_partial_insufficient",
+      "status": "FAILED",
+      "input_text": "تفسير آية غير محددة، وقول فقهي منسوب إلى عالم غير مذكور، ومكان حادثة تاريخية لم يرد في المصدر.",
+      "claims": [],
+      "execution": [
+        {
+          "step": "ANALYZE_TEXT",
+          "status": "FAILED",
+          "title_ar": "تحليل النص",
+          "summary_ar": "جارٍ التنفيذ...",
+          "started_at": "2026-10-04T17:07:21.270256Z",
+          "completed_at": "2026-10-04T17:07:21.328479Z",
+          "duration_ms": 58.223,
+          "details": {}
+        },
+        {
+          "step": "RETRIEVE_EVIDENCE",
+          "status": "PENDING",
+          "title_ar": "البحث عن الأدلة",
+          "summary_ar": "في انتظار التنفيذ.",
+          "started_at": null,
+          "completed_at": null,
+          "duration_ms": null,
+          "details": {}
+        },
+        {
+          "step": "ALIGN_EVIDENCE",
+          "status": "PENDING",
+          "title_ar": "مطابقة الأدلة",
+          "summary_ar": "في انتظار التنفيذ.",
+          "started_at": null,
+          "completed_at": null,
+          "duration_ms": null,
+          "details": {}
+        },
+        {
+          "step": "VALIDATE_EVIDENCE",
+          "status": "PENDING",
+          "title_ar": "التحقق من الأدلة",
+          "summary_ar": "في انتظار التنفيذ.",
+          "started_at": null,
+          "completed_at": null,
+          "duration_ms": null,
+          "details": {}
+        },
+        {
+          "step": "MAKE_DECISION",
+          "status": "PENDING",
+          "title_ar": "تحديد النتيجة",
+          "summary_ar": "في انتظار التنفيذ.",
+          "started_at": null,
+          "completed_at": null,
+          "duration_ms": null,
+          "details": {}
+        },
+        {
+          "step": "BUILD_REPORT",
+          "status": "PENDING",
+          "title_ar": "إعداد التقرير",
+          "summary_ar": "في انتظار التنفيذ.",
+          "started_at": null,
+          "completed_at": null,
+          "duration_ms": null,
+          "details": {}
+        }
+      ],
+      "cost": {
+        "llm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "provider_calls": 0,
+        "provider_breakdown": [],
+        "duration_ms": 64.544,
+        "cost_status": "AVAILABLE",
+        "estimated_cost_usd": "0",
+        "estimated_cost_sar": "0.00",
+        "usd_sar_rate": "3.75",
+        "usage_records": []
+      },
+      "error": "تعذر إكمال عملية التحقق. يرجى المحاولة مرة أخرى.",
+      "created_at": "2026-10-04T17:07:21.263748Z",
+      "completed_at": "2026-10-04T17:07:21.328479Z"
+    }
+  ],
+  "cost": {
+    "duration_ms": 322.21299999999997,
+    "llm_calls_with_recorded_usage": 0,
+    "provider_calls": 0,
+    "estimated_cost_usd": 0.0,
+    "estimated_cost_sar": 0.0,
+    "note": "Failed API attempts without usage records are not assigned an invented cost."
+  },
+  "failures": [
+    {
+      "request_id": "stage5_live_mixed_valid",
+      "status": "FAILED",
+      "error": "تعذر إكمال عملية التحقق. يرجى المحاولة مرة أخرى."
+    },
+    {
+      "request_id": "stage5_live_mixed_adversarial",
+      "status": "FAILED",
+      "error": "تعذر إكمال عملية التحقق. يرجى المحاولة مرة أخرى."
+    },
+    {
+      "request_id": "stage5_live_partial_insufficient",
+      "status": "FAILED",
+      "error": "تعذر إكمال عملية التحقق. يرجى المحاولة مرة أخرى."
+    }
+  ]
+}
